@@ -1,0 +1,27 @@
+.site-header {
+  padding: 1rem 0;
+}
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-header__logo-link {
+  display: flex;
+  align-items: center;
+}
+.site-header__logo-img {
+  height: 30px;
+}
+.site-header__logo-text {
+  font-size: 20px;
+  margin-left: 15px;
+  line-height: 1.1;
+}
+.site-header__links {
+  display: flex;
+  align-items: center;
+}
+.site-header__link {
+  margin-left: 1.5rem;
+}

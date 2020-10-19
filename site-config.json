@@ -1,0 +1,28 @@
+{
+  "siteMeta": {
+    "title": "Foo Tech Blog",
+    "description": "RSS based tech blog templates"
+  },
+  "headerLinks": [
+    {
+      "title": "About",
+      "href": "/about"
+    },
+    {
+      "title": "Company",
+      "href": "https://zenn.dev"
+    },
+    {
+      "title": "GitHub",
+      "href": "https://rss-based-blog.com"
+    }
+  ],
+  "cssVariables": {
+    "color-base-background": "#111",
+    "color-base-background-moderate": "#555",
+    "color-base-text": "#FFF",
+    "color-base-text-moderate": "rgba(255,255,255, 0.5)",
+    "color-primary": "blue",
+    "color-secondary": "orange"
+  }
+}
