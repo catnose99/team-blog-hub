@@ -1,0 +1,44 @@
+.scrollable-members {
+  display: flex;
+  align-items: flex-start;
+  overflow-x: scroll;
+  padding-bottom: 1rem; /* for scrollbar */
+  -webkit-overflow-scrolling: touch;
+  /* right space for horizontal scroll  */
+  &:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+}
+.scrollable-member__link {
+  display: block;
+  flex-shrink: 0;
+  width: 90px;
+  margin-right: 23px;
+  margin-left: -5px;
+  text-align: center;
+  line-height: 1.5;
+}
+.scrollable-member__image,
+.scrollable-member__img,
+.scrollable-member__name,
+.scrollable-member__role {
+  display: block;
+}
+.scrollable-member__img {
+  border-radius: 18px;
+  margin: 0 auto;
+}
+
+.scrollable-member__name {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.scrollable-member__role {
+  font-size: 12px;
+  color: var(--color-base-text-lighter);
+}

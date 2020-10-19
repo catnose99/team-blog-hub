@@ -3,7 +3,7 @@ html {
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 *,
 *:before,
@@ -17,7 +17,7 @@ body {
   background: var(--color-base-background);
   word-break: break-word;
   word-wrap: break-word;
-  font-family: "Lato", "BlinkMacSystemFont", "Hiragino Kaku Gothic ProN",
+  font-family: "Rubik", "BlinkMacSystemFont", "Hiragino Kaku Gothic ProN",
     "Hiragino Sans", Meiryo, sans-serif;
 }
 
@@ -46,7 +46,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1.5;
 }
 

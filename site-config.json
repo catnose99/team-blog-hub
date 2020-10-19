@@ -1,7 +1,7 @@
 {
   "siteMeta": {
     "title": "Foo Tech Blog",
-    "description": "RSS based tech blog templates"
+    "description": "A RSS based blog template for teams."
   },
   "headerLinks": [
     {
@@ -19,10 +19,11 @@
   ],
   "cssVariables": {
     "color-base-background": "#111",
-    "color-base-background-moderate": "#555",
+    "color-base-background-lighter": "#555",
     "color-base-text": "#FFF",
-    "color-base-text-moderate": "rgba(255,255,255, 0.5)",
-    "color-primary": "blue",
+    "color-base-text-lighter": "rgba(212, 231, 241, 0.6)",
+    "color-border": "rgba(115, 125, 130, 0.3)",
+    "color-primary": "#ac88ff",
     "color-secondary": "orange"
   }
 }

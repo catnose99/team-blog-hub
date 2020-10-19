@@ -1,0 +1,33 @@
+.home-hero {
+  padding: 2rem 0;
+}
+.home-hero__title {
+  font-size: 3.2rem;
+  line-height: 1.4;
+}
+.home-hero__description {
+  margin-top: 0.4rem;
+  font-size: 1.2rem;
+  color: var(--color-base-text-lighter);
+}
+
+.home-section-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0;
+  border-bottom: solid 1px var(--color-border);
+}
+.home-section-title {
+  font-size: 1.8rem;
+}
+.home-section-link {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+}
+.home-members {
+  padding: 3rem 0;
+}
+.home-members-container {
+  margin-top: 2rem;
+}

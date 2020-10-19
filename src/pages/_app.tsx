@@ -10,7 +10,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon shortcut" href="/fixme.png" />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap"
         />
         <style>{getCssVariableStrings()}</style>
       </Head>

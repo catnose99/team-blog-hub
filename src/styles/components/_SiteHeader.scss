@@ -1,5 +1,8 @@
 .site-header {
   padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  background: var(--color-base-background);
 }
 .site-header__inner {
   display: flex;
@@ -11,13 +14,9 @@
   align-items: center;
 }
 .site-header__logo-img {
-  height: 30px;
+  height: 35px;
 }
-.site-header__logo-text {
-  font-size: 20px;
-  margin-left: 15px;
-  line-height: 1.1;
-}
+
 .site-header__links {
   display: flex;
   align-items: center;
