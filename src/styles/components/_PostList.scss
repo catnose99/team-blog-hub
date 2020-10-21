@@ -1,12 +1,21 @@
+$side-padding: 1.7rem;
 .post-link {
-  padding: 1.9rem 1.3rem;
+  display: flex;
+  flex-flow: column;
   background: var(--color-base-background-lighter);
 }
 .post-link__author {
+  padding: 1.6rem $side-padding 0.6rem;
   display: flex;
   align-items: center;
   font-size: 13px;
   line-height: 1.4;
+}
+.post-link__main-link {
+  padding: 0.6rem $side-padding 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-flow: column;
 }
 .post-link__date {
   color: var(--color-base-text-lighter);
@@ -17,14 +26,20 @@
   margin-right: 0.7rem;
 }
 .post-link__title {
-  margin-top: 1.2rem;
   font-size: 1.1rem;
+  flex: 1;
 }
 
-.post-link__host {
-  margin-top: 0.5em;
+.post-link__site {
+  margin-top: 0.9rem;
   color: var(--color-base-text-lighter);
-  font-size: 0.85rem;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.post-link__site-favicon {
+  border-radius: 3px;
+  margin-right: 6px;
 }
 
 .post-list {
@@ -32,7 +47,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   .post-link {
-    margin-top: 4%;
-    width: 31%;
+    margin-top: 5%;
+    width: 47.5%;
   }
 }
