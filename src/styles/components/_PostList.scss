@@ -1,4 +1,5 @@
-$side-padding: 1.7rem;
+$side-padding: 1.6rem;
+$side-padding-sm: 1rem;
 .post-list-empty {
   padding: 5rem 0;
   text-align: center;
@@ -18,12 +19,18 @@ $side-padding: 1.7rem;
   align-items: center;
   font-size: 13px;
   line-height: 1.4;
+  @include mq(sm) {
+    padding: 1.4rem $side-padding-sm 0;
+  }
 }
 .post-link__main-link {
   padding: 1.1rem $side-padding 1.5rem;
   flex: 1;
   display: flex;
   flex-flow: column;
+  @include mq(sm) {
+    padding: 1rem $side-padding-sm 1.2rem;
+  }
 }
 .post-link__date {
   color: var(--color-base-text-lighter);
@@ -64,6 +71,15 @@ $side-padding: 1.7rem;
   color: #fff;
   background: var(--color-primary);
   border-radius: 12px;
+  @include mq(sm) {
+    right: 0;
+    top: 0;
+    height: 20px;
+    line-height: 20px;
+    width: 34px;
+    border-radius: 0;
+    font-size: 10px;
+  }
 }
 
 .post-list {
@@ -73,6 +89,10 @@ $side-padding: 1.7rem;
   .post-link {
     margin-top: 5%;
     width: 47.5%;
+    @include mq(sm) {
+      margin-top: 1.3rem;
+      width: 100%;
+    }
   }
 }
 .post-list-load {
