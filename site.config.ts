@@ -1,6 +1,7 @@
 export const config = {
   siteMeta: {
     title: "Foo Tech Blog",
+    companyName: "catnose",
     description: "A RSS based blog template for teams.",
   },
   headerLinks: [

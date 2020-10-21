@@ -4,6 +4,7 @@ export type Member = {
   role?: string;
   bio?: string;
   sources?: string[];
+  excludeUrlRegex?: string;
 };
 
 export type PostItem = {
@@ -12,4 +13,5 @@ export type PostItem = {
   link: string;
   contentSnippet?: string;
   isoDate?: string;
+  dateMiliSeconds: number;
 };

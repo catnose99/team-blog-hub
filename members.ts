@@ -9,7 +9,7 @@ export const members: Member[] = [
     avatarSrc: "/avatars/catnose.jpg",
     sources: [
       "https://zenn.dev/catnose99/feed",
-      "https://note.com/catnose/rss",
+      "https://medium.com/feed/@catnose99",
     ],
   },
   {
@@ -17,14 +17,15 @@ export const members: Member[] = [
     role: "SRE",
     bio: "Site Reliability Engineer.",
     avatarSrc: "/avatars/doe.jpg",
-    sources: ["https://zenn.dev/zenn/feed"],
+    sources: ["https://note.com/catnose/rss"],
+    excludeUrlRegex: "n3a59e3cdd820",
   },
   {
     name: "Amanda",
     role: "Frontend dev",
     bio: "Frontend developer,",
     avatarSrc: "/avatars/amanda.jpg",
-    sources: ["https://medium.com/feed/@Medium"],
+    sources: ["https://qiita.com/catnose99/feed.atom"],
   },
   {
     name: "Takada Junji",

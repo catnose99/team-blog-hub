@@ -9,6 +9,7 @@ type FeedItem = {
   link: string;
   contentSnippet?: string;
   isoDate?: string;
+  dateMiliSeconds: number;
 };
 
 const parser = new Parser();
@@ -26,6 +27,7 @@ async function fetchFeedItems(url: string) {
         contentSnippet: contentSnippet?.replace(/\n/g, ""),
         link,
         isoDate,
+        dateMiliSeconds: isoDate ? new Date(isoDate).getTime() : 0,
       };
     })
     .filter(({ title, link }) => title && link) as FeedItem[];
@@ -45,11 +47,17 @@ async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
   const feedItems = await getFeedItemsFromSources(member.sources);
   if (!feedItems) return [];
 
-  return feedItems.map((item) => {
+  const postItems = feedItems.map((item) => {
     return {
       ...item,
       authorName: member.name,
     };
+  });
+  if (!member.excludeUrlRegex) return postItems;
+
+  // remove excludeUrlRegex matched items
+  return postItems.filter((item) => {
+    return !item.link.match(new RegExp(member.excludeUrlRegex || ""));
   });
 }
 
@@ -58,6 +66,7 @@ async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
     const items = await getMemberFeedItems(member);
     if (items) allPostItems = [...allPostItems, ...items];
   }
+  allPostItems.sort((a, b) => b.dateMiliSeconds - a.dateMiliSeconds);
   fs.ensureDirSync(".contents");
   fs.writeJsonSync(".contents/posts.json", allPostItems);
 })();

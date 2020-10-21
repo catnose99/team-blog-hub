@@ -5,13 +5,14 @@ import Head from "next/head";
 import { config } from "@site.config";
 import { PostItem } from "@src/types";
 
+import { SiteHeader } from "@src/components/SiteHeader";
+import { SiteFooter } from "@src/components/SiteFooter";
+import { ScrollableMembers } from "@src/components/ScrollableMembers";
+import { PostList } from "@src/components/PostList";
 import {
   ContentWrapper,
   UndoWrapForScroll,
 } from "@src/components/ContentWrapper";
-import { SiteHeader } from "@src/components/SiteHeader";
-import { ScrollableMembers } from "@src/components/ScrollableMembers";
-import { PostList } from "@src/components/PostList";
 import posts from "@/.contents/posts.json";
 
 const Page: NextPage = () => {
@@ -62,6 +63,7 @@ const Page: NextPage = () => {
           </div>
         </ContentWrapper>
       </section>
+      <SiteFooter />
     </>
   );
 };

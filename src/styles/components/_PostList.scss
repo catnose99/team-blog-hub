@@ -1,18 +1,24 @@
 $side-padding: 1.7rem;
+.post-list-empty {
+  padding: 5rem 0;
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+}
 .post-link {
   display: flex;
   flex-flow: column;
   background: var(--color-base-background-lighter);
 }
 .post-link__author {
-  padding: 1.6rem $side-padding 0.6rem;
+  padding: 1.6rem $side-padding 0;
   display: flex;
   align-items: center;
   font-size: 13px;
   line-height: 1.4;
 }
 .post-link__main-link {
-  padding: 0.6rem $side-padding 1.5rem;
+  padding: 1.1rem $side-padding 1.5rem;
   flex: 1;
   display: flex;
   flex-flow: column;
@@ -50,4 +56,16 @@ $side-padding: 1.7rem;
     margin-top: 5%;
     width: 47.5%;
   }
+}
+.post-list-load {
+  margin-top: 3rem;
+  text-align: center;
+}
+.post-list-load__button {
+  border: solid 1px var(--color-border);
+  padding: 0.9em 2em;
+  border-radius: 2.5em;
+  font-size: 0.9rem;
+  color: var(--color-base-text-lighter);
+  overflow-anchor: none;
 }
