@@ -3,11 +3,13 @@ $side-padding: 1.7rem;
   padding: 5rem 0;
   text-align: center;
   font-weight: 700;
-  font-style: italic;
+  color: var(--color-base-text-lighter);
+  font-size: 1.4rem;
 }
 .post-link {
   display: flex;
   flex-flow: column;
+  position: relative;
   background: var(--color-base-background-lighter);
 }
 .post-link__author {
@@ -27,6 +29,7 @@ $side-padding: 1.7rem;
   color: var(--color-base-text-lighter);
   font-size: 12px;
 }
+
 .post-link__author-img {
   border-radius: 25%;
   margin-right: 0.7rem;
@@ -46,6 +49,21 @@ $side-padding: 1.7rem;
 .post-link__site-favicon {
   border-radius: 3px;
   margin-right: 6px;
+}
+.post-link__new-label {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  display: block;
+  text-align: center;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff;
+  background: var(--color-primary);
+  border-radius: 12px;
 }
 
 .post-list {

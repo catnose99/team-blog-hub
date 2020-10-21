@@ -11,6 +11,9 @@ export const members: Member[] = [
       "https://zenn.dev/catnose99/feed",
       "https://medium.com/feed/@catnose99",
     ],
+    twitterUsername: "catnose99",
+    githubUsername: "catnose99",
+    websiteUrl: "https://catnose99.com",
   },
   {
     name: "John Doe",
@@ -19,6 +22,7 @@ export const members: Member[] = [
     avatarSrc: "/avatars/doe.jpg",
     sources: ["https://note.com/catnose/rss"],
     excludeUrlRegex: "n3a59e3cdd820",
+    twitterUsername: "catnose99",
   },
   {
     name: "Amanda",
@@ -26,6 +30,7 @@ export const members: Member[] = [
     bio: "Frontend developer,",
     avatarSrc: "/avatars/amanda.jpg",
     sources: ["https://qiita.com/catnose99/feed.atom"],
+    twitterUsername: "catnose99",
   },
   {
     name: "Takada Junji",

@@ -5,8 +5,6 @@ import Head from "next/head";
 import { config } from "@site.config";
 import { PostItem } from "@src/types";
 
-import { SiteHeader } from "@src/components/SiteHeader";
-import { SiteFooter } from "@src/components/SiteFooter";
 import { ScrollableMembers } from "@src/components/ScrollableMembers";
 import { PostList } from "@src/components/PostList";
 import {
@@ -21,8 +19,6 @@ const Page: NextPage = () => {
       <Head>
         <title>Company Tech Blog</title>
       </Head>
-
-      <SiteHeader />
 
       <section className="home-hero">
         <ContentWrapper>
@@ -63,7 +59,6 @@ const Page: NextPage = () => {
           </div>
         </ContentWrapper>
       </section>
-      <SiteFooter />
     </>
   );
 };
