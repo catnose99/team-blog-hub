@@ -13,7 +13,7 @@ export const ScrollableMembers: React.FC = () => {
           <a className="scrollable-member__link">
             <span className="scrollable-member__image">
               <img
-                src={`/avatars/${member.avatarFileName}`}
+                src={member.avatarSrc}
                 alt={member.name}
                 className="scrollable-member__img"
                 width={80}

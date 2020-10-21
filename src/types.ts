@@ -1,6 +1,6 @@
 export type Member = {
   name: string;
-  avatarFileName: string;
+  avatarSrc: string;
   role?: string;
   bio?: string;
   sources?: string[];
@@ -8,8 +8,8 @@ export type Member = {
 
 export type PostItem = {
   authorName: string;
-  title?: string;
+  title: string;
+  link: string;
   contentSnippet?: string;
-  link?: string;
   isoDate?: string;
 };

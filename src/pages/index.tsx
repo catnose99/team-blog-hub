@@ -3,6 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 
 import { config } from "@site.config";
+import { PostItem } from "@src/types";
 
 import {
   ContentWrapper,
@@ -10,10 +11,10 @@ import {
 } from "@src/components/ContentWrapper";
 import { SiteHeader } from "@src/components/SiteHeader";
 import { ScrollableMembers } from "@src/components/ScrollableMembers";
+import { PostList } from "@src/components/PostList";
+import posts from "@/.contents/posts.json";
 
-type Props = {};
-
-const Page: NextPage<Props> = (props) => {
+const Page: NextPage = () => {
   return (
     <>
       <Head>
@@ -56,17 +57,13 @@ const Page: NextPage<Props> = (props) => {
             <h2 className="home-section-title">Articles</h2>
           </div>
 
-          <div className="home-posts-container"></div>
+          <div className="home-posts-container">
+            <PostList items={posts as PostItem[]} />
+          </div>
         </ContentWrapper>
       </section>
     </>
   );
-};
-
-export const getServerSideProps: GetServerSideProps<Props> = async () => {
-  return {
-    props: {},
-  };
 };
 
 export default Page;
