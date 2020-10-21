@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { siteMeta, headerLinks } from "@/site-config.json";
+import { siteMeta, headerLinks } from "@/site.config.json";
 import { ContentWrapper } from "@src/components/ContentWrapper";
 
 export const SiteHeader: React.FC = () => (

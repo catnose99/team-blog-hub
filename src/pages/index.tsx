@@ -2,7 +2,7 @@ import { NextPage, GetServerSideProps } from "next";
 import Link from "next/link";
 import Head from "next/head";
 
-import { siteMeta } from "@/site-config.json";
+import { siteMeta } from "@/site.config.json";
 
 import {
   ContentWrapper,
