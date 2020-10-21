@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { siteMeta, headerLinks } from "@/site.config.json";
+import { config } from "@site.config";
+
 import { ContentWrapper } from "@src/components/ContentWrapper";
 
 export const SiteHeader: React.FC = () => (
@@ -10,13 +11,13 @@ export const SiteHeader: React.FC = () => (
           <a className="site-header__logo-link">
             <img
               src="/logo.svg"
-              alt={siteMeta.title}
+              alt={config.siteMeta.title}
               className="site-header__logo-img"
             />
           </a>
         </Link>
         <div className="site-header__links">
-          {headerLinks.map((link, i) => {
+          {config.headerLinks.map((link, i) => {
             const key = `header-link-${i}`;
             if (link.href.startsWith("/")) {
               return (

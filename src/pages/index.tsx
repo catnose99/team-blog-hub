@@ -2,13 +2,13 @@ import { NextPage, GetServerSideProps } from "next";
 import Link from "next/link";
 import Head from "next/head";
 
-import { siteMeta } from "@/site.config.json";
+import { config } from "@site.config";
 
 import {
   ContentWrapper,
   UndoWrapForScroll,
 } from "@src/components/ContentWrapper";
-import { SiteHeader } from "@/src/components/SiteHeader";
+import { SiteHeader } from "@src/components/SiteHeader";
 import { ScrollableMembers } from "@src/components/ScrollableMembers";
 
 type Props = {};
@@ -24,9 +24,11 @@ const Page: NextPage<Props> = (props) => {
 
       <section className="home-hero">
         <ContentWrapper>
-          <h1 className="home-hero__title">{siteMeta.title}</h1>
-          {!!siteMeta.description && (
-            <p className="home-hero__description">{siteMeta.description}</p>
+          <h1 className="home-hero__title">{config.siteMeta.title}</h1>
+          {!!config.siteMeta.description && (
+            <p className="home-hero__description">
+              {config.siteMeta.description}
+            </p>
           )}
         </ContentWrapper>
       </section>

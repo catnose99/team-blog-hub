@@ -1,5 +1,5 @@
 import Link from "next/link";
-import members from "@/members.json";
+import { members } from "@members";
 
 export const ScrollableMembers: React.FC = () => {
   return (
