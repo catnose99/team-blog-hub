@@ -6,7 +6,7 @@ export const config = {
   },
   siteRoot:
     process.env.NODE_ENV === "production"
-      ? "https://catnose99.com"
+      ? "https://fixme.com"
       : "http://localhost:3000",
   headerLinks: [
     {

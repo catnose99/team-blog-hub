@@ -1,30 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Team Blog Hub
 
-## Getting Started
+![Demo](https://user-images.githubusercontent.com/34590683/96832331-8c289400-1479-11eb-9466-f24d30860a24.png)
 
-First, run the development server:
+企業/チームのためのブログ・スターターです。Forkしてご自由にお使いください。
 
+ブログのRSSのURLを登録することで、チームメンバーの投稿を一覧にまとめて表示します。Zenn、Qiita、Medium、note、はてなブログなど、RSSフィードを取得できるサイトであれば、メンバーは好きな場所に投稿できます。
+
+詳しくは下記の記事をご覧ください。
+
+[メンバーのテックブログをRSSで集約するサイトを作った →](https://zenn.dev/catnose99/articles/cb72a73368a547756862)
+
+## Demo
+https://fixme.com
+
+## Development
 ```bash
-npm run dev
-# or
-yarn dev
+$ yarn install
+$ yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- サイトの基本設定は`site.config.ts`で行います。
+- メンバーのプロフィールやRSSの登録は`members.ts`で行います。
+- 配色を変更するには`src/styles/variables.scss`を書き換えます。
+- ロゴなどの画像を変更するには`public`内のファイルを置き換えます。
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+その他、ご自由にコードを書き換えてください。
 
-## Learn More
+## Deployment
+VercelやNetlifyにデプロイすることを推奨します。`npm run build`（or `yarn build`）を実行することで、RSSからの投稿データの取得とサイトのビルドが行われます。1日に1回などの頻度で自動デプロイするのが良いかもしれません。
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Licence
+MIT
