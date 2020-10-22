@@ -1,15 +1,12 @@
 import { NextPage } from "next";
 import Link from "next/link";
-import Head from "next/head";
 
 import posts from "@.contents/posts.json";
 import { config } from "@site.config";
-
 import { PostItem } from "@src/types";
-
 import { ScrollableMembers } from "@src/components/ScrollableMembers";
 import { PostList } from "@src/components/PostList";
-
+import { PageSEO } from "@src/components/PageSEO";
 import {
   ContentWrapper,
   UndoWrapForScroll,
@@ -18,9 +15,12 @@ import {
 const Page: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>Company Tech Blog</title>
-      </Head>
+      <PageSEO
+        title={config.siteMeta.title}
+        description={config.siteMeta.description}
+        path="/"
+        removeSiteNameFromTitle={true}
+      />
 
       <section className="home-hero">
         <ContentWrapper>

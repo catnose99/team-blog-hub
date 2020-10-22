@@ -1,11 +1,14 @@
 import { NextPage, GetStaticProps, GetStaticPaths } from "next";
-import Head from "next/head";
-
+import { members } from "@members";
 import { PostItem, Member } from "@src/types";
 import { PostList } from "@src/components/PostList";
 import { ContentWrapper } from "@src/components/ContentWrapper";
-import { getMemberByName, getMemberPostsByName } from "@src/utils/helper";
-import { members } from "@members";
+import { PageSEO } from "@src/components/PageSEO";
+import {
+  getMemberByName,
+  getMemberPostsByName,
+  getMemberPath,
+} from "@src/utils/helper";
 
 type Props = {
   postItems: PostItem[];
@@ -24,10 +27,7 @@ const Page: NextPage<Props> = (props) => {
 
   return (
     <>
-      <Head>
-        <title>Company Tech Blog</title>
-      </Head>
-
+      <PageSEO title={name} path={getMemberPath(name)} />
       <section className="member">
         <ContentWrapper>
           <header className="member-header">

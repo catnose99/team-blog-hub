@@ -1,9 +1,12 @@
 .home-hero {
-  padding: 2rem 0;
+  padding: 2.7rem 0 2rem;
 }
 .home-hero__title {
-  font-size: 3.2rem;
+  font-size: 3.1rem;
   line-height: 1.4;
+  @include mq(xs) {
+    font-size: 2.6rem;
+  }
 }
 .home-hero__description {
   margin-top: 0.4rem;
@@ -19,7 +22,7 @@
   border-bottom: solid 1px var(--color-border);
 }
 .home-section-title {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
 }
 .home-section-link {
   font-size: 1.1rem;

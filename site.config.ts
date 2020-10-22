@@ -1,9 +1,13 @@
 export const config = {
   siteMeta: {
-    title: "Foo Tech Blog",
+    title: "Team Blog Hub",
     teamName: "catnose Inc.",
-    description: "A RSS based blog starter kit for teams.",
+    description: "RSS based blog starter kit for teams.",
   },
+  siteRoot:
+    process.env.NODE_ENV === "production"
+      ? "https://catnose99.com"
+      : "http://localhost:3000",
   headerLinks: [
     {
       title: "About",

@@ -2,13 +2,12 @@ import { NextPage } from "next";
 import Link from "next/link";
 import Head from "next/head";
 
-import { ContentWrapper } from "@src/components/ContentWrapper";
 import { config } from "@site.config";
-
-import { getMemberPath } from "@src/utils/helper";
-
-import { Member } from "@src/types";
 import { members } from "@members";
+import { ContentWrapper } from "@src/components/ContentWrapper";
+import { PageSEO } from "@src/components/PageSEO";
+import { getMemberPath } from "@src/utils/helper";
+import { Member } from "@src/types";
 
 const MemberCard: React.FC<{ member: Member }> = ({ member }) => {
   return (
@@ -33,9 +32,7 @@ const MemberCard: React.FC<{ member: Member }> = ({ member }) => {
 const Page: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>Members</title>
-      </Head>
+      <PageSEO title="Members" path="/members" />
       <ContentWrapper>
         <section className="members">
           <h1 className="members__title">

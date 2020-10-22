@@ -1,23 +1,20 @@
 import { NextPage } from "next";
-import Head from "next/head";
-import Link from "next/link";
-
 import { ContentWrapper } from "@src/components/ContentWrapper";
+import { LinkBackHome } from "@src/components/LinkBackHome";
+import { PageSEO } from "@src/components/PageSEO";
 
 const Page: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>About</title>
-      </Head>
+      <PageSEO title="About" path="/about" />
       <ContentWrapper>
         <section className="about">
           <h1 className="about__title">About</h1>
           <div className="about__body">
             <p>
               このサイトはチームのためのブログスターター 「
-              <a href="https://github.com/catnose99/team-blog-root">
-                Team Blog Root
+              <a href="https://github.com/catnose99/team-blog-hub">
+                Team Blog Hub
               </a>
               」
               のデモです。ブログのRSSのURLを登録することで、チームメンバーの投稿を一覧にまとめて表示します。
@@ -34,9 +31,7 @@ const Page: NextPage = () => {
             </p>
           </div>
           <div className="about__actions">
-            <Link href="/" passHref>
-              <a className="about__home-button">Back Home</a>
-            </Link>
+            <LinkBackHome />
           </div>
         </section>
       </ContentWrapper>
