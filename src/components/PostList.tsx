@@ -8,6 +8,7 @@ import {
   getMemberByName,
   getHostFromURL,
   getFaviconSrcFromHostname,
+  getMemberPath,
 } from "@src/utils/helper";
 
 dayjs.extend(relativeTime);
@@ -21,7 +22,7 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
 
   return (
     <article className="post-link">
-      <Link href={`/members/${encodeURIComponent(member.name)}`} passHref>
+      <Link href={getMemberPath(member.name)} passHref>
         <a className="post-link__author">
           <img
             src={member.avatarSrc}

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { members } from "@members";
+import { getMemberPath } from "@src/utils/helper";
 
 export const ScrollableMembers: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ export const ScrollableMembers: React.FC = () => {
       {members.map((member, i) => (
         <Link
           key={`scrollable-member-${i}`}
-          href={`/members/${encodeURIComponent(member.name)}`}
+          href={getMemberPath(member.name)}
           passHref
         >
           <a className="scrollable-member__link">

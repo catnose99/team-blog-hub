@@ -1,6 +1,6 @@
 import { PostItem } from "@src/types";
 import { members } from "@members";
-import posts from "@/.contents/posts.json";
+import posts from "@.contents/posts.json";
 
 export function getMemberByName(name: string) {
   return members.find((member) => member.name === name);
@@ -14,4 +14,7 @@ export function getHostFromURL(str: string) {
 }
 export function getFaviconSrcFromHostname(hostname: string) {
   return `http://www.google.com/s2/favicons?domain=${hostname}`;
+}
+export function getMemberPath(name: string) {
+  return `/members/${encodeURIComponent(name)}`;
 }

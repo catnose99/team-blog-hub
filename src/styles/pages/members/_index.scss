@@ -1,0 +1,60 @@
+.members {
+  padding: 2.5rem 0;
+}
+.members__title {
+  font-size: 2.3rem;
+}
+.members__title-team {
+  display: block;
+  font-size: 1.3rem;
+  color: var(--color-base-text-lighter);
+}
+
+.members__cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2.5em 2em;
+  @include mq(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.member-card {
+  display: block;
+  text-align: center;
+  font-size: 0.95rem;
+  position: relative;
+  &:hover:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -1rem;
+    bottom: -1rem;
+    left: -1rem;
+    right: -1rem;
+    background: var(--color-base-background-lighter);
+    opacity: 0;
+  }
+  &:hover:before {
+    opacity: 1;
+  }
+}
+.member-card__name {
+  margin-top: 0.7rem;
+  font-size: 1.1rem;
+}
+.member-card__bio {
+  margin-top: 0.5rem;
+  display: inline-block;
+  text-align: left;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+.member-card__avatar-img {
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+}

@@ -1,17 +1,19 @@
-import { NextPage, GetServerSideProps } from "next";
+import { NextPage } from "next";
 import Link from "next/link";
 import Head from "next/head";
 
+import posts from "@.contents/posts.json";
 import { config } from "@site.config";
+
 import { PostItem } from "@src/types";
 
 import { ScrollableMembers } from "@src/components/ScrollableMembers";
 import { PostList } from "@src/components/PostList";
+
 import {
   ContentWrapper,
   UndoWrapForScroll,
 } from "@src/components/ContentWrapper";
-import posts from "@/.contents/posts.json";
 
 const Page: NextPage = () => {
   return (

@@ -4,7 +4,7 @@ import { config } from "@site.config";
 export const SiteFooter: React.FC = () => (
   <footer className="site-footer">
     <ContentWrapper>
-      <p>© {config.siteMeta.companyName}</p>
+      <p>© {config.siteMeta.teamName}</p>
     </ContentWrapper>
   </footer>
 );
