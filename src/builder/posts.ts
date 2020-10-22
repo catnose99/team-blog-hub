@@ -44,21 +44,30 @@ async function getFeedItemsFromSources(sources: undefined | string[]) {
 }
 
 async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
-  const feedItems = await getFeedItemsFromSources(member.sources);
+  const { sources, name, includeUrlRegex, excludeUrlRegex } = member;
+  const feedItems = await getFeedItemsFromSources(sources);
   if (!feedItems) return [];
 
-  const postItems = feedItems.map((item) => {
+  let postItems = feedItems.map((item) => {
     return {
       ...item,
-      authorName: member.name,
+      authorName: name,
     };
   });
-  if (!member.excludeUrlRegex) return postItems;
+  // remove items which not matches includeUrlRegex
+  if (includeUrlRegex) {
+    postItems = postItems.filter((item) => {
+      return item.link.match(new RegExp(includeUrlRegex));
+    });
+  }
+  // remove items which matches excludeUrlRegex
+  if (excludeUrlRegex) {
+    postItems = postItems.filter((item) => {
+      return !item.link.match(new RegExp(excludeUrlRegex));
+    });
+  }
 
-  // remove excludeUrlRegex matched items
-  return postItems.filter((item) => {
-    return !item.link.match(new RegExp(member.excludeUrlRegex || ""));
-  });
+  return postItems;
 }
 
 (async function () {
