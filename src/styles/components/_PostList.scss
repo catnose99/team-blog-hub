@@ -69,7 +69,7 @@ $side-padding-sm: 1rem;
   font-size: 11px;
   font-weight: bold;
   color: #fff;
-  background: var(--color-primary);
+  background: var(--color-primary-background);
   border-radius: 12px;
   @include mq(sm) {
     right: 0;
