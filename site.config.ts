@@ -6,7 +6,7 @@ export const config = {
   },
   siteRoot:
     process.env.NODE_ENV === "production"
-      ? "https://fixme.com"
+      ? "https://team-blog-hub.vercel.app"
       : "http://localhost:3000",
   headerLinks: [
     {

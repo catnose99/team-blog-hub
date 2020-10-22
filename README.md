@@ -11,7 +11,7 @@
 [メンバーのテックブログをRSSで集約するサイトを作った →](https://zenn.dev/catnose99/articles/cb72a73368a547756862)
 
 ## Demo
-https://fixme.com
+https://team-blog-hub.vercel.app
 
 ## Development
 ```bash
