@@ -4,6 +4,8 @@
   overflow-x: scroll;
   padding-bottom: 1rem; /* for scrollbar */
   -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   /* right space for horizontal scroll  */
   &:after {
     content: "";
@@ -11,6 +13,10 @@
     width: 20px;
     height: 20px;
     flex-shrink: 0;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+    -webkit-appearance: none;
   }
 }
 .scrollable-member__link {
@@ -21,6 +27,7 @@
   margin-left: -5px;
   text-align: center;
   line-height: 1.5;
+  scroll-snap-align: center;
 }
 .scrollable-member__image,
 .scrollable-member__img,
