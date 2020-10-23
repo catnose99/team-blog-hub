@@ -8,7 +8,9 @@
 
 詳しくは下記の記事をご覧ください。
 
-[メンバーのテックブログをRSSで集約するサイトを作った →](https://zenn.dev/catnose99/articles/cb72a73368a547756862)
+［2020/10/24公開予定］
+<!-- FIXME -->
+<!-- [メンバーのテックブログをRSSで集約するサイトを作った →](https://zenn.dev/catnose99/articles/cb72a73368a547756862) -->
 
 ## Demo
 https://team-blog-hub.vercel.app

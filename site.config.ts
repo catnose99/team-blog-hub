@@ -15,7 +15,7 @@ export const config = {
     },
     {
       title: "Company",
-      href: "https://zenn.dev/catnose99/articles/cb72a73368a547756862",
+      href: "https://catnose99.com", // FIXME
     },
     {
       title: "GitHub",

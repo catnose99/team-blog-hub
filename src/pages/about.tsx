@@ -21,13 +21,14 @@ const Page: NextPage = () => {
             <p>
               Medium、note、Zenn、Qiita、はてなブログなど、RSSフィードを取得できるサイトであれば、メンバーは好きな場所に投稿できます。
             </p>
-            <p>
+            {/* FIXME */}
+            {/* <p>
               詳しくは
               <a href="https://zenn.dev/catnose99/articles/cb72a73368a547756862">
                 メンバーのテックブログをRSSで集約するサイトを作った
               </a>
               をご覧ください。
-            </p>
+            </p> */}
           </div>
           <div className="about__actions">
             <LinkBackHome />
