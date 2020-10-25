@@ -16,6 +16,7 @@ https://team-blog-hub.vercel.app
 ## Development
 ```bash
 $ yarn install
+$ yarn build
 $ yarn dev
 ```
 
