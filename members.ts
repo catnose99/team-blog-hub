@@ -10,8 +10,9 @@ export const members: Member[] = [
     sources: [
       "https://zenn.dev/matsubokkuri/feed",
       "https://matsu.teraren.com/blog/feed/",
+      "https://qiita.com/matsubo/feed",
     ],
-    includeUrlRegex: "zenn.dev|teraren.com",
+    includeUrlRegex: "zenn.dev|teraren.com|qiita.com",
     twitterUsername: "matsubokkuri",
     githubUsername: "matsubo",
     websiteUrl: "https://matsu.teraren.com/blog",
