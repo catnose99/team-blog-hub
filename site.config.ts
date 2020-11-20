@@ -1,12 +1,12 @@
 export const config = {
   siteMeta: {
-    title: "Team Blog Hub",
-    teamName: "catnose Inc.",
-    description: "RSS based blog starter kit for teams.",
+    title: "Minedia, Inc. Engineer Blog Hub",
+    teamName: "Minedia, Inc.",
+    description: "RSS based blog site.",
   },
   siteRoot:
     process.env.NODE_ENV === "production"
-      ? "https://team-blog-hub.vercel.app"
+      ? "https://minedia-engineer-hub.vercel.app/"
       : "http://localhost:3000",
   headerLinks: [
     {
@@ -15,11 +15,11 @@ export const config = {
     },
     {
       title: "Company",
-      href: "https://zenn.dev/catnose99/articles/cb72a73368a547756862",
+      href: "https://corporate.minedia.com/",
     },
     {
       title: "GitHub",
-      href: "https://github.com/catnose99/team-blog-hub",
+      href: "https://github.com/minedia",
     },
   ],
 };
