@@ -30,4 +30,3 @@ export const members: Member[] = [
     githubUsername: "piroya"
   },
 ];
-];
