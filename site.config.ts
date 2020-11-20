@@ -1,6 +1,6 @@
 export const config = {
   siteMeta: {
-    title: "Minedia, Inc. Engineer Blog Hub",
+    title: "Engineer Blog Hub",
     teamName: "Minedia, Inc.",
     description: "RSS based blog site.",
   },
