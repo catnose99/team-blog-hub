@@ -17,4 +17,17 @@ export const members: Member[] = [
     githubUsername: "matsubo",
     websiteUrl: "https://matsu.teraren.com/blog",
   },
+  {
+    name: "Hiroya Suzuki",
+    role: "CEO",
+    bio:
+      "4649",
+    avatarSrc: "https://gravatar.com/avatar/d6c558853d3a571260c7efc92a5947f6?s=400&d=robohash&r=x",
+    sources: [
+      "https://qiita.com/piroya/feed",
+    ],
+    includeUrlRegex: "zenn.dev|teraren.com|qiita.com",
+    githubUsername: "piroya"
+  },
+];
 ];
