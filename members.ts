@@ -17,4 +17,15 @@ export const members: Member[] = [
     githubUsername: "matsubo",
     websiteUrl: "https://matsu.teraren.com/blog",
   },
+  {
+    name: "Hajime Takeda",
+    role: "Data Scientist",
+    bio:
+      "駆け出しデータサイエンティスト。コーヒーが好きです。",
+    avatarSrc: "https://avatars1.githubusercontent.com/u/8223210?s=400&u=bd4b2b1ff493f380a93eb11366db3c58a025b047&v=4",
+    sources: [
+      "https://qiita.com/takechanman1228/feed",
+    ],
+    githubUsername: "takechanman1228",
+  },
 ];
