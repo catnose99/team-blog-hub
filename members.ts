@@ -33,7 +33,7 @@ export const members: Member[] = [
     role: "CEO",
     bio:
       "4649",
-    avatarSrc: "https://gravatar.com/avatar/d6c558853d3a571260c7efc92a5947f6?s=400&d=robohash&r=x",
+    avatarSrc: "https://avatars.dicebear.com/v2/male/d6c558853d3a571260c7efc92a5947f6.svg",
     sources: [
       "https://qiita.com/piroya/feed",
     ],
