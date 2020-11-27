@@ -39,5 +39,17 @@ export const members: Member[] = [
     ],
     includeUrlRegex: "zenn.dev|teraren.com|qiita.com",
     githubUsername: "piroya"
+  },
+  {
+    name: "Yuma Ota",
+    role: "University Student",
+    bio:
+      "大学生のエンジニアです，データに恋してます",
+    avatarSrc: "https://avatars.githubusercontent.com/Yum-git",
+    sources: [
+      "https://yzk-yzk-yzk.hatenablog.com/rss",
+    ],
+    githubUsername: "Yum-git",
+    twitterUsername: "yuma_1999_",
   }
 ];
