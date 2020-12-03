@@ -11,18 +11,19 @@ import { Member } from "@src/types";
 
 const MemberCard: React.FC<{ member: Member }> = ({ member }) => {
   return (
-    <Link href={getMemberPath(member.name)}>
+    <Link href={getMemberPath(member.nickname)}>
       <a className="member-card">
         <div className="member-card__avatar">
           <img
             src={member.avatarSrc}
-            alt={member.name}
+            alt={member.nickname}
             width={80}
             height={80}
             className="member-card__avatar-img"
           />
         </div>
-        <h2 className="member-card__name"> {member.name}</h2>
+        <h2 className="member-card__nickname"> {member.nickname}</h2>
+        <p className="member-card__real-name">{member.realName}</p>
         <p className="member-card__bio">{member.bio}</p>
       </a>
     </Link>

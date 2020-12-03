@@ -40,9 +40,14 @@
     opacity: 1;
   }
 }
-.member-card__name {
+.member-card__nickname {
   margin-top: 0.7rem;
   font-size: 1.1rem;
+}
+.member-card__real-name {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-base-text-lighter);
 }
 .member-card__bio {
   margin-top: 0.5rem;

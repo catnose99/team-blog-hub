@@ -1,7 +1,7 @@
 export type Member = {
-  name: string;
+  nickname: string;
   avatarSrc: string;
-  role?: string;
+  realName?: string;
   bio?: string;
   sources?: string[];
   includeUrlRegex?: string;

@@ -17,7 +17,8 @@ type Props = {
 
 const Page: NextPage<Props> = (props) => {
   const {
-    name,
+    nickname,
+    realName,
     bio,
     avatarSrc,
     twitterUsername,
@@ -27,20 +28,21 @@ const Page: NextPage<Props> = (props) => {
 
   return (
     <>
-      <PageSEO title={name} path={getMemberPath(name)} />
+      <PageSEO title={nickname} path={getMemberPath(nickname)} />
       <section className="member">
         <ContentWrapper>
           <header className="member-header">
             <div className="member-header__avatar">
               <img
                 src={avatarSrc}
-                alt={name}
+                alt={nickname}
                 width={100}
                 height={100}
                 className="member-header__avatar-img"
               />
             </div>
-            <h1 className="member-header__name">{name}</h1>
+            <h1 className="member-header__nickname">{nickname}</h1>
+            <p className="member-header__real-name">{realName}</p>
             <p className="member-header__bio">{bio}</p>
             <div className="member-header__links">
               {twitterUsername && (
@@ -108,7 +110,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const memberNameList = members.map((member) =>
-    encodeURIComponent(member.name)
+    encodeURIComponent(member.nickname)
   );
   const paths = memberNameList.map((name) => {
     return {

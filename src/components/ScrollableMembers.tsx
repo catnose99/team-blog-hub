@@ -8,21 +8,21 @@ export const ScrollableMembers: React.FC = () => {
       {members.map((member, i) => (
         <Link
           key={`scrollable-member-${i}`}
-          href={getMemberPath(member.name)}
+          href={getMemberPath(member.nickname)}
           passHref
         >
           <a className="scrollable-member__link">
             <span className="scrollable-member__image">
               <img
                 src={member.avatarSrc}
-                alt={member.name}
+                alt={member.nickname}
                 className="scrollable-member__img"
                 width={80}
                 height={80}
               />
             </span>
-            <span className="scrollable-member__name">{member.name}</span>
-            <span className="scrollable-member__role">{member.role}</span>
+            <span className="scrollable-member__nickname">{member.nickname}</span>
+            <span className="scrollable-member__real-name">{member.realName}</span>
           </a>
         </Link>
       ))}
