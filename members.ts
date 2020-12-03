@@ -12,4 +12,15 @@ export const members: Member[] = [
     githubUsername: "ngsw_taro",
     websiteUrl: "https://taro.hatenablog.jp/",
   },
+  {
+    nickname: "たつろろ",
+    realName: "中村達郎",
+    bio: "Webフロントエンドが得意です。福岡在住",
+    avatarSrc: "/avatars/tatsuroro.jpg",
+    sources: ["https://tatsuroro.hateblo.jp/feed"],
+    includeUrlRegex: "taro.hatenablog.jp",
+    twitterUsername: "tatsuroro",
+    githubUsername: "tatsuroro",
+    websiteUrl: "https://tatsuroro.hateblo.jp/",
+  },
 ];
