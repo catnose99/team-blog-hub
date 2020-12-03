@@ -13,6 +13,17 @@ export const members: Member[] = [
     websiteUrl: "https://taro.hatenablog.jp/",
   },
   {
+    nickname: "たつろろ",
+    realName: "中村達郎",
+    bio: "Webフロントエンドが得意です。福岡在住",
+    avatarSrc: "/avatars/tatsuroro.jpg",
+    sources: ["https://tatsuroro.hateblo.jp/feed"],
+    includeUrlRegex: "taro.hatenablog.jp",
+    twitterUsername: "tatsuroro",
+    githubUsername: "tatsuroro",
+    websiteUrl: "https://tatsuroro.hateblo.jp/",
+  },
+  {
     nickname: "しらじ",
     realName: "磯貝佳典",
     bio: "家紋アイコンしらじです。フロント、バックエンドやってます",
@@ -22,5 +33,5 @@ export const members: Member[] = [
     twitterUsername: "shiraj_i",
     githubUsername: "shiraji",
     websiteUrl: "https://shiraji.hatenablog.com",
-  },
+  }
 ];
