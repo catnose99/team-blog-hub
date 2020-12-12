@@ -51,5 +51,17 @@ export const members: Member[] = [
     ],
     githubUsername: "Yum-git",
     twitterUsername: "yuma_1999_",
+  },
+  {
+    name: "Takahiro Ishiwata",
+    role: "Marketing & Operation Manager",
+    bio:
+      "BtoB、BtoCマーケターです。マーケター視点でちょっと技術寄りの話をします。",
+    avatarSrc: "https://gravatar.com/avatar/38be4545da8da87195bb6b89cf82e978?s=400&d=robohash&r=x",
+    sources: [
+      "https://note.com/takastone/m/m6a150c695fc1/rss",
+    ],
+    githubUsername: "takahiro_ishi",
+    twitterUsername: "takahirostone",
   }
 ];
