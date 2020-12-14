@@ -8,7 +8,8 @@
 
 ## Published URL
 
-https://minedia-engineer-hub.vercel.app/
+- https://tech-blog.minedia.com/
+
 
 ## Development
 ```bash
