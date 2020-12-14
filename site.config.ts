@@ -6,7 +6,7 @@ export const config = {
   },
   siteRoot:
     process.env.NODE_ENV === "production"
-      ? "https://minedia-engineer-hub.vercel.app/"
+      ? "https://tech-blog.minedia.com"
       : "http://localhost:3000",
   headerLinks: [
     {
