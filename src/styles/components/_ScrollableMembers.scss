@@ -3,6 +3,7 @@
   align-items: flex-start;
   overflow-x: scroll;
   padding-bottom: 1rem; /* for scrollbar */
+  padding-left: 1rem;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;

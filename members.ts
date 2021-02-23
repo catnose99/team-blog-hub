@@ -3,10 +3,10 @@ import { Member } from "@src/types";
 export const members: Member[] = [
   {
     name: "KazuhitoNakayama",
-    role: "CTO",
+    role: "Web Dev",
     bio:
-      "デザインが好きなプログラマー。開発者向けの情報共有プラットフォームzenn.devを開発しています。",
-    avatarSrc: "/avatars/catnose.jpg",
+      "Web制作をしたり、2CののWebサービスを開発したりしてます。",
+    avatarSrc: "/avatars/favicon_kazu.png",
     sources: [
       "https://zenn.dev/be_the_light/feed",
       "https://qiita.com/facultyoflaw11/feed.atom",
