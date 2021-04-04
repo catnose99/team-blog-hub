@@ -24,5 +24,5 @@ export const author: Author = {
   ],
   twitterUsername: "ysmtegsr",
   githubUsername: "ysmtegsr",
-  websiteUrl: "https://ysmtegsr.com"
+  websiteUrl: "https://blog.ysmtegsr.com"
 };
