@@ -11,16 +11,16 @@ $side-padding-sm: 1rem;
   display: flex;
   flex-flow: column;
   position: relative;
-  background: var(--color-base-background-lighter);
-}
-.post-link__author {
-  padding: 1.6rem $side-padding 0;
-  display: flex;
-  align-items: center;
-  font-size: 13px;
-  line-height: 1.4;
-  @include mq(sm) {
-    padding: 1.4rem $side-padding-sm 0;
+
+  &__author {
+    padding: 1.6rem $side-padding 0;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    line-height: 1.4;
+    @include mq(sm) {
+      padding: 1.4rem $side-padding-sm 0;
+    }
   }
 }
 .post-link__main-link {

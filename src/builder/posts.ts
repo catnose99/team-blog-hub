@@ -1,7 +1,7 @@
 import fs from "fs-extra";
 import Parser from "rss-parser";
-import { members } from "../../members";
-import { PostItem, Member } from "../types";
+import { author } from "../../author";
+import { PostItem, Author, Source } from "../types";
 export default {};
 
 type FeedItem = {
@@ -30,21 +30,20 @@ async function fetchFeedItems(url: string) {
         dateMiliSeconds: isoDate ? new Date(isoDate).getTime() : 0,
       };
     })
-    .filter(({ title, link }) => title && link) as FeedItem[];
+    .filter(({ title, link }) =>  title && link ) as FeedItem[];
 }
 
-async function getFeedItemsFromSources(sources: undefined | string[]) {
-  if (!sources?.length) return [];
+async function getFeedItemsFromSources(sources: Source[]) {
   let feedItems: FeedItem[] = [];
-  for (const url of sources) {
-    const items = await fetchFeedItems(url);
+  for (const source of sources) {
+    const items = await fetchFeedItems(source.url);
     if (items) feedItems = [...feedItems, ...items];
   }
   return feedItems;
 }
 
-async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
-  const { sources, name, includeUrlRegex, excludeUrlRegex } = member;
+async function getFeedItems(author: Author): Promise<PostItem[]> {
+  const { sources, name } = author;
   const feedItems = await getFeedItemsFromSources(sources);
   if (!feedItems) return [];
 
@@ -54,27 +53,12 @@ async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
       authorName: name,
     };
   });
-  // remove items which not matches includeUrlRegex
-  if (includeUrlRegex) {
-    postItems = postItems.filter((item) => {
-      return item.link.match(new RegExp(includeUrlRegex));
-    });
-  }
-  // remove items which matches excludeUrlRegex
-  if (excludeUrlRegex) {
-    postItems = postItems.filter((item) => {
-      return !item.link.match(new RegExp(excludeUrlRegex));
-    });
-  }
 
   return postItems;
 }
 
 (async function () {
-  for (const member of members) {
-    const items = await getMemberFeedItems(member);
-    if (items) allPostItems = [...allPostItems, ...items];
-  }
+  const allPostItems = await getFeedItems(author);
   allPostItems.sort((a, b) => b.dateMiliSeconds - a.dateMiliSeconds);
   fs.ensureDirSync(".contents");
   fs.writeJsonSync(".contents/posts.json", allPostItems);

@@ -1,18 +1,58 @@
 .about {
   padding: 2.5rem 0;
-}
-.about__title {
-  font-size: 2.3rem;
-}
-.about__body {
-  p {
-    margin-top: 1.2rem;
+
+  &__title {
+    font-size: 2.3rem;
   }
-  a {
-    color: var(--color-primary-text);
+
+  &__body {
+    p {
+      margin-top: 1.2rem;
+    }
+    a {
+      color: var(--color-primary-text);
+    }
+  }
+
+  &__actions {
+    margin-top: 3.5rem;
+    text-align: center;
   }
 }
-.about__actions {
-  margin-top: 3.5rem;
+
+.author-header {
+  padding: 2rem 0;
   text-align: center;
+
+  &__avatar-img {
+    border-radius: 18px;
+  }
+
+  &__name {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  &__bio {
+    display: inline-block;
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    max-width: 500px;
+    opacity: 0.8;
+  }
+
+  &__links {
+    margin-top: 0.6rem;
+  }
+
+  &__link {
+    margin: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--color-base-background-lighter);
+  }
 }
