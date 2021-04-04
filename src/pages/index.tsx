@@ -4,7 +4,6 @@ import Link from "next/link";
 import posts from "@.contents/posts.json";
 import { config } from "@site.config";
 import { PostItem } from "@src/types";
-import { ScrollableMembers } from "@src/components/ScrollableMembers";
 import { PostList } from "@src/components/PostList";
 import { PageSEO } from "@src/components/PageSEO";
 import {
@@ -25,28 +24,20 @@ const Page: NextPage = () => {
       <section className="home-hero">
         <ContentWrapper>
           <h1 className="home-hero__title">{config.siteMeta.title}</h1>
-          {!!config.siteMeta.description && (
-            <p className="home-hero__description">
-              {config.siteMeta.description}
-            </p>
-          )}
-        </ContentWrapper>
-      </section>
-
-      <section className="home-members">
-        <ContentWrapper>
-          <div className="home-section-title-container">
-            <h2 className="home-section-title">Members</h2>
-            <Link href="/members">
-              <a className="home-section-link">See Details →</a>
-            </Link>
-          </div>
-
-          <div className="home-members-container">
-            <UndoWrapForScroll>
-              <ScrollableMembers />
-            </UndoWrapForScroll>
-          </div>
+          <p className="home-hero__description">
+            こんにちは 👋 <br />福岡県在住のソフトウェアエンジニア、ヨッシーです。
+          </p>
+          <p>
+            このサイトは、「企業/チームのためのブログ・スターター
+            <a
+              href="https://github.com/catnose99/team-blog-hub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Team Blog Hub
+            </a> 」をカスタマイズし、各サービスでのアウトプットを集約して閲覧できるようにしたものです。
+          </p>
+          <p>技術を用いた問題解決が大好きなので、蓄えた知識をいろんな場所で発信するように心がけています。</p>
         </ContentWrapper>
       </section>
 

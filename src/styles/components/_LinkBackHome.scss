@@ -1,6 +1,8 @@
 .link-back-home {
-  font-size: 0.95rem;
-  padding: 0.7em 1.3em;
-  color: #fff;
   background: var(--color-primary-background);
+  border-radius: 3px;
+  color: var(--color-base-text-lighter);
+  font-size: 0.95rem;
+  font-weight: bold;
+  padding: 0.7em 1.3em;
 }

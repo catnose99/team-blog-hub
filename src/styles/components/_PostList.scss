@@ -8,6 +8,9 @@ $side-padding-sm: 1rem;
   font-size: 1.4rem;
 }
 .post-link {
+  background: var(--color-card-background);
+  border-radius: 3px;
+  color: var(--color-card-text);
   display: flex;
   flex-flow: column;
   position: relative;
@@ -22,63 +25,69 @@ $side-padding-sm: 1rem;
       padding: 1.4rem $side-padding-sm 0;
     }
   }
-}
-.post-link__main-link {
-  padding: 1.1rem $side-padding 1.5rem;
-  flex: 1;
-  display: flex;
-  flex-flow: column;
-  @include mq(sm) {
-    padding: 1rem $side-padding-sm 1.2rem;
+
+  &__main {
+    padding: 1.1rem $side-padding 1.5rem;
+    @include mq(sm) {
+      padding: 1rem $side-padding-sm 1.2rem;
+    }
   }
-}
-.post-link__date {
-  color: var(--color-base-text-lighter);
-  font-size: 12px;
-}
 
-.post-link__author-img {
-  border-radius: 25%;
-  margin-right: 0.7rem;
-}
-.post-link__title {
-  font-size: 1.1rem;
-  flex: 1;
-}
+  &__date {
+    font-size: 12px;
+  }
 
-.post-link__site {
-  margin-top: 0.9rem;
-  color: var(--color-base-text-lighter);
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-}
-.post-link__site-favicon {
-  border-radius: 3px;
-  margin-right: 6px;
-}
-.post-link__new-label {
-  position: absolute;
-  right: -5px;
-  top: -5px;
-  display: block;
-  text-align: center;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
-  font-size: 11px;
-  font-weight: bold;
-  color: #fff;
-  background: var(--color-primary-background);
-  border-radius: 12px;
-  @include mq(sm) {
-    right: 0;
-    top: 0;
-    height: 20px;
-    line-height: 20px;
-    width: 34px;
-    border-radius: 0;
-    font-size: 10px;
+  &__author-img {
+    border-radius: 3px;
+    margin-right: 0.7rem;
+  }
+
+  &__title {
+    color: var(--color-card-headline);
+    display: -webkit-box;
+    flex: 1;
+    font-size: 1.1rem;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  &__site {
+    align-items: center;
+    background: var(--color-card-tag-background);
+    color: var(--color-card-tag-text);
+    border-radius: 3px;
+    display: inline-flex;
+    margin-top: 0.9rem;
+    font-size: 12px;
+    padding: 0.5em;
+  }
+
+  &__site-favicon {
+    border-radius: 3px;
+    margin-right: 6px;
+  }
+
+  &__new-label {
+    position: absolute;
+    right: 1.6em;
+    top: 1.6em;
+    display: block;
+    text-align: center;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--color-primary-text);
+    @include mq(sm) {
+      right: 1em;
+      top: 1.4em;
+      height: 20px;
+      line-height: 20px;
+      width: 34px;
+      font-size: 10px;
+    }
   }
 }
 
@@ -100,10 +109,19 @@ $side-padding-sm: 1rem;
   text-align: center;
 }
 .post-list-load__button {
-  border: solid 1px var(--color-border);
-  padding: 0.9em 2em;
-  border-radius: 2.5em;
-  font-size: 0.9rem;
+  background: var(--color-primary-background);
+  border-radius: 3px;
   color: var(--color-base-text-lighter);
+  font-size: 0.9rem;
+  font-weight: bold;
   overflow-anchor: none;
+  padding: 0.9em 2em;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    box-shadow: 0 5px 15px -10px rgb(31 18 53 / 60%);
+  }
 }

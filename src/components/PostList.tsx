@@ -5,41 +5,52 @@ import relativeTime from "dayjs/plugin/relativeTime";
 
 import { PostItem } from "@src/types";
 import {
-  getMemberByName,
   getHostFromURL,
   getFaviconSrcFromHostname,
-  getMemberPath,
+  getAuthorData
 } from "@src/utils/helper";
 
 dayjs.extend(relativeTime);
 
 const PostLink: React.FC<{ item: PostItem }> = (props) => {
-  const { authorName, title, isoDate, link, dateMiliSeconds } = props.item;
-  const member = getMemberByName(authorName);
-  if (!member) return null;
+  const { title, isoDate, link, dateMiliSeconds } = props.item;
+  const author = getAuthorData();
 
   const hostname = getHostFromURL(link);
+  const source = author.sources.filter((source) => {
+    return source.url.includes(hostname)
+  })[0];
 
   return (
     <article className="post-link">
-      <Link href={getMemberPath(member.name)} passHref>
-        <a className="post-link__author">
+      <Link href={source.profileUrl} passHref>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="post-link__author"
+        >
           <img
-            src={member.avatarSrc}
+            src={source.avatar}
             className="post-link__author-img"
             width={35}
             height={35}
           />
           <div className="post-link__author-name">
-            <div className="post-link__author-name">{member.name}</div>
+            <div className="post-link__author-name">{source.username || author.name}</div>
             <time dateTime={isoDate} className="post-link__date">
               {dayjs(isoDate).fromNow()}
             </time>
           </div>
         </a>
       </Link>
-      <a href={link} className="post-link__main-link">
-        <h2 className="post-link__title">{title}</h2>
+      <div className="post-link__main">
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className="post-link__title">{title}</h2>
+        </a>
         {hostname && (
           <div className="post-link__site">
             <img
@@ -51,7 +62,7 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
             {hostname}
           </div>
         )}
-      </a>
+      </div>
       {dateMiliSeconds && dateMiliSeconds > Date.now() - 86400000 * 3 && (
         <div className="post-link__new-label">NEW</div>
       )}
@@ -60,7 +71,7 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
 };
 
 export const PostList: React.FC<{ items: PostItem[] }> = (props) => {
-  const [displayItemsCount, setDisplayItemsCount] = useState<number>(32);
+  const [displayItemsCount, setDisplayItemsCount] = useState<number>(10);
   const totalItemsCount = props.items?.length || 0;
   const canLoadMore = totalItemsCount - displayItemsCount > 0;
 
@@ -78,10 +89,10 @@ export const PostList: React.FC<{ items: PostItem[] }> = (props) => {
       {canLoadMore && (
         <div className="post-list-load">
           <button
-            onClick={() => setDisplayItemsCount(displayItemsCount + 32)}
+            onClick={() => setDisplayItemsCount(displayItemsCount + 10)}
             className="post-list-load__button"
           >
-            LOAD MORE
+            Load More
           </button>
         </div>
       )}

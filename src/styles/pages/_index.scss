@@ -1,17 +1,40 @@
 .home-hero {
+  background: var(--color-section-background);
+  margin-bottom: 2rem;
   padding: 2.7rem 0 2rem;
-}
-.home-hero__title {
-  font-size: 3.1rem;
-  line-height: 1.4;
-  @include mq(xs) {
-    font-size: 2.6rem;
+
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
-}
-.home-hero__description {
-  margin-top: 0.4rem;
-  font-size: 1.2rem;
-  color: var(--color-base-text-lighter);
+
+  &__title {
+    color: var(--color-section-headline);
+    font-size: 3.1rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    @include mq(xs) {
+      font-size: 2.6rem;
+    }
+  }
+
+  p {
+    color: var(--color-section-text);
+    margin: 0.4rem 0;
+
+    a {
+      color: var(--color-primary-text);
+      text-decoration: underline;
+    }
+  }
+
+  &__img {
+    border: 3px solid var(--color-border);
+    border-radius: 3px;
+    margin-left: 2rem;
+  }
 }
 
 .home-section-title-container {
