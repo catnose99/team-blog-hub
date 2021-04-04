@@ -32,3 +32,6 @@ yarn-error.log*
 
 # generated data
 /.contents
+
+# Local Netlify folder
+.netlify
