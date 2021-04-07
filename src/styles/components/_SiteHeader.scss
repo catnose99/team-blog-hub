@@ -12,8 +12,9 @@
     justify-content: space-between;
 
     a {
+      font-size: 1.5rem;
       border-radius: 3px;
-      padding: 0.6em;
+      padding: 0 0.6em;
 
       &:hover {
         background: var(--color-primary-background);

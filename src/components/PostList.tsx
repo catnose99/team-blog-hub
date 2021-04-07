@@ -43,14 +43,15 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
           </div>
         </a>
       </Link>
-      <div className="post-link__main">
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      <a
+        className="post-link__main"
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div>
           <h2 className="post-link__title">{title}</h2>
-        </a>
+        </div>
         {hostname && (
           <div className="post-link__site">
             <img
@@ -62,7 +63,7 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
             {hostname}
           </div>
         )}
-      </div>
+      </a>
       {dateMiliSeconds && dateMiliSeconds > Date.now() - 86400000 * 3 && (
         <div className="post-link__new-label">NEW</div>
       )}

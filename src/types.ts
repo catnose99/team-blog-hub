@@ -10,10 +10,12 @@ export type Author = {
 };
 
 export type Source = {
+  title: string;
   username?: string;
   avatar: string;
   url: string;
   profileUrl: string;
+  contents: string;
 }
 
 export type PostItem = {
