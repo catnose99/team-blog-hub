@@ -1,27 +1,5 @@
-.about {
-  padding: 2.5rem 0;
-
-  &__title {
-    font-size: 2.3rem;
-  }
-
-  &__body {
-    p {
-      margin-top: 1.2rem;
-    }
-    a {
-      color: var(--color-primary-text);
-    }
-  }
-
-  &__actions {
-    margin-top: 3.5rem;
-    text-align: center;
-  }
-}
-
 .author-header {
-  padding: 2rem 0;
+  padding: 2.5rem 0;
   text-align: center;
 
   &__avatar-img {
@@ -46,13 +24,98 @@
   }
 
   &__link {
-    margin: 0.5rem;
-    display: inline-flex;
     align-items: center;
+    background: var(--color-card-tag-background);
+    border-radius: 3px;
+    display: inline-flex;
     justify-content: center;
-    width: 40px;
     height: 40px;
-    border-radius: 10px;
-    background: var(--color-base-background-lighter);
+    margin: 0.5rem;
+    opacity: 0.5;
+    width: 40px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.about {
+  padding: 1rem 0;
+
+  &__title {
+    border-bottom: 1px solid var(--color-border-lighter);
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.25rem;
+  }
+
+  &__body {
+    p {
+      margin-top: 1.2rem;
+      width: 100%;
+    }
+
+    &__subtitle {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    ul {
+      list-style: circle;
+      margin: 1.2rem 0;
+      padding-left: 1.5rem;
+
+      li {
+        list-style-type: disc;
+        margin: 0 0 0.8rem 1rem;
+      }
+    }
+
+    &__sources {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &__item {
+        border: 1px solid var(--color-border-lighter);
+        border-radius: 3px;
+        color: var(--color-base-text);
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 1.6rem;
+        margin-top: 5%;
+        width: 47.5%;
+        @include mq(sm) {
+          margin-top: 1.3rem;
+          width: 100%;
+        }
+
+        img {
+          border-radius: 3px;
+        }
+
+        div {
+          align-items: center;
+          display: flex;
+          width: 100%;
+        }
+
+        span {
+          font-weight: bold;
+          margin-left: 1rem;
+        }
+
+        p {
+          font-size: 0.75rem;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+
+  &__actions {
+    margin-top: 3.5rem;
+    text-align: center;
   }
 }

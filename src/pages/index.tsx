@@ -25,7 +25,7 @@ const Page: NextPage = () => {
         <ContentWrapper>
           <h1 className="home-hero__title">{config.siteMeta.title}</h1>
           <p className="home-hero__description">
-            こんにちは 👋 <br />福岡県在住のソフトウェアエンジニア、ヨッシーです。
+            こんにちは、ヨッシーです 👋 <br />福岡県在住のソフトウェアエンジニアです。
           </p>
           <p>
             このサイトは、「企業/チームのためのブログ・スターター
@@ -37,7 +37,7 @@ const Page: NextPage = () => {
               Team Blog Hub
             </a> 」をカスタマイズし、各サービスでのアウトプットを集約して閲覧できるようにしたものです。
           </p>
-          <p>技術を用いた問題解決が大好きなので、蓄えた知識をいろんな場所で発信するように心がけています。</p>
+          <p>技術を用いた課題解決が大好きなので、蓄えた知識をいろんな場所で発信するように心がけています。</p>
         </ContentWrapper>
       </section>
 
