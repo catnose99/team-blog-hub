@@ -16,7 +16,6 @@ type Props = {
 const Page: NextPage<Props> = (props) => {
   const {
     name,
-    role,
     bio,
     avatarSrc,
     sources,
@@ -49,7 +48,7 @@ const Page: NextPage<Props> = (props) => {
         <p>{source.contents}</p>
       </a>
     );
-  })
+  });
 
   return (
     <>
@@ -149,7 +148,7 @@ const Page: NextPage<Props> = (props) => {
           </div>
         </section>
 
-        <section className="">
+        <section className="about">
           <div className="about__actions">
             <LinkBackHome />
           </div>
