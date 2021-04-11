@@ -130,7 +130,7 @@ const Page: NextPage<Props> = (props) => {
         <section className="about">
           <h2 className="about__title">このサイトについて</h2>
           <div className="about__body">
-            <h3 className="about__body__subtitle">技術スタック</h3>
+            <h3>技術スタック</h3>
             <p>このサイトでは、下記の技術を使っています。</p>
             <ul>
               <li>Next.js (SSG)</li>
@@ -140,7 +140,7 @@ const Page: NextPage<Props> = (props) => {
             </ul>
           </div>
           <div className="about__body">
-            <h3 className="about__body__subtitle">データ取得元</h3>
+            <h3>データ取得元</h3>
             <p>
               下記のサイトの RSS フィードを購読して動的にデータを取得しています。データは 1 日に 2 回最新化されます。
             </p>

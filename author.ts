@@ -7,7 +7,7 @@ export const author: Author = {
   avatarSrc: "/avatars/ysmtegsr.png",
   sources: [
     {
-      title: 'Zenn.dev',
+      title: 'Zenn',
       username: "ysmtegsr",
       avatar: "/avatars/y.svg",
       url: "https://zenn.dev/ysmtegsr/feed",

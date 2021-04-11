@@ -45,20 +45,17 @@
 
   &__title {
     border-bottom: 1px solid var(--color-border-lighter);
-    font-size: 2.3rem;
+    font-size: 1.7rem;
     margin-bottom: 1rem;
     padding-bottom: 0.25rem;
   }
 
   &__body {
+    margin-bottom: 1.5rem;
+
     p {
       margin-top: 1.2rem;
       width: 100%;
-    }
-
-    &__subtitle {
-      font-size: 1.5rem;
-      margin-top: 1.5rem;
     }
 
     ul {
