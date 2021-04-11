@@ -15,6 +15,9 @@
       font-size: 1.5rem;
       border-radius: 3px;
       padding: 0 0.6em;
+      @include mq(sm) {
+        font-size: 1.2rem;
+      }
 
       &:hover {
         background: var(--color-primary-background);
