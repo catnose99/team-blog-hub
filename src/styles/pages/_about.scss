@@ -42,6 +42,9 @@
 
 .about {
   padding: 1rem 0;
+  @include mq(sm) {
+    padding: 0.5rem 0;
+  }
 
   &__title {
     border-bottom: 1px solid var(--color-border-lighter);
@@ -51,8 +54,6 @@
   }
 
   &__body {
-    margin-bottom: 1.5rem;
-
     p {
       margin-top: 1.2rem;
       width: 100%;

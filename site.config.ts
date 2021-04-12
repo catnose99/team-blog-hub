@@ -12,10 +12,10 @@ export const config = {
       title: "About",
       href: "/about",
     },
-    // {
-    //   title: "Resume",
-    //   href: "/resume",
-    // },
+    {
+      title: "Resume",
+      href: "/resume",
+    }
     // {
     //   title: "GitHub",
     //   href: "https://github.com/catnose99/team-blog-hub",

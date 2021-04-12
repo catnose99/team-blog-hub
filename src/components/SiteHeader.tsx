@@ -8,15 +8,15 @@ export const SiteHeader: React.FC = () => (
     <ContentWrapper>
       <div className="site-header__inner">
         <Link href="/" passHref>
-          <a>Home</a>
+          <a className="site-header__link">Home</a>
         </Link>
-        <div className="site-header__links">
+        <div className="site-header__link">
           {config.headerLinks.map((link, i) => {
             const key = `header-link-${i}`;
             if (link.href.startsWith("/")) {
               return (
                 <Link key={key} href={link.href} passHref>
-                  <a className="site-header__link">{link.title}</a>
+                  <a className="site-header__link__item">{link.title}</a>
                 </Link>
               );
             }
@@ -24,7 +24,7 @@ export const SiteHeader: React.FC = () => (
               <a
                 key={key}
                 href={link.href}
-                className="site-header__link"
+                className="site-header__link__item"
                 target="_blank"
                 rel="noopener noreferrer"
               >
