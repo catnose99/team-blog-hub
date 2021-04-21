@@ -6,13 +6,17 @@
     h1 {
       font-size: 2.6rem;
     }
+
+    span {
+      font-size: 0.75rem;
+    }
   }
 
   &__body {
     h2 {
       border-bottom: 1px solid var(--color-border-lighter);
       font-size: 1.7rem;
-      margin-bottom: 1rem;
+      margin: 2rem 0 1rem;
       padding-bottom: 0.25rem;
     }
 
@@ -24,23 +28,18 @@
       border-collapse: collapse;
       margin: 1.5rem 0;
 
-      thead {
-        display: none;
-      }
-
+      thead,
       tbody {
         tr {
-          border-top: 1px solid #c6cbd1;
+          border-top: 1px solid var(--color-border-lighter);
 
-          &:nth-child(odd) {
-          }
-
+          th,
           td {
-            border: 1px solid #dfe2e5;
+            border: 1px solid var(--color-border-lighter);
             padding: 0.5rem 1rem;
 
             &:first-of-type {
-              padding-right: 2rem;
+              white-space: nowrap;
             }
           }
         }
@@ -48,31 +47,46 @@
     }
 
     h3 {
-      margin: 1rem 0;
+      margin: 1.5rem 0;
     }
 
     ul {
       list-style: circle;
-      margin: 1.2rem 0;
-      padding-left: 1rem;
+      margin: 1.5rem 0;
+      padding-left: 2rem;
 
       li {
         list-style-type: disc;
         margin: 0 0 0.8rem 1rem;
 
         ul {
-          padding-left: 0;
+          margin: 0.8rem 0 0;
+          padding-left: 1rem;
 
           li {
             list-style-type: circle;
+            margin-bottom: 0;
           }
         }
       }
     }
 
+    ol {
+      font-weight: 700;
+      list-style-type: decimal;
+      margin: 1.5rem 0;
+      padding-left: 2rem;
+    }
+
     a {
       color: var(--color-primary-text);
       text-decoration: underline;
+    }
+
+    hr {
+      background: var(--color-border-lighter);
+      height: 0.25rem;
+      margin: 24px 0;
     }
   }
 

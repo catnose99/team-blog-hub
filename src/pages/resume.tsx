@@ -25,7 +25,7 @@ export const Page: NextPage<Props> = (props) => {
           <h1 className="resume__header__title">{title}</h1>
           <span className="resume__header__date">最終更新日：{date}</span>
         </header>
-        
+
         <section className="resume__body">
           <ReactMarkdown plugins={[gfm]} skipHtml={true}>{content}</ReactMarkdown>
         </section>

@@ -8,11 +8,13 @@
     "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
     "build:next": "next build",
     "export": "next export",
-    "start": "next start"
+    "start": "next start",
+    "pdf": "md-to-pdf docs/resume.md"
   },
   "dependencies": {
     "dayjs": "^1.9.3",
     "gray-matter": "^4.0.2",
+    "md-to-pdf": "^3.3.2",
     "next": "9.5.5",
     "react": "16.14.0",
     "react-dom": "16.14.0",
