@@ -1,0 +1,31 @@
+{
+  "filters": {},
+  "rules": {
+    "preset-smarthr": {
+      "prh-rules": true,
+      "ja-no-mixed-period": true,
+      "no-hankaku-kana": true,
+      "@textlint-rule/no-unmatched-pair": true,
+      "sentence-length": {
+        "max": 120
+      },
+      "no-doubled-conjunctive-particle-ga": true,
+      "no-double-negative-ja": true,
+      "ja-no-abusage": true,
+      "ja-no-redundant-expression": true,
+      "no-mixed-zenkaku-and-hankaku-alphabet": true,
+      "ja-hiragana-keishikimeishi": true,
+      "ja-hiragana-fukushi": true,
+      "ja-hiragana-hojodoushi": true,
+      "ja-hiragana-daimeishi": true,
+      "ja-no-space-around-parentheses": true,
+      "ja-no-space-between-full-width": true,
+      "ja-space-between-half-and-full-width": {
+        "space": "always"
+      },
+      "ja-space-after-exclamation": true,
+      "ja-space-after-question": true,
+      "ja-space-around-code": false
+    }
+  }
+}

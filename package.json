@@ -9,7 +9,8 @@
     "build:next": "next build",
     "export": "next export",
     "start": "next start",
-    "pdf": "md-to-pdf docs/resume.md"
+    "pdf": "md-to-pdf docs/resume.md",
+    "lint": "npx textlint ./docs/resume.md"
   },
   "dependencies": {
     "dayjs": "^1.9.3",
@@ -32,12 +33,24 @@
     "eslint-plugin-react": "^7.21.4",
     "eslint-plugin-react-hooks": "^4.1.2",
     "fs-extra": "^9.0.1",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
     "netlify-cli": "^3.13.10",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2",
     "rss-parser": "^3.9.0",
     "sass": "^1.27.0",
+    "textlint": "^11.9.0",
+    "textlint-rule-preset-smarthr": "^1.2.0",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{md}": [ "yarn lint" ]
   }
 }
