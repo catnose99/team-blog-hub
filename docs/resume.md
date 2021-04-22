@@ -53,17 +53,17 @@ excerpt: "ysmtegsr の職務経歴書"
 
 業務で使用したことのある技術のみを記載しております。
 
-| key            | value          |
-| :------------: | -------------- |
-| バックエンド     | PHP, Go, Node.js |
-| フロントエンド   | Vue.js, TypeScript, Sass |
-| フレームワーク   | Laravel, Echo, Nuxt.js      |
-| コンテナ        | Docker, Amazon Elastic Container Service |
-| クラウド        | Amazon Web Services, Google Cloud Platform(Firebase) |
-| DB             | MySQL, MariaDB, PostgreSQL, Redis, Amazon Aurora, Amazon DynamoDB |
-| IaC            | Terraform |
-| CI/CD          | GitHub Actions, CircleCI |
-| その他          | Asana, Azure DevOps, GitHub, Mackerel, Slack |
+| key | value |
+| :---: | --- |
+| バックエンド | PHP, Go, Node.js |
+| フロントエンド | Vue.js, TypeScript, Sass |
+| フレームワーク | Laravel, Echo, Nuxt.js |
+| コンテナ | Docker, Amazon Elastic Container Service |
+| クラウド | Amazon Web Services, Google Cloud Platform(Firebase) |
+| DB | MySQL, MariaDB, PostgreSQL, Redis, Amazon Aurora, Amazon DynamoDB |
+| IaC | Terraform |
+| CI/CD | GitHub Actions, CircleCI |
+| その他 | Asana, Azure DevOps, GitHub, Mackerel, Slack |
 
 ## 職務経歴
 
