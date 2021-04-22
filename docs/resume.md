@@ -1,7 +1,7 @@
 ---
 title: "職務経歴書"
 date: "2020-04-22"
-excerpt: "これがexcerptです"
+excerpt: "ysmtegsr の職務経歴書"
 ---
 ## 基本データ
 

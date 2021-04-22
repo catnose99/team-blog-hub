@@ -46,7 +46,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   return {
     props: {
       title: md.data.title,
-      description: md.excerpt,
+      description: md.data.excerpt,
       date: md.data.date,
       content: md.content
     }

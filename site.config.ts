@@ -1,7 +1,7 @@
 export const config = {
   siteMeta: {
     title: "ysmtegsr.com",
-    description: "RSS based blog.",
+    description: "社会人 3 年目のソフトウェアエンジニア ysmtegsr のアウトプット集約 Web サイト",
   },
   siteRoot:
     process.env.NODE_ENV === "production"
@@ -16,9 +16,5 @@ export const config = {
       title: "Resume",
       href: "/resume",
     }
-    // {
-    //   title: "GitHub",
-    //   href: "https://github.com/catnose99/team-blog-hub",
-    // },
-  ],
+  ]
 };
