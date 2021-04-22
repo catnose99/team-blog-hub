@@ -20,7 +20,7 @@ export const Page: NextPage<Props> = (props) => {
   return (
     <>
       <PageSEO title={title} description={description} path="/resume" />
-      <ContentWrapper className="resume">
+      <ContentWrapper>
         <header className="resume__header">
           <h1 className="resume__header__title">{title}</h1>
           <span className="resume__header__date">最終更新日：{date}</span>

@@ -1,12 +1,7 @@
-type Props = {
-  className?: string;
-}
-
 export const ContentWrapper: React.FC<{ children: React.ReactNode }> = (
   props
 ) => {
-  const { className, children } = props;
-  return <div className={`content-wrapper${className ? " " + className : ""}`}>{children}</div>;
+  return <div className="content-wrapper">{props.children}</div>;
 };
 
 export const UndoWrapForScroll: React.FC<{
