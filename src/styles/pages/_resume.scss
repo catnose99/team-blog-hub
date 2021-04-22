@@ -47,6 +47,7 @@
     }
 
     h3 {
+      font-size: 1.3rem;
       margin: 1.5rem 0;
     }
 
@@ -54,6 +55,9 @@
       list-style: circle;
       margin: 1.5rem 0;
       padding-left: 2rem;
+      @include mq(sm) {
+        padding-left: 1rem;
+      }
 
       li {
         list-style-type: disc;
@@ -62,6 +66,9 @@
         ul {
           margin: 0.8rem 0 0;
           padding-left: 1rem;
+          @include mq(sm) {
+            padding-left: 0;
+          }
 
           li {
             list-style-type: circle;
@@ -76,6 +83,9 @@
       list-style-type: decimal;
       margin: 1.5rem 0;
       padding-left: 2rem;
+      @include mq(sm) {
+        padding-left: 1.2rem;
+      }
     }
 
     a {
