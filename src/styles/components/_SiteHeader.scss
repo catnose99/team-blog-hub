@@ -1,9 +1,10 @@
 .site-header {
+  background: var(--color-base-background);
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
   font-weight: bold;
   padding: 1rem 0;
   position: sticky;
   top: 0;
-  background: var(--color-base-background);
   z-index: 99;
 
   &__inner {
@@ -12,12 +13,8 @@
     justify-content: space-between;
 
     a {
-      font-size: 1.5rem;
       border-radius: 3px;
-      padding: 0 0.6em;
-      @include mq(sm) {
-        font-size: 1.2rem;
-      }
+      padding: 0.3rem 0.6em;
 
       &:hover {
         background: var(--color-primary-background);
@@ -25,13 +22,13 @@
     }
   }
 
-  &__links {
+  &__link {
     align-items: center;
     display: flex;
-  }
+    justify-content: flex-end;
 
-  &__link {
-    font-size: 0.95rem;
-    margin-left: 1.5rem;
+    &__item:not(:first-of-type) {
+      margin-left: 1rem;
+    }
   }
 }

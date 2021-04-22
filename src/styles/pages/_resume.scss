@@ -1,0 +1,129 @@
+.resume {
+  &__header {
+    padding: 2.5rem 0;
+    text-align: center;
+
+    h1 {
+      font-size: 2.6rem;
+    }
+
+    span {
+      font-size: 0.75rem;
+    }
+  }
+
+  &__body {
+    h2 {
+      border-bottom: 1px solid var(--color-border-lighter);
+      font-size: 1.7rem;
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.25rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+
+      thead,
+      tbody {
+        tr {
+          border-top: 1px solid var(--color-border-lighter);
+
+          th,
+          td {
+            border: 1px solid var(--color-border-lighter);
+            padding: 0.5rem 1rem;
+
+            &:first-of-type {
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin: 1.5rem 0;
+    }
+
+    ul {
+      list-style: circle;
+      margin: 1.5rem 0;
+      padding-left: 2rem;
+      @include mq(sm) {
+        padding-left: 1rem;
+      }
+
+      li {
+        list-style-type: disc;
+        margin: 0 0 0.8rem 1rem;
+
+        ul {
+          margin: 0.8rem 0 0;
+          padding-left: 1rem;
+          @include mq(sm) {
+            padding-left: 0;
+          }
+
+          li {
+            list-style-type: circle;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    ol {
+      font-weight: 700;
+      list-style-type: decimal;
+      margin: 1.5rem 0;
+      padding-left: 2rem;
+      @include mq(sm) {
+        padding-left: 1.2rem;
+      }
+    }
+
+    a {
+      color: var(--color-primary-text);
+      text-decoration: underline;
+    }
+
+    hr {
+      background: var(--color-border-lighter);
+      height: 0.25rem;
+      margin: 24px 0;
+    }
+  }
+
+  &__action {
+    padding: 1rem 0;
+
+    &__btn {
+      margin-top: 3.5rem;
+      text-align: center;
+    }
+  }
+}
+
+@include mq(sm) {
+  .resume {
+    &__header {
+      padding: 1.5rem 0;
+    }
+
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    &__body {
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
