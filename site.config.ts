@@ -1,3 +1,9 @@
+// site.config.ts
+// 役割:サイトの設定
+// 何時:src/components/PageSEO.tsx,SiteFooter.tsx,SiteHeader.tsx,
+// src/pages/_app.tsx,index.tsx,
+// src/pages/members/index.tsx
+
 export const config = {
   siteMeta: {
     title: "Team Blog Hub",
