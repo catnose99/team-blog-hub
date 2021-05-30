@@ -1,3 +1,4 @@
+// TO 404.tsx
 import Head from "next/head";
 
 import { config } from "@site.config";
