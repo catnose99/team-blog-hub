@@ -13,6 +13,13 @@
 ## Demo
 https://team-blog-hub.vercel.app
 
+## Update Content
+please run
+```bash
+$ yarn build
+```
+
+
 ## Development
 ```bash
 $ yarn install
