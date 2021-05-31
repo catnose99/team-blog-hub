@@ -1,6 +1,6 @@
 export const config = {
   siteMeta: {
-    title: "K-creative",
+    title: "Kazuhito Nakayama",
     teamName: "catnose Inc.",
     description: "This is site for outputs of my own.\nRSS based blog starter kit for teams.\nmade by catnose.このサイトは、私のブログをRSSフィードによってまとめたものです。catnoseさんによって、提供されるOSSを使用しております。",
   },
