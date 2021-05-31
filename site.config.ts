@@ -19,7 +19,7 @@ export const config = {
     },
     {
       title: "GitHub",
-      href: "https://github.com/catnose99/team-blog-hub",
+      href: "https://github.com/kazuhitonakayama",
     },
   ],
 };
