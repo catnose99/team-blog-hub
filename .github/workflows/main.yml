@@ -1,0 +1,40 @@
+name: deploy website
+on:
+  # 一応動確のために手動で GitHub Actions を実行可能にする
+  # その際の引数として checkout 時の ref を渡している
+  # default 部分はリポジトリに設定されているデフォルトブランチを指定する
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: branch|tag|SHA to checkout
+        default: 'main'
+        required: true
+  # 毎日日本時間の 11時 に GitHub Actions が実行される (cron の時刻は UST)
+  # 実行の際に参照されるブランチは上記の default で指定したものが使用される
+  schedule:
+    - cron:  '0 2 * * *'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.inputs.ref }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '15'
+      # 投稿内容を更新するために npm run build:posts を走らせる
+      - name: Recreate all posts
+        shell: bash
+        run: |
+          npm install
+          npm run build:posts
+      - uses: amondnet/vercel-action@v20
+        with:
+          # GitHub Actions の Secrets で作成した値を参照する形で
+          # Vercel デプロイ時に必要となる各種パラメタを設定する
+          vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
+          vercel-args: '--prod' # Optional
+          vercel-org-id: ${{ secrets.ORG_ID}}  #Required
+          vercel-project-id: ${{ secrets.PROJECT_ID}} #Required
+          working-directory: ./
