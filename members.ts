@@ -3,13 +3,15 @@ import { Member } from "@src/types";
 export const members: Member[] = [
   {
     name: "CatNose",
-    role: "CTO",
+    role: "Programming",
     bio:
       "デザインが好きなプログラマー。開発者向けの情報共有プラットフォームzenn.devを開発しています。",
     avatarSrc: "/avatars/catnose.jpg",
     sources: [
       "https://zenn.dev/catnose99/feed",
       "https://medium.com/feed/@catnose99",
+      "https://note.com/catnose/rss",
+      "https://qiita.com/catnose99/feed.atom"
     ],
     includeUrlRegex: "medium.com|zenn.dev",
     twitterUsername: "catnose99",
@@ -17,21 +19,21 @@ export const members: Member[] = [
     websiteUrl: "https://catnose99.com",
   },
   {
-    name: "John Doe",
-    role: "SRE",
+    name: "パレオさん",
+    role: "Health",
     bio: "Site Reliability Engineer.",
     avatarSrc: "/avatars/doe.jpg",
-    sources: ["https://note.com/catnose/rss"],
-    excludeUrlRegex: "n3a59e3cdd820",
-    twitterUsername: "catnose99",
+    sources: ["https://yuchrszk.blogspot.com/feeds/posts/default?alt=rss",
+    "https://ch.nicovideo.jp/paleo/blomaga/nico/feed"
+     ],
+    twitterUsername: "yuchrszk",
   },
   {
     name: "Amanda",
     role: "Frontend dev",
     bio: "Frontend developer,",
     avatarSrc: "/avatars/amanda.jpg",
-    sources: ["https://qiita.com/catnose99/feed.atom"],
-    twitterUsername: "catnose99",
+    sources: [],
   },
   {
     name: "Takada Junji",
