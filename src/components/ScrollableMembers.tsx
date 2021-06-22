@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { members } from '@members';
 import { getMemberPath } from '@src/utils/helper';
-import { basicStyles } from '@src/shared/styles';
+import { basicStyles, scrollableMemberLink } from '@src/shared/styles';
 
 // eslint-disable-next-line import/prefer-default-export
 export const ScrollableMembers: React.FC = () => {
@@ -14,7 +14,7 @@ export const ScrollableMembers: React.FC = () => {
           href={getMemberPath(member.name)}
           passHref
         >
-          <a className="scrollable-member__link">
+          <a className={scrollableMemberLink}>
             <span className="scrollable-member__image">
               <img
                 src={member.avatarSrc}

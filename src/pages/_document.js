@@ -18,7 +18,7 @@ export default class AppDocument extends Document {
           />
         </>
       ),
-    }
+    };
   }
 
   render() {
@@ -30,6 +30,6 @@ export default class AppDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }

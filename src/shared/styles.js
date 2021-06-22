@@ -1,5 +1,7 @@
-import { css, cx, keyframes, injectGlobal } from '@emotion/css';
+// eslint-disable-next-line @emotion/no-vanilla
+import { css, injectGlobal } from '@emotion/css';
 
+// eslint-disable-next-line no-unused-expressions
 injectGlobal`
   * {
     box-sizing: border-box;
@@ -11,13 +13,7 @@ const basicStyles = css`
   transition: all 0.1s linear;
   padding: 1rem 0.25rem;
   font-size: 36px;
-   border-radius: 18px;
-`;
-
-const otherStyles = css`
-  background-color: red;
-  padding: 10px;
-  margin-bottom: 10px;
+  border-radius: 18px;
 `;
 
 const someMoreBasicStyles = css`
@@ -31,64 +27,26 @@ const someCssAsObject = css({
   background: 'orange',
   color: 'white',
   padding: '10px',
-  marginBottom: '10px'
+  marginBottom: '10px',
 });
 
 const combinedAsArray = css([someMoreBasicStyles, someCssAsObject]);
 
-const cls1 = css`
-  font-size: 20px;
-  padding: 5px;
-  background: green;
-  color: orange;
+const scrollableMemberLink = css`
+  display: block;
+  flex-shrink: 0;
+  width: 90px;
+  margin-right: 23px;
+  margin-left: -5px;
+  text-align: center;
+  line-height: 1.5;
+  scroll-snap-align: center;
 `;
-const cls2 = css`
-  font-size: 20px;
-  padding: 15px;
-  background: blue;
-  color: white;
-`;
-
-const cxExample = cx(cls1, cls2);
-
-const bounce = keyframes`
-  from, 20%, 53%, 80%, to {
-    transform: translate3d(0,0,0);
-  }
-
-  40%, 43% {
-    transform: translate3d(0, -30px, 0);
-  }
-
-  70% {
-    transform: translate3d(0, -15px, 0);
-  }
-
-  90% {
-    transform: translate3d(19px,-40px,0);
-  }
-`;
-
-const keyframesExample = css([
-  bounce,
-  css({
-    marginTop: '50px',
-    width: '20px',
-    height: '20px',
-    background: 'black',
-    borderRadius: '50%',
-    padding: '20px',
-    animation: `${bounce} 1s ease infinite`,
-    transformOrigin: 'center'
-  })
-]);
 
 export {
   combinedAsArray,
-  cxExample,
-  keyframesExample,
   someCssAsObject,
   someMoreBasicStyles,
-  otherStyles,
-  basicStyles
+  basicStyles,
+  scrollableMemberLink,
 };
