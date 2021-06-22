@@ -1,16 +1,16 @@
-import { NextPage } from "next";
-import Link from "next/link";
+import { NextPage } from 'next';
+import Link from 'next/link';
 
-import posts from "@.contents/posts.json";
-import { config } from "@site.config";
-import { PostItem } from "@src/types";
-import { ScrollableMembers } from "@src/components/ScrollableMembers";
-import { PostList } from "@src/components/PostList";
-import { PageSEO } from "@src/components/PageSEO";
+import posts from '@.contents/posts.json';
+import { config } from '@site.config';
+import { PostItem } from '@src/types';
+import { ScrollableMembers } from '@src/components/ScrollableMembers';
+import { PostList } from '@src/components/PostList';
+import { PageSEO } from '@src/components/PageSEO';
 import {
   ContentWrapper,
   UndoWrapForScroll,
-} from "@src/components/ContentWrapper";
+} from '@src/components/ContentWrapper';
 
 const Page: NextPage = () => {
   return (
@@ -19,7 +19,7 @@ const Page: NextPage = () => {
         title={config.siteMeta.title}
         description={config.siteMeta.description}
         path="/"
-        removeSiteNameFromTitle={true}
+        removeSiteNameFromTitle
       />
 
       <section className="home-hero">
@@ -36,7 +36,7 @@ const Page: NextPage = () => {
       <section className="home-members">
         <ContentWrapper>
           <div className="home-section-title-container">
-            <h2 className="home-section-title">Members</h2>
+            <h2 className="home-section-title">🧑Members</h2>
             <Link href="/members">
               <a className="home-section-link">See Details →</a>
             </Link>
@@ -53,7 +53,7 @@ const Page: NextPage = () => {
       <section className="home-posts">
         <ContentWrapper>
           <div className="home-section-title-container">
-            <h2 className="home-section-title">Articles</h2>
+            <h2 className="home-section-title">📚Articles</h2>
           </div>
 
           <div className="home-posts-container">

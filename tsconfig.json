@@ -15,11 +15,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+     "jsxImportSource": "@emotion/react",
     "baseUrl": ".",
     "paths": {
       "@*": ["./*"]
     }
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js", "src/pages/_document.js"]
 }

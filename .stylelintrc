@@ -1,0 +1,26 @@
+{
+  "processors": [
+    "stylelint-processor-styled-components"
+  ],
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-styled-components",
+    "stylelint-config-recess-order",
+    "stylelint-config-prettier",
+    "stylelint-prettier/recommended"
+  ],
+  "plugins": [
+    "stylelint-declaration-block-no-ignored-properties",
+    "stylelint-no-unsupported-browser-features",
+    "stylelint-prettier"
+  ],
+  "rules": {
+    "plugin/declaration-block-no-ignored-properties": true,
+    "plugin/no-unsupported-browser-features": [true, {
+      "browsers": ["> 1%", "Last 2 versions"],
+      "ignore": ["rem"],
+      "ignorePartialSupport": true,
+      "severity": "warning"
+    }],
+  }
+}
