@@ -13,7 +13,13 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['@emotion','@typescript-eslint', 'react', 'react-hooks', 'prettier'],
+  plugins: [
+    '@emotion',
+    '@typescript-eslint',
+    'react',
+    'react-hooks',
+    'prettier',
+  ],
   extends: [
     'airbnb',
     'plugin:@typescript-eslint/recommended',
@@ -39,10 +45,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/no-namespace': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
-    'import/extensions': [
-      1,
-      { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
-    ],
+    'import/extensions': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     'import/no-extraneous-dependencies': [
       'error',
       {

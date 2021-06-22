@@ -4,7 +4,6 @@
   ],
   "extends": [
     "stylelint-config-recommended",
-    "stylelint-config-recommended-scss",
     "stylelint-config-styled-components",
     "stylelint-config-recess-order",
     "stylelint-config-prettier",

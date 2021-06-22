@@ -39,6 +39,7 @@ const scrollableMemberLink = css`
   margin-left: -5px;
   text-align: center;
   line-height: 1.5;
+
   scroll-snap-align: center;
   margin-right: 23px;
 `;

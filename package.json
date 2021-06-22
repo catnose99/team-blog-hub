@@ -8,9 +8,9 @@
     "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
     "build:next": "next build",
     "start": "next start",
-    "format": "prettier --w './src/**/*.js'",
+    "format": "prettier --w ./src/**/*.js",
     "lint": "run-s lint:css lint:check",
-    "lint:css": "stylelint './src/**/*.js' --fix",
+    "lint:css": "stylelint ./src/**/*.js",
     "lint:check": "stylelint-config-prettier-check",
     "fix": "run-s format lint"
   },
