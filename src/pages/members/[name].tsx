@@ -1,14 +1,14 @@
-import { NextPage, GetStaticProps, GetStaticPaths } from "next";
-import { members } from "@members";
-import { PostItem, Member } from "@src/types";
-import { PostList } from "@src/components/PostList";
-import { ContentWrapper } from "@src/components/ContentWrapper";
-import { PageSEO } from "@src/components/PageSEO";
+import { NextPage, GetStaticProps, GetStaticPaths } from 'next';
+import { members } from '@members';
+import { PostItem, Member } from '@src/types';
+import { PostList } from '@src/components/PostList';
+import { ContentWrapper } from '@src/components/ContentWrapper';
+import { PageSEO } from '@src/components/PageSEO';
 import {
   getMemberByName,
   getMemberPostsByName,
   getMemberPath,
-} from "@src/utils/helper";
+} from '@src/utils/helper';
 
 type Props = {
   postItems: PostItem[];
@@ -16,14 +16,8 @@ type Props = {
 };
 
 const Page: NextPage<Props> = (props) => {
-  const {
-    name,
-    bio,
-    avatarSrc,
-    twitterUsername,
-    githubUsername,
-    websiteUrl,
-  } = props.member;
+  const { name, bio, avatarSrc, twitterUsername, githubUsername, websiteUrl } =
+    props.member;
 
   return (
     <>
@@ -96,7 +90,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
   const member = getMemberByName(name);
   const postItems = getMemberPostsByName(name);
 
-  if (!member) throw "User not found";
+  if (!member) throw 'User not found';
 
   return {
     props: {

@@ -1,15 +1,15 @@
-import { useState } from "react";
-import Link from "next/link";
-import dayjs from "dayjs";
-import relativeTime from "dayjs/plugin/relativeTime";
+import { useState } from 'react';
+import Link from 'next/link';
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
 
-import { PostItem } from "@src/types";
+import { PostItem } from '@src/types';
 import {
   getMemberByName,
   getHostFromURL,
   getFaviconSrcFromHostname,
   getMemberPath,
-} from "@src/utils/helper";
+} from '@src/utils/helper';
 
 dayjs.extend(relativeTime);
 

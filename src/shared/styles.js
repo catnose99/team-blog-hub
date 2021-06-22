@@ -36,11 +36,11 @@ const scrollableMemberLink = css`
   display: block;
   flex-shrink: 0;
   width: 90px;
-  margin-right: 23px;
   margin-left: -5px;
   text-align: center;
   line-height: 1.5;
   scroll-snap-align: center;
+  margin-right: 23px;
 `;
 
 export {
