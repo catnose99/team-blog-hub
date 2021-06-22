@@ -4,13 +4,16 @@
   ],
   "extends": [
     "stylelint-config-recommended",
+    "stylelint-config-recommended-scss",
     "stylelint-config-styled-components",
     "stylelint-config-recess-order",
-    "stylelint-config-prettier"
+    "stylelint-config-prettier",
+    "stylelint-prettier/recommended"
   ],
   "plugins": [
     "stylelint-declaration-block-no-ignored-properties",
-    "stylelint-no-unsupported-browser-features"
+    "stylelint-no-unsupported-browser-features",
+    "stylelint-prettier"
   ],
   "rules": {
     "plugin/declaration-block-no-ignored-properties": true,
@@ -19,6 +22,6 @@
       "ignore": ["rem"],
       "ignorePartialSupport": true,
       "severity": "warning"
-    }]
+    }],
   }
 }
