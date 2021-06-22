@@ -7,7 +7,7 @@ export const members: Member[] = [
     role: 'Programming',
     bio: 'デザインが好きなプログラマー。開発者向けの情報共有プラットフォームzenn.devを開発しています。',
     avatarSrc: '/avatars/catnose.jpg',
-    avatarEmoji: '🧑',
+    avatarEmoji: '🐱',
     sources: [
       'https://zenn.dev/catnose99/feed',
       'https://medium.com/feed/@catnose99',
@@ -36,7 +36,7 @@ export const members: Member[] = [
     role: 'Frontend dev',
     bio: 'Frontend developer,',
     avatarSrc: '/avatars/amanda.jpg',
-    avatarEmoji: '🧑',
+    avatarEmoji: '⏭',
     sources: ['https://zenn.dev/topics/nextjs/feed'],
   },
   {

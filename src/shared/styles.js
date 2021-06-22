@@ -9,7 +9,7 @@ injectGlobal`
   }
 `;
 
-const basicStyles = css`
+const avatorEmoji = css`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,6 +50,6 @@ export {
   combinedAsArray,
   someCssAsObject,
   someMoreBasicStyles,
-  basicStyles,
+  avatorEmoji,
   scrollableMemberLink,
 };
