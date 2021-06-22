@@ -1,6 +1,15 @@
 import Link from "next/link";
 import { members } from "@members";
 import { getMemberPath } from "@src/utils/helper";
+import {
+  basicStyles,
+  otherStyles,
+  someMoreBasicStyles,
+  someCssAsObject,
+  combinedAsArray,
+  cxExample,
+  keyframesExample
+} from '@src/pages/shared/styles';
 
 export const ScrollableMembers: React.FC = () => {
   return (
@@ -21,6 +30,7 @@ export const ScrollableMembers: React.FC = () => {
                 height={80}
               />
             👼🏽
+            <div className={basicStyles}>Basic styles using emotion</div>
             </span>
             <span className="scrollable-member__name">{member.name}</span>
             <span className="scrollable-member__role">{member.role}</span>
