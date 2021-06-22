@@ -7,7 +7,7 @@ on:
     inputs:
       ref:
         description: branch|tag|SHA to checkout
-        default: 'main'
+        default: 'addEmotion'
         required: true
   # 毎日日本時間の 11時 に GitHub Actions が実行される (cron の時刻は UST)
   # 実行の際に参照されるブランチは上記の default で指定したものが使用される
