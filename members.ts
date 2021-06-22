@@ -37,24 +37,10 @@ export const members: Member[] = [
     sources: ['https://zenn.dev/topics/nextjs/feed'],
   },
   {
-    name: 'Takada Junji',
-    role: 'Designer',
-    bio: 'Designing all of the apps in Foo company.',
-    avatarSrc: '/avatars/junji.jpg',
-    sources: [],
-  },
-  {
-    name: 'Ota Naoko',
-    role: 'Researcher',
-    bio: 'Some texts here',
-    avatarSrc: '/avatars/naoko.jpg',
-    sources: [],
-  },
-  {
-    name: 'Alexandria',
+    name: 'Adachi',
     role: 'Tech Lead',
     bio: 'IT professional with 3 years of experience',
     avatarSrc: '/avatars/alexandria.jpg',
-    sources: [],
+    sources: ['https://zenn.dev/a_da_chi/feed'],
   },
 ];

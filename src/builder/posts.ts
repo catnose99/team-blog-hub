@@ -2,6 +2,7 @@ import fs from 'fs-extra';
 import Parser from 'rss-parser';
 import { members } from '../../members';
 import { PostItem, Member } from '../types';
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {};
 
 type FeedItem = {

@@ -9,7 +9,8 @@
     "build:next": "next build",
     "start": "next start",
     "format": "prettier --w ./src/**/*.js",
-    "lint": "run-s lint:css lint:check",
+    "lint": "run-s lint:next lint:css lint:check",
+    "lint:next": "next lint",
     "lint:css": "stylelint ./src/**/*.js",
     "lint:check": "stylelint-config-prettier-check",
     "fix": "run-s format lint"
@@ -20,9 +21,9 @@
     "@emotion/server": "11.0.0",
     "@emotion/styled": "11.0.0",
     "dayjs": "^1.9.3",
-    "next": "9.5.5",
-    "react": "16.14.0",
-    "react-dom": "16.14.0",
+    "next": "^11.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "stylelint-no-unsupported-browser-features": "^5.0.1"
   },
   "devDependencies": {
@@ -35,6 +36,7 @@
     "@typescript-eslint/parser": "^4.28.0",
     "eslint": "^7.29.0",
     "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-next": "^11.0.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.23.4",
