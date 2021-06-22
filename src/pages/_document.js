@@ -1,21 +1,22 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
-import * as React from 'react'
-import { renderStatic } from '@src/pages/shared/renderer'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { renderStatic } from '@src/shared/renderer';
+
 export default class AppDocument extends Document {
   static async getInitialProps(ctx) {
-    const page = await ctx.renderPage()
-    const { css, ids } = await renderStatic(page.html)
-    const initialProps = await Document.getInitialProps(ctx)
+    const page = await ctx.renderPage();
+    const { css, ids } = await renderStatic(page.html);
+    const initialProps = await Document.getInitialProps(ctx);
     return {
       ...initialProps,
       styles: (
-        <React.Fragment>
+        <>
           {initialProps.styles}
           <style
             data-emotion={`css ${ids.join(' ')}`}
+            // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: css }}
           />
-        </React.Fragment>
+        </>
       ),
     }
   }
