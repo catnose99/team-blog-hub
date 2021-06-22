@@ -7,6 +7,7 @@ export const members: Member[] = [
     role: 'Programming',
     bio: 'デザインが好きなプログラマー。開発者向けの情報共有プラットフォームzenn.devを開発しています。',
     avatarSrc: '/avatars/catnose.jpg',
+    avatarEmoji: '🐱',
     sources: [
       'https://zenn.dev/catnose99/feed',
       'https://medium.com/feed/@catnose99',
@@ -19,10 +20,11 @@ export const members: Member[] = [
     websiteUrl: 'https://catnose99.com',
   },
   {
-    name: 'パレオさん',
+    name: 'PareoSan',
     role: 'Health',
     bio: 'Site Reliability Engineer.',
     avatarSrc: '/avatars/doe.jpg',
+    avatarEmoji: '🧪',
     sources: [
       'https://yuchrszk.blogspot.com/feeds/posts/default?alt=rss',
       'https://ch.nicovideo.jp/paleo/blomaga/nico/feed',
@@ -30,31 +32,19 @@ export const members: Member[] = [
     twitterUsername: 'yuchrszk',
   },
   {
-    name: '📈Nextjs Trend',
+    name: 'NextjsTrend',
     role: 'Frontend dev',
     bio: 'Frontend developer,',
     avatarSrc: '/avatars/amanda.jpg',
+    avatarEmoji: '⏭',
     sources: ['https://zenn.dev/topics/nextjs/feed'],
   },
   {
-    name: 'Takada Junji',
-    role: 'Designer',
-    bio: 'Designing all of the apps in Foo company.',
-    avatarSrc: '/avatars/junji.jpg',
-    sources: [],
-  },
-  {
-    name: 'Ota Naoko',
-    role: 'Researcher',
-    bio: 'Some texts here',
-    avatarSrc: '/avatars/naoko.jpg',
-    sources: [],
-  },
-  {
-    name: 'Alexandria',
+    name: 'Adachi',
     role: 'Tech Lead',
     bio: 'IT professional with 3 years of experience',
     avatarSrc: '/avatars/alexandria.jpg',
-    sources: [],
+    avatarEmoji: '🧑',
+    sources: ['https://zenn.dev/a_da_chi/feed'],
   },
 ];
