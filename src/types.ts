@@ -1,6 +1,7 @@
 export type Member = {
   name: string;
   avatarSrc: string;
+  avatarEmoji: string;
   role?: string;
   bio?: string;
   sources?: string[];
