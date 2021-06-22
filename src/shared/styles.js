@@ -9,11 +9,11 @@ injectGlobal`
 `;
 
 const basicStyles = css`
-  background-color: white;
-  transition: all 0.1s linear;
   padding: 1rem 0.25rem;
   font-size: 36px;
+  background-color: white;
   border-radius: 18px;
+  transition: all 0.1s linear;
 `;
 
 const someMoreBasicStyles = css`
