@@ -7,12 +7,12 @@ on:
     inputs:
       ref:
         description: branch|tag|SHA to checkout
-        default: 'addEmotion'
+        default: 'main'
         required: true
   # 毎日日本時間の 11時 に GitHub Actions が実行される (cron の時刻は UST)
   # 実行の際に参照されるブランチは上記の default で指定したものが使用される
   schedule:
-    - cron:  '0 2 * * *'
+    - cron: '0 2 * * *'
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -33,6 +33,6 @@ jobs:
           # Vercel デプロイ時に必要となる各種パラメタを設定する
           vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
           vercel-args: '--prod' # Optional
-          vercel-org-id: ${{ secrets.ORG_ID}}  #Required
+          vercel-org-id: ${{ secrets.ORG_ID}} #Required
           vercel-project-id: ${{ secrets.PROJECT_ID}} #Required
           working-directory: ./
