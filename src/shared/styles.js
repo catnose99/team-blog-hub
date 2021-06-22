@@ -5,22 +5,25 @@ import { css, injectGlobal } from '@emotion/css';
 injectGlobal`
   * {
     box-sizing: border-box;
+    transition: all 0.1s linear;
   }
 `;
 
 const basicStyles = css`
-  padding: 1rem 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 0;
   font-size: 36px;
   background-color: white;
   border-radius: 18px;
-  transition: all 0.1s linear;
 `;
 
 const someMoreBasicStyles = css`
-  background-color: green;
-  color: white;
-  margin-bottom: 10px;
   padding: 10px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: green;
 `;
 
 const someCssAsObject = css({
@@ -35,13 +38,12 @@ const combinedAsArray = css([someMoreBasicStyles, someCssAsObject]);
 const scrollableMemberLink = css`
   display: block;
   flex-shrink: 0;
-  width: 90px;
-  margin-left: -5px;
-  text-align: center;
-  line-height: 1.5;
 
   scroll-snap-align: center;
-  margin-right: 23px;
+  width: 80px;
+  margin: 0 1rem;
+  line-height: 1.5;
+  text-align: center;
 `;
 
 export {

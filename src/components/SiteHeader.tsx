@@ -3,6 +3,7 @@ import { config } from '@site.config';
 
 import { ContentWrapper } from '@src/components/ContentWrapper';
 
+// eslint-disable-next-line import/prefer-default-export
 export const SiteHeader: React.FC = () => (
   <header className="site-header">
     <ContentWrapper>
