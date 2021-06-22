@@ -4,23 +4,14 @@ injectGlobal`
   * {
     box-sizing: border-box;
   }
-  body {
-    background: #DFCFBE;
-    font-family: Helvetica, sans-serif;
-  }
 `;
 
 const basicStyles = css`
   background-color: white;
-  color: cornflowerblue;
-  border: 1px solid lightgreen;
-  border-right: none;
-  /*線の種類（実線） 太さ 色*/
-  border-bottom: solid 3px black;
-  box-shadow: 5px 5px 0 0 lightgreen, 10px 10px 0 0 lightyellow;
   transition: all 0.1s linear;
-  margin: 3rem 0;
-  padding: 1rem 0.5rem;
+  padding: 1rem 0.25rem;
+  font-size: 36px;
+   border-radius: 18px;
 `;
 
 const otherStyles = css`

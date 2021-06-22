@@ -29,8 +29,8 @@ export const ScrollableMembers: React.FC = () => {
                 width={80}
                 height={80}
               />
-            👼🏽
-            <div className={basicStyles}>Basic styles using emotion</div>
+              {/* testing */}
+            <div className={basicStyles}>👼🏽</div>
             </span>
             <span className="scrollable-member__name">{member.name}</span>
             <span className="scrollable-member__role">{member.role}</span>
