@@ -6,7 +6,7 @@
 // eslint-disable-next-line import/prefer-default-export
 export const config = {
   siteMeta: {
-    title: '🧪Test Hub for Portfolio',
+    title: '🧪 Test Hub for Portfolio',
     teamName: 'Example Inc.',
     description: 'My Sandbox.',
   },
@@ -24,7 +24,7 @@ export const config = {
       href: 'https://zenn.dev/catnose99/articles/cb72a73368a547756862',
     },
     {
-      title: '👩‍💻GitHub',
+      title: '👩‍💻 GitHub',
       href: 'https://github.com/yuki1111117/team-blog-hub',
     },
   ],
