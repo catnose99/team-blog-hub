@@ -5,7 +5,7 @@ warning "@emotion/css > @emotion/babel-plugin@11.3.0" has unmet peer dependency 
 warning "@emotion/css > @emotion/babel-plugin > @babel/plugin-syntax-jsx@7.14.5" has unmet peer dependency "@babel/core@^7.0.0-0".
 warning "@emotion/babel-plugin > @babel/plugin-syntax-jsx@7.12.1" has unmet peer dependency "@babel/core@^7.0.0-0".
 warning " > @typescript-eslint/eslint-plugin@4.4.1" has unmet peer dependency "eslint@^5.0.0 || ^6.0.0 || ^7.0.0".
-warning "@typescript-eslint/eslint-plugin > @typescript-eslint/experimental-utils@4.4.1" has unmet peer dependency "eslint@*".
+warning "@typescript-eslint/eslint-plugin > @typescript-eslint/experimental-utils@4.4.1" has unmet peer dependency "eslint@\*".
 warning " > @typescript-eslint/parser@4.4.1" has unmet peer dependency "eslint@^5.0.0 || ^6.0.0 || ^7.0.0".
 warning " > eslint-config-prettier@6.13.0" has unmet peer dependency "eslint@>=3.14.1".
 warning " > eslint-plugin-prettier@3.1.4" has unmet peer dependency "eslint@>=5.0.0".
@@ -13,7 +13,6 @@ warning " > eslint-plugin-react@7.21.4" has unmet peer dependency "eslint@^3 || 
 warning " > eslint-plugin-react-hooks@4.1.2" has unmet peer dependency "eslint@^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0".
 warning " > @emotion/babel-plugin@11.0.0" has unmet peer dependency "@babel/core@^7.0.0".
 [4/4] Building fresh packages...
-
 
 ## eslint
 
@@ -47,8 +46,8 @@ npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@~2.1.2 (node_modules/sa
 npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
 npm WARN stylis-rule-sheet@0.0.10 requires a peer of stylis@^3.5.0 but none is installed. You must install peer dependencies yourself.
 
-+ eslint@7.29.0
-added 242 packages from 82 contributors, removed 66 packages, updated 780 packages and audited 1047 packages in 68.717s
+- eslint@7.29.0
+  added 242 packages from 82 contributors, removed 66 packages, updated 780 packages and audited 1047 packages in 68.717s
 
 84 packages are looking for funding
-  run `npm fund` for details
+run `npm fund` for details

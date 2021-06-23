@@ -12,6 +12,7 @@ export const members: Member[] = [
       'https://yuchrszk.blogspot.com/feeds/posts/default?alt=rss',
       'https://ch.nicovideo.jp/paleo/blomaga/nico/feed',
     ],
+
     twitterUsername: 'yuchrszk',
   },
   {
