@@ -6,7 +6,7 @@
 // eslint-disable-next-line import/prefer-default-export
 export const config = {
   siteMeta: {
-    title: '🧪 Test Hub for Portfolio',
+    title: '🧪 Functional tests blog',
     teamName: 'Example Inc.',
     description: 'My Sandbox.',
   },

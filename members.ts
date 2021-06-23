@@ -3,23 +3,6 @@ import { Member } from '@src/types';
 // eslint-disable-next-line import/prefer-default-export
 export const members: Member[] = [
   {
-    name: 'CatNose',
-    role: 'Programming',
-    bio: 'デザインが好きなプログラマー。開発者向けの情報共有プラットフォームzenn.devを開発しています。',
-    avatarSrc: '/avatars/catnose.jpg',
-    avatarEmoji: '🐱',
-    sources: [
-      'https://zenn.dev/catnose99/feed',
-      'https://medium.com/feed/@catnose99',
-      'https://note.com/catnose/rss',
-      'https://qiita.com/catnose99/feed.atom',
-    ],
-    includeUrlRegex: 'medium.com|zenn.dev',
-    twitterUsername: 'catnose99',
-    githubUsername: 'catnose99',
-    websiteUrl: 'https://catnose99.com',
-  },
-  {
     name: 'PareoSan',
     role: 'Health',
     bio: 'Site Reliability Engineer.',
@@ -38,6 +21,23 @@ export const members: Member[] = [
     avatarSrc: '/avatars/amanda.jpg',
     avatarEmoji: '⏭',
     sources: ['https://zenn.dev/topics/nextjs/feed'],
+  },
+  {
+    name: 'CatNose',
+    role: 'Programming',
+    bio: 'デザインが好きなプログラマー。開発者向けの情報共有プラットフォームzenn.devを開発しています。',
+    avatarSrc: '/avatars/catnose.jpg',
+    avatarEmoji: '🐱',
+    sources: [
+      'https://zenn.dev/catnose99/feed',
+      'https://medium.com/feed/@catnose99',
+      'https://note.com/catnose/rss',
+      'https://qiita.com/catnose99/feed.atom',
+    ],
+    includeUrlRegex: 'medium.com|zenn.dev',
+    twitterUsername: 'catnose99',
+    githubUsername: 'catnose99',
+    websiteUrl: 'https://catnose99.com',
   },
   {
     name: 'Adachi',
