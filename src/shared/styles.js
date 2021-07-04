@@ -1,4 +1,3 @@
-// eslint-disable-next-line @emotion/no-vanilla
 import { css, injectGlobal } from '@emotion/css';
 
 // eslint-disable-next-line no-unused-expressions

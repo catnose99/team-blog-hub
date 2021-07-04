@@ -12,6 +12,7 @@ export const members: Member[] = [
       'https://yuchrszk.blogspot.com/feeds/posts/default?alt=rss',
       'https://ch.nicovideo.jp/paleo/blomaga/nico/feed',
     ],
+
     twitterUsername: 'yuchrszk',
   },
   {
@@ -21,6 +22,14 @@ export const members: Member[] = [
     avatarSrc: '/avatars/amanda.jpg',
     avatarEmoji: '⏭',
     sources: ['https://zenn.dev/topics/nextjs/feed'],
+  },
+  {
+    name: 'JavascriptTrend',
+    role: 'Frontend dev',
+    bio: 'Frontend developer,',
+    avatarSrc: '/avatars/amanda.jpg',
+    avatarEmoji: '🟨',
+    sources: ['https://zenn.dev/topics/javascript/feed'],
   },
   {
     name: 'CatNose',
@@ -38,6 +47,14 @@ export const members: Member[] = [
     twitterUsername: 'catnose99',
     githubUsername: 'catnose99',
     websiteUrl: 'https://catnose99.com',
+  },
+  {
+    name: 'Adachi',
+    role: 'Tech Lead',
+    bio: 'IT professional with 3 years of experience',
+    avatarSrc: '/avatars/alexandria.jpg',
+    avatarEmoji: '🧑',
+    sources: ['https://zenn.dev/a_da_chi/feed'],
   },
   {
     name: 'Adachi',
