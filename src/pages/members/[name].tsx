@@ -76,7 +76,25 @@ const Page: NextPage<Props> = (props) => {
               )}
             </div>
           </header>
+        </ContentWrapper>
+      </section>
 
+      <section>
+        <ContentWrapper>
+          <div className="home-section-title-container">
+            <h2 className="home-section-title">🔍Search Keywords</h2>
+          </div>
+          <a href="https://duckduckgo.com/?q=site%3Ayuchrszk.blogspot.com+%E7%B7%91%E8%8C%B6&ia=web">
+            <span>🍵緑茶</span>
+          </a>
+        </ContentWrapper>
+      </section>
+
+      <section>
+        <ContentWrapper>
+          <div className="home-section-title-container">
+            <h2 className="home-section-title">📚Articles</h2>
+          </div>
           <div className="member-posts-container">
             <PostList items={props.postItems} />
           </div>
