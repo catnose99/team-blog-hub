@@ -9,6 +9,7 @@ import {
   getMemberPostsByName,
   getMemberPath,
 } from '@src/utils/helper';
+import Image from 'next/image';
 
 type Props = {
   postItems: PostItem[];
@@ -26,7 +27,7 @@ const Page: NextPage<Props> = (props) => {
         <ContentWrapper>
           <header className="member-header">
             <div className="member-header__avatar">
-              <img
+              <Image
                 src={avatarSrc}
                 alt={name}
                 width={100}
@@ -42,7 +43,7 @@ const Page: NextPage<Props> = (props) => {
                   href={`https://twitter.com/${twitterUsername}`}
                   className="member-header__link"
                 >
-                  <img
+                  <Image
                     src="/icons/twitter.svg"
                     alt={`Twitterのユーザー@${twitterUsername}`}
                     width={22}
@@ -55,7 +56,7 @@ const Page: NextPage<Props> = (props) => {
                   href={`https://github.com/${githubUsername}`}
                   className="member-header__link"
                 >
-                  <img
+                  <Image
                     src="/icons/github.svg"
                     alt={`GitHubのユーザー@${githubUsername}`}
                     width={22}
@@ -65,7 +66,7 @@ const Page: NextPage<Props> = (props) => {
               )}
               {websiteUrl && (
                 <a href={websiteUrl} className="member-header__link">
-                  <img
+                  <Image
                     src="/icons/link.svg"
                     alt={`ウェブサイトのリンク`}
                     width={22}

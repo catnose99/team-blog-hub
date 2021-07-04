@@ -24,6 +24,14 @@ export const members: Member[] = [
     sources: ['https://zenn.dev/topics/nextjs/feed'],
   },
   {
+    name: 'JavascriptTrend',
+    role: 'Frontend dev',
+    bio: 'Frontend developer,',
+    avatarSrc: '/avatars/amanda.jpg',
+    avatarEmoji: '🟨',
+    sources: ['https://zenn.dev/topics/javascript/feed'],
+  },
+  {
     name: 'CatNose',
     role: 'Programming',
     bio: 'デザインが好きなプログラマー。開発者向けの情報共有プラットフォームzenn.devを開発しています。',
@@ -39,6 +47,14 @@ export const members: Member[] = [
     twitterUsername: 'catnose99',
     githubUsername: 'catnose99',
     websiteUrl: 'https://catnose99.com',
+  },
+  {
+    name: 'Adachi',
+    role: 'Tech Lead',
+    bio: 'IT professional with 3 years of experience',
+    avatarSrc: '/avatars/alexandria.jpg',
+    avatarEmoji: '🧑',
+    sources: ['https://zenn.dev/a_da_chi/feed'],
   },
   {
     name: 'Adachi',
