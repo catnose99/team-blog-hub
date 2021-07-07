@@ -1,12 +1,12 @@
-import { NextPage } from "next";
-import { ContentWrapper } from "@src/components/ContentWrapper";
-import { LinkBackHome } from "@src/components/LinkBackHome";
-import { PageSEO } from "@src/components/PageSEO";
+import { NextPage } from 'next';
+import { ContentWrapper } from '@src/components/ContentWrapper';
+import { LinkBackHome } from '@src/components/LinkBackHome';
+import { PageSEO } from '@src/components/PageSEO';
 
 const Page: NextPage = () => {
   return (
     <>
-      <PageSEO title="404 not found" noindex={true} />
+      <PageSEO title="404 not found" noindex />
 
       <div className="error">
         <ContentWrapper>

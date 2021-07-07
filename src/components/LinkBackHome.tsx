@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export const LinkBackHome: React.FC = () => (
   <Link href="/" passHref>

@@ -8,7 +8,7 @@
   scroll-behavior: smooth;
   /* right space for horizontal scroll  */
   &:after {
-    content: "";
+    content: '';
     display: block;
     width: 20px;
     height: 20px;
@@ -19,16 +19,16 @@
     -webkit-appearance: none;
   }
 }
-.scrollable-member__link {
-  display: block;
-  flex-shrink: 0;
-  width: 90px;
-  margin-right: 23px;
-  margin-left: -5px;
-  text-align: center;
-  line-height: 1.5;
-  scroll-snap-align: center;
-}
+// .scrollable-member__link {
+//   display: block;
+//   flex-shrink: 0;
+//   width: 90px;
+//   margin-right: 23px;
+//   margin-left: -5px;
+//   text-align: center;
+//   line-height: 1.5;
+//   scroll-snap-align: center;
+// }
 .scrollable-member__image,
 .scrollable-member__img,
 .scrollable-member__name,

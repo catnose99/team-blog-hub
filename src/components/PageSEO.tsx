@@ -1,6 +1,7 @@
-import Head from "next/head";
+// TO 404.tsx
+import Head from 'next/head';
 
-import { config } from "@site.config";
+import { config } from '@site.config';
 
 // types
 type Props = {
@@ -12,6 +13,7 @@ type Props = {
   removeSiteNameFromTitle?: boolean;
 };
 
+// eslint-disable-next-line import/prefer-default-export
 export const PageSEO: React.FC<Props> = (props) => {
   const {
     path,
@@ -22,7 +24,7 @@ export const PageSEO: React.FC<Props> = (props) => {
     removeSiteNameFromTitle,
   } = props;
 
-  const pageUrl = `${config.siteRoot}${path || ""}`;
+  const pageUrl = `${config.siteRoot}${path || ''}`;
   return (
     <Head>
       <title>

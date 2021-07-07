@@ -1,29 +1,24 @@
-import { NextPage, GetStaticProps, GetStaticPaths } from "next";
-import { members } from "@members";
-import { PostItem, Member } from "@src/types";
-import { PostList } from "@src/components/PostList";
-import { ContentWrapper } from "@src/components/ContentWrapper";
-import { PageSEO } from "@src/components/PageSEO";
+import { NextPage, GetStaticProps, GetStaticPaths } from 'next';
+import { members } from '@members';
+import { PostItem, Member } from '@src/types';
+import { PostList } from '@src/components/PostList';
+import { ContentWrapper } from '@src/components/ContentWrapper';
+import { PageSEO } from '@src/components/PageSEO';
 import {
   getMemberByName,
   getMemberPostsByName,
   getMemberPath,
-} from "@src/utils/helper";
-
+} from '@src/utils/helper';
+import Image from 'next/image';
+import { SearchWord } from '@src/components/SearchWord';
 type Props = {
   postItems: PostItem[];
   member: Member;
 };
 
 const Page: NextPage<Props> = (props) => {
-  const {
-    name,
-    bio,
-    avatarSrc,
-    twitterUsername,
-    githubUsername,
-    websiteUrl,
-  } = props.member;
+  const { name, bio, avatarSrc, twitterUsername, githubUsername, websiteUrl } =
+    props.member;
 
   return (
     <>
@@ -32,7 +27,7 @@ const Page: NextPage<Props> = (props) => {
         <ContentWrapper>
           <header className="member-header">
             <div className="member-header__avatar">
-              <img
+              <Image
                 src={avatarSrc}
                 alt={name}
                 width={100}
@@ -48,7 +43,7 @@ const Page: NextPage<Props> = (props) => {
                   href={`https://twitter.com/${twitterUsername}`}
                   className="member-header__link"
                 >
-                  <img
+                  <Image
                     src="/icons/twitter.svg"
                     alt={`Twitterのユーザー@${twitterUsername}`}
                     width={22}
@@ -61,7 +56,7 @@ const Page: NextPage<Props> = (props) => {
                   href={`https://github.com/${githubUsername}`}
                   className="member-header__link"
                 >
-                  <img
+                  <Image
                     src="/icons/github.svg"
                     alt={`GitHubのユーザー@${githubUsername}`}
                     width={22}
@@ -71,7 +66,7 @@ const Page: NextPage<Props> = (props) => {
               )}
               {websiteUrl && (
                 <a href={websiteUrl} className="member-header__link">
-                  <img
+                  <Image
                     src="/icons/link.svg"
                     alt={`ウェブサイトのリンク`}
                     width={22}
@@ -81,7 +76,24 @@ const Page: NextPage<Props> = (props) => {
               )}
             </div>
           </header>
+        </ContentWrapper>
+      </section>
 
+      <section>
+        <ContentWrapper>
+          <div className="home-section-title-container">
+            <h2 className="home-section-title">🔍Search Keywords</h2>
+          </div>
+          <SearchWord keyword="🍵緑茶" />
+          <SearchWord keyword="　　酪酸" />
+        </ContentWrapper>
+      </section>
+
+      <section>
+        <ContentWrapper>
+          <div className="home-section-title-container">
+            <h2 className="home-section-title">📚Articles</h2>
+          </div>
           <div className="member-posts-container">
             <PostList items={props.postItems} />
           </div>
@@ -96,7 +108,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
   const member = getMemberByName(name);
   const postItems = getMemberPostsByName(name);
 
-  if (!member) throw "User not found";
+  if (!member) throw 'User not found';
 
   return {
     props: {

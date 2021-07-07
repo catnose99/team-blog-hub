@@ -1,7 +1,8 @@
-import fs from "fs-extra";
-import Parser from "rss-parser";
-import { members } from "../../members";
-import { PostItem, Member } from "../types";
+import fs from 'fs-extra';
+import Parser from 'rss-parser';
+import { members } from '../../members';
+import { PostItem, Member } from '../types';
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {};
 
 type FeedItem = {
@@ -24,7 +25,7 @@ async function fetchFeedItems(url: string) {
     .map(({ title, contentSnippet, link, isoDate }) => {
       return {
         title,
-        contentSnippet: contentSnippet?.replace(/\n/g, ""),
+        contentSnippet: contentSnippet?.replace(/\n/g, ''),
         link,
         isoDate,
         dateMiliSeconds: isoDate ? new Date(isoDate).getTime() : 0,
@@ -76,6 +77,6 @@ async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
     if (items) allPostItems = [...allPostItems, ...items];
   }
   allPostItems.sort((a, b) => b.dateMiliSeconds - a.dateMiliSeconds);
-  fs.ensureDirSync(".contents");
-  fs.writeJsonSync(".contents/posts.json", allPostItems);
+  fs.ensureDirSync('.contents');
+  fs.writeJsonSync('.contents/posts.json', allPostItems);
 })();
