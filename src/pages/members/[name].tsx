@@ -10,7 +10,7 @@ import {
   getMemberPath,
 } from '@src/utils/helper';
 import Image from 'next/image';
-
+import { SearchWord } from '@src/components/SearchWord';
 type Props = {
   postItems: PostItem[];
   member: Member;
@@ -84,9 +84,8 @@ const Page: NextPage<Props> = (props) => {
           <div className="home-section-title-container">
             <h2 className="home-section-title">🔍Search Keywords</h2>
           </div>
-          <a href="https://duckduckgo.com/?q=site%3Ayuchrszk.blogspot.com+%E7%B7%91%E8%8C%B6&ia=web">
-            <span>🍵緑茶</span>
-          </a>
+          <SearchWord keyword="🍵緑茶" />
+          <SearchWord keyword="　　酪酸" />
         </ContentWrapper>
       </section>
 
