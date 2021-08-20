@@ -2,6 +2,7 @@ import { Member } from "@src/types";
 
 export const members: Member[] = [
   {
+    id: "catnose",
     name: "CatNose",
     role: "CTO",
     bio:
@@ -17,6 +18,7 @@ export const members: Member[] = [
     websiteUrl: "https://catnose99.com",
   },
   {
+    id: "john_doe",
     name: "John Doe",
     role: "SRE",
     bio: "Site Reliability Engineer.",
@@ -26,6 +28,7 @@ export const members: Member[] = [
     twitterUsername: "catnose99",
   },
   {
+    id: "amanda",
     name: "Amanda",
     role: "Frontend dev",
     bio: "Frontend developer,",
@@ -34,6 +37,7 @@ export const members: Member[] = [
     twitterUsername: "catnose99",
   },
   {
+    id: "takada_junji",
     name: "Takada Junji",
     role: "Designer",
     bio: "Designing all of the apps in Foo company.",
@@ -41,13 +45,15 @@ export const members: Member[] = [
     sources: [],
   },
   {
-    name: "Ota Naoko",
+    id: "ota_naoko",
+    name: "太田 直子",
     role: "Researcher",
     bio: "Some texts here",
     avatarSrc: "/avatars/naoko.jpg",
     sources: [],
   },
   {
+    id: "alexandria",
     name: "Alexandria",
     role: "Tech Lead",
     bio: "IT professional with 3 years of experience",

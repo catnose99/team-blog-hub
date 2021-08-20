@@ -1,4 +1,5 @@
 export type Member = {
+  id: string;
   name: string;
   avatarSrc: string;
   role?: string;
@@ -12,6 +13,7 @@ export type Member = {
 };
 
 export type PostItem = {
+  authorId: string;
   authorName: string;
   title: string;
   link: string;
