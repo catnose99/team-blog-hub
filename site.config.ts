@@ -2,6 +2,7 @@ export const config = {
   siteMeta: {
     title: "Kazuhito Nakayama",
     teamName: "catnose Inc.",
+    aboutme: "My mission statement is 'create social good products'. ",
     description: "This is site for outputs of my own.\nRSS based blog starter kit for teams.\nmade by catnose.このサイトは、私のブログをRSSフィードによってまとめたものです。catnoseさんによって、提供されるOSSを使用しております。",
   },
   siteRoot:
