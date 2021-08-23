@@ -4,6 +4,8 @@ export const config = {
     teamName: "catnose Inc.",
     aboutme: "My mission statement is 'create social good products'. ",
     description: "This is site for outputs of my own.\nRSS based blog starter kit for teams.\nmade by catnose.このサイトは、私のブログをRSSフィードによってまとめたものです。catnoseさんによって、提供されるOSSを使用しております。",
+    mydream_en: "My dream  is realizing a society where kind people can be happy. So, I want to create social good products for making the world better place.",
+    mydream_ja: "私の夢は、優しい人たちが幸せになれる社会を実現することです。そのために、世界をより良くするためのソーシャルグッドなプロダクトを作りたいと思っています。"
   },
   siteRoot:
     process.env.NODE_ENV === "production"

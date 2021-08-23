@@ -36,6 +36,20 @@ const Page: NextPage = () => {
       <section className="home-members">
         <ContentWrapper>
           <div className="home-section-title-container">
+            <h2 className="home-section-title">My Dream</h2>
+          </div>
+          <div className="home-section-title-container">
+            <p className="home-hero__description">
+              {config.siteMeta.mydream_en}<br/>
+              {config.siteMeta.mydream_ja}
+            </p>
+          </div>
+        </ContentWrapper>
+      </section>
+      
+      <section className="home-members">
+        <ContentWrapper>
+          <div className="home-section-title-container">
             <h2 className="home-section-title">About me</h2>
             <Link href="/members">
               <a className="home-section-link"></a>
