@@ -16,6 +16,7 @@ const parser = new Parser();
 let allPostItems: PostItem[] = [];
 
 async function fetchFeedItems(url: string) {
+  console.log({url})
   const feed = await parser.parseURL(url);
   if (!feed?.items?.length) return [];
 

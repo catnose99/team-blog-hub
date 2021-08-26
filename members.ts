@@ -2,56 +2,132 @@ import { Member } from "@src/types";
 
 export const members: Member[] = [
   {
-    name: "CatNose",
-    role: "CTO",
+    name: "Kazue Igarashi",
+    role: "",
     bio:
-      "デザインが好きなプログラマー。開発者向けの情報共有プラットフォームzenn.devを開発しています。",
+      "",
     avatarSrc: "/avatars/catnose.jpg",
     sources: [
-      "https://zenn.dev/catnose99/feed",
-      "https://medium.com/feed/@catnose99",
+      "https://qiita.com/gatespace/feed.atom",
+      "https://gatespace.jp/feed/atom"
     ],
-    includeUrlRegex: "medium.com|zenn.dev",
-    twitterUsername: "catnose99",
-    githubUsername: "catnose99",
-    websiteUrl: "https://catnose99.com",
+    twitterUsername: "gatespace_k",
+    githubUsername: "gatespace",
+    websiteUrl: "https://qiita.com/gatespace.com",
   },
   {
-    name: "John Doe",
-    role: "SRE",
-    bio: "Site Reliability Engineer.",
+    name: "Hidetaka Okamoto",
+    role: "Developer",
+    bio: "AWS Samurai 2017 Alexa Champions",
     avatarSrc: "/avatars/doe.jpg",
-    sources: ["https://note.com/catnose/rss"],
-    excludeUrlRegex: "n3a59e3cdd820",
-    twitterUsername: "catnose99",
+    sources: [
+      "https://qiita.com/motchi0214/feed.atom",
+      "https://wp-kyoto.net/feed",
+      "https://zenn.dev/hideokamoto/feed/"
+    ],
+    twitterUsername: "hide__dev",
+    githubUsername: 'hideokamoto'
   },
   {
-    name: "Amanda",
-    role: "Frontend dev",
-    bio: "Frontend developer,",
+    name: "Wokamoto",
+    role: "",
+    bio: "",
     avatarSrc: "/avatars/amanda.jpg",
-    sources: ["https://qiita.com/catnose99/feed.atom"],
-    twitterUsername: "catnose99",
+    sources: ["https://qiita.com/wokamoto/feed.atom"],
+    twitterUsername: "wokamoto",
+    githubUsername: "wokamoto"
   },
   {
-    name: "Takada Junji",
-    role: "Designer",
-    bio: "Designing all of the apps in Foo company.",
+    name: "JOTAKI, Taisuke",
+    role: "",
+    bio: "",
+    avatarSrc: "/avatars/amanda.jpg",
+    sources: ["https://wp.tekapo.com/feed/atom"],
+    twitterUsername: "wokamoto",
+    githubUsername: "wokamoto"
+  },
+  {
+    name: "Shusei Toda",
+    role: "",
+    bio: "",
+    avatarSrc: "/avatars/amanda.jpg",
+    sources: ["https://shuseitoda.com/feed/atom"],
+    twitterUsername: "",
+    githubUsername: ""
+  },
+  {
+    name: "plasticdreams",
+    role: "",
+    bio: "",
+    avatarSrc: "/avatars/amanda.jpg",
+    sources: ["https://blog.plasticdreams.org/feed"],
+    twitterUsername: "",
+    githubUsername: ""
+  },
+  {
+    name: "mt8",
+    role: "",
+    bio: "",
+    avatarSrc: "/avatars/amanda.jpg",
+    sources: ["https://mt8.biz/feed"],
+    twitterUsername: "",
+    githubUsername: ""
+  },
+  {
+    name: "Webnist",
+    role: "",
+    bio: "",
     avatarSrc: "/avatars/junji.jpg",
-    sources: [],
+    sources: [
+      "https://qiita.com/Webnist/feed.atom"
+    ],
   },
   {
-    name: "Ota Naoko",
-    role: "Researcher",
-    bio: "Some texts here",
+    name: "gorooe",
+    role: "",
+    bio: "",
     avatarSrc: "/avatars/naoko.jpg",
-    sources: [],
+    sources: [
+      "https://qiita.com/gorooe/feed.atom"
+    ],
   },
   {
-    name: "Alexandria",
-    role: "Tech Lead",
-    bio: "IT professional with 3 years of experience",
+    name: "03hiro",
+    role: "",
+    bio: "",
     avatarSrc: "/avatars/alexandria.jpg",
-    sources: [],
+    sources: [
+      "https://qiita.com/03hiro/feed.atom"
+    ],
+  },
+  {
+    name: "Shifter Official",
+    role: "",
+    bio: "",
+    avatarSrc: "/avatars/alexandria.jpg",
+    sources: [
+      "https://getshifter.io/feed/atom"
+    ],
+  },
+  {
+    name: "AMIMOTO Official",
+    role: "",
+    bio: "",
+    avatarSrc: "/avatars/alexandria.jpg",
+    sources: [
+      "https://amimoto-ami.com/feed/atom",
+      "https://ja.amimoto-ami.com/feed/atom"
+    ],
+  },
+  {
+    name: "Digitalcube Official",
+    role: "",
+    bio: "",
+    avatarSrc: "/avatars/alexandria.jpg",
+    sources: [
+      "https://labworks.digitalcube.jp/feed/atom",
+      "https://digitalcube.jp/feed/atom",
+      "https://en.digitalcube.jp/feed/atom"
+    ],
   },
 ];
