@@ -67,7 +67,6 @@ export const PostList: React.FC<{ items: PostItem[] }> = (props) => {
   if (!totalItemsCount) {
     return <div className="post-list-empty">No posts yet</div>;
   }
-
   return (
     <>
       <div className="post-list">

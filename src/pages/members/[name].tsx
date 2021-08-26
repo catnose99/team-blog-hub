@@ -8,6 +8,7 @@ import {
   getMemberByName,
   getMemberPostsByName,
   getMemberPath,
+  convertMemberNameToPath,
 } from "@src/utils/helper";
 
 type Props = {
@@ -108,7 +109,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const memberNameList = members.map((member) =>
-    encodeURIComponent(member.name)
+  convertMemberNameToPath(member.name)
   );
   const paths = memberNameList.map((name) => {
     return {

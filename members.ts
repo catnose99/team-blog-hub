@@ -38,7 +38,7 @@ export const members: Member[] = [
     githubUsername: "wokamoto"
   },
   {
-    name: "JOTAKI, Taisuke",
+    name: "JOTAKI Taisuke",
     role: "",
     bio: "",
     avatarSrc: "/avatars/amanda.jpg",
