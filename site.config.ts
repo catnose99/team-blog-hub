@@ -1,12 +1,12 @@
 export const config = {
   siteMeta: {
     title: "Team Blog Hub",
-    teamName: "catnose Inc.",
+    teamName: "Digitalcube",
     description: "RSS based blog starter kit for teams.",
   },
   siteRoot:
     process.env.NODE_ENV === "production"
-      ? "https://team-blog-hub.vercel.app"
+      ? "https://dc-team-blog-hub.netlify.app/"
       : "http://localhost:3000",
   headerLinks: [
     {
@@ -15,11 +15,11 @@ export const config = {
     },
     {
       title: "Company",
-      href: "https://zenn.dev/catnose99/articles/cb72a73368a547756862",
+      href: "https://www.digitalcube.jp/",
     },
     {
       title: "GitHub",
-      href: "https://github.com/catnose99/team-blog-hub",
+      href: "https://github.com/digitalcube/team-blog-hub",
     },
   ],
 };
