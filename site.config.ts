@@ -1,7 +1,7 @@
 export const config = {
   siteMeta: {
     title: "Kazuhito Nakayama",
-    teamName: "catnose Inc.",
+    teamName: "Kazuhito Nakayama",
     aboutme: "My mission statement is 'create social good products'. ",
     description: "This is site for outputs of my own.\nRSS based blog starter kit for teams.\nmade by catnose.このサイトは、私のブログをRSSフィードによってまとめたものです。catnoseさんによって、提供されるOSSを使用しております。",
     mydream_en: "My dream  is realizing a society where kind people can be happy. So, I want to create social good products for making the world better place.",
@@ -13,7 +13,7 @@ export const config = {
       : "http://localhost:3000",
   headerLinks: [
     {
-      title: "About",
+      title: "About this site",
       href: "/about",
     },
     {
