@@ -5,9 +5,14 @@
 .member-header__avatar-img {
   border-radius: 18px;
 }
-.member-header__name {
+.member-header__nickname {
   margin-top: 0.5rem;
   font-size: 1.5rem;
+}
+.member-header__real-name {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--color-base-text-lighter);
 }
 .member-header__bio {
   display: inline-block;

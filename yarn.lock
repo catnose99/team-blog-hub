@@ -1267,6 +1267,11 @@
     "@typescript-eslint/types" "4.4.1"
     eslint-visitor-keys "^2.0.0"
 
+"@ubie/prettier-config@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@ubie/prettier-config/-/prettier-config-0.1.0.tgz#7b5c08e4ab03a9a05142c0df942667fd51c10fd3"
+  integrity sha512-4K/gXy6hrYBYqioEaYHdRNrFVEtpXpr4VS3E5HzZO8RNCNSSnuJMYg6RIkIpjoSHJWa9INC7h9GEdP9MzkZQzw==
+
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.9.0.tgz#bd850604b4042459a5a41cd7d338cbed695ed964"

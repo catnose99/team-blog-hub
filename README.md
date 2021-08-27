@@ -1,34 +1,42 @@
-# Team Blog Hub
+# Ubie Engineers' Blogs
 
-![Demo](https://user-images.githubusercontent.com/34590683/96832331-8c289400-1479-11eb-9466-f24d30860a24.png)
+Fork of https://github.com/catnose99/team-blog-hub
 
-企業/チームのためのブログ・スターターです。Forkしてご自由にお使いください。
-
-ブログのRSSのURLを登録することで、チームメンバーの投稿を一覧にまとめて表示します。Zenn、Qiita、Medium、note、はてなブログなど、RSSフィードを取得できるサイトであれば、メンバーは好きな場所に投稿できます。
-
-詳しくは下記の記事をご覧ください。
-
-[チーム個々人のテックブログをRSSで集約するサイトを作った →](https://zenn.dev/catnose99/articles/cb72a73368a547756862)
-
-## Demo
-https://team-blog-hub.vercel.app
+published at: https://blog.ubie.tech/
 
 ## Development
+
 ```bash
 $ yarn install
 $ yarn build
 $ yarn dev
 ```
 
-- サイトの基本設定は`site.config.ts`で行います。
-- メンバーのプロフィールやRSSの登録は`members.ts`で行います。
-- 配色を変更するには`src/styles/variables.scss`を書き換えます。
-- ロゴなどの画像を変更するには`public`内のファイルを置き換えます。
+## How to add a member
 
-その他、ご自由にコードを書き換えてください。
+- members.ts
 
-## Deployment
-VercelやNetlifyにデプロイすることを推奨します。`npm run build`（or `yarn build`）を実行することで、RSSからの投稿データの取得とサイトのビルドが行われます。1日に1回などの頻度で自動デプロイするのが良いかもしれません。
+```typescript
+  {
+      // urlに使うので半角英数字にしてください。
+    id: "empitsu",
+    nickname: "えんぴつ",
+    realName: "empitsu",
+    bio: "フロントエンドが得意です。1児の母。",
+      // 正方形の画像を指定する。なるべく500px x 500px以内にしてください。
+    avatarSrc: "/avatars/empitsu.jpeg",
+      // rss sourcesは複数指定可能。
+    sources: ["https://note.com/empitsu88/rss", "https://zenn.dev/empitsu88/feed", "https://qiita.com/empitsu88/feed"],
+      // github, twitterアカウント, websiteUrlはoptionalです。不要な場合はkeyごと削除して下さい。
+    githubUsername: "empitsu",
+    twitterUsername: "empitsu88",
+    websiteUrl: "https://empitsu88.hatenablog.com/entry/myprofile",
+  },
+```
+
+正規表現で一部の記事のみ含めたり、除外することもできます。詳しくは[こちら](https://zenn.dev/catnose99/articles/cb72a73368a547756862#%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%8F%BE%E3%81%A7%E4%B8%80%E9%83%A8%E3%81%AE%E8%A8%98%E4%BA%8B%E3%82%92%E9%99%A4%E5%A4%96%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB)
+
 
 ## Licence
+
 MIT
