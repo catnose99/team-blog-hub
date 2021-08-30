@@ -244,4 +244,13 @@ export const members: Member[] = [
     sources: ["https://note.com/jagabass/rss"],
     twitterUsername: "jagabass"
   },
+  {
+    id: "atsumi",
+    nickname: "atsumi",
+    realName: "Tatsuya Atsumi",
+    bio: "Data Engineer",
+    avatarSrc: "/avatars/atsumi.png",
+    sources: ["https://attsun1031.github.io/index.xml"],
+    twitterUsername: "__Attsun__"
+  },
 ].sort((a, b) => (a.nickname < b.nickname ? -1 : 1));
