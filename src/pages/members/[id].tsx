@@ -5,8 +5,8 @@ import { PostList } from "@src/components/PostList";
 import { ContentWrapper } from "@src/components/ContentWrapper";
 import { PageSEO } from "@src/components/PageSEO";
 import {
-  getMemberByName,
-  getMemberPostsByName,
+  getMemberById,
+  getMemberPostsById,
   getMemberPath,
 } from "@src/utils/helper";
 
@@ -17,6 +17,7 @@ type Props = {
 
 const Page: NextPage<Props> = (props) => {
   const {
+    id,
     name,
     bio,
     avatarSrc,
@@ -27,7 +28,7 @@ const Page: NextPage<Props> = (props) => {
 
   return (
     <>
-      <PageSEO title={name} path={getMemberPath(name)} />
+      <PageSEO title={name} path={getMemberPath(id)} />
       <section className="member">
         <ContentWrapper>
           <header className="member-header">
@@ -92,9 +93,9 @@ const Page: NextPage<Props> = (props) => {
 };
 
 export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
-  const name = params?.name as string;
-  const member = getMemberByName(name);
-  const postItems = getMemberPostsByName(name);
+  const id = params?.id as string;
+  const member = getMemberById(id);
+  const postItems = getMemberPostsById(id);
 
   if (!member) throw "User not found";
 
@@ -107,13 +108,11 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const memberNameList = members.map((member) =>
-    encodeURIComponent(member.name)
-  );
-  const paths = memberNameList.map((name) => {
+  const memberNameList = members.map((member) => encodeURIComponent(member.id));
+  const paths = memberNameList.map((id) => {
     return {
       params: {
-        name,
+        id,
       },
     };
   });

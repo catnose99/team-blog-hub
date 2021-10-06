@@ -8,7 +8,7 @@ export const ScrollableMembers: React.FC = () => {
       {members.map((member, i) => (
         <Link
           key={`scrollable-member-${i}`}
-          href={getMemberPath(member.name)}
+          href={getMemberPath(member.id)}
           passHref
         >
           <a className="scrollable-member__link">

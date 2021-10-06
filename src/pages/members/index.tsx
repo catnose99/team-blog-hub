@@ -11,7 +11,7 @@ import { Member } from "@src/types";
 
 const MemberCard: React.FC<{ member: Member }> = ({ member }) => {
   return (
-    <Link href={getMemberPath(member.name)}>
+    <Link href={getMemberPath(member.id)}>
       <a className="member-card">
         <div className="member-card__avatar">
           <img
