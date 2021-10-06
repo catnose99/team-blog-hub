@@ -10,7 +10,7 @@ export const members: Member[] = [
     avatarSrc: "/avatars/catnose.jpg",
     sources: [
       "https://zenn.dev/catnose99/feed",
-      "https://medium.com/feed/@catnose99",
+      "https://catnose.medium.com/feed",
     ],
     includeUrlRegex: "medium.com|zenn.dev",
     twitterUsername: "catnose99",
