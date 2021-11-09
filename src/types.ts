@@ -1,8 +1,17 @@
+const roles = [
+  "Lead Engineer",
+  "Frontend dev",
+  "Backend dev",
+  "CRE",
+  "Designer",
+  "Intern",
+] as const;
+
 export type Member = {
   id: string;
   name: string;
   avatarSrc: string;
-  role?: string;
+  role?: typeof roles[number];
   bio?: string;
   sources?: string[];
   includeUrlRegex?: string;
