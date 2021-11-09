@@ -10,16 +10,16 @@ export const config = {
       : "http://localhost:3000",
   headerLinks: [
     {
-      title: "About",
-      href: "/about",
-    },
-    {
       title: "Company",
-      href: "https://zenn.dev/catnose99/articles/cb72a73368a547756862",
+      href: "https://lisatech.jp/",
     },
     {
-      title: "GitHub",
-      href: "https://github.com/catnose99/team-blog-hub",
+      title: "Product",
+      href: "https://fooddeliverymanager.com/",
+    },
+    {
+      title: "Recruit",
+      href: "https://www.wantedly.com/companies/lisatech",
     },
   ],
 };
