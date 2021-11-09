@@ -27,7 +27,12 @@ export const SiteHeader: React.FC = () => (
               );
             }
             return (
-              <a key={key} href={link.href} className="site-header__link">
+              <a
+                key={key}
+                href={link.href}
+                className="site-header__link"
+                target="_blank"
+              >
                 {link.title}
               </a>
             );
