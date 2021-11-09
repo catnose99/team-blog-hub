@@ -1,7 +1,7 @@
 export const config = {
   siteMeta: {
     title: "Lisa's Output Hub",
-    teamName: "catnose Inc.",
+    teamName: "Lisa Technologies Inc.",
     description: "Lisa Technologies株式会社のメンバーの投稿が集まります",
   },
   siteRoot:
