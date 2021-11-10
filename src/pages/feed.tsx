@@ -9,8 +9,8 @@ async function generateFeedXml() {
   const feed = new RSS({
     title: config.siteMeta.title,
     description: config.siteMeta.description,
-    site_url: "https://lisa.vercel.app",
-    feed_url: "https://lisa.vercel.app/feed",
+    site_url: config.siteMeta.description,
+    feed_url: `${config.siteMeta.description}/feed`,
     language: "ja",
   });
 
