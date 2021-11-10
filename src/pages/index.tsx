@@ -30,6 +30,11 @@ const Page: NextPage = () => {
               {config.siteMeta.description}
             </p>
           )}
+          <Link href="/feed">
+            <a className="home-hero__feed-icon">
+              <img src="/icons/rss-fill.svg" alt="rss" width={22} height={22} />
+            </a>
+          </Link>
         </ContentWrapper>
       </section>
 
