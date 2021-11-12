@@ -8,14 +8,10 @@ export const members: Member[] = [
     bio:
       "学生時代よりソフトウェア開発・マーケティング業務に携わる。工学部卒（卒論AR実装)、農林水産省認定の６次産業での立ち上げ、D2Cブランドの立ち上げ、EC系SaaSの自社開発、フリーランスを経て、 Lisa Technologies(株)にジョイン",
     avatarSrc: "/avatars/catnose.jpg",
-    sources: [
-      "https://zenn.dev/catnose99/feed",
-      "https://catnose.medium.com/feed",
-    ],
+    sources: ["https://zenn.dev/sintaro/feed"],
     includeUrlRegex: "medium.com|zenn.dev",
     twitterUsername: "sintaro0221",
     githubUsername: "sintaro",
-    websiteUrl: "https://catnose99.com",
   },
   {
     id: "akarikusumoto",
@@ -35,11 +31,24 @@ export const members: Member[] = [
     role: "Frontend dev",
     bio: "",
     avatarSrc: "/avatars/catnose.jpg",
-    sources: [],
+    sources: ["https://yutaaaaa.vercel.app/rss/feed.xml"],
     includeUrlRegex: "medium.com|zenn.dev",
     twitterUsername: "yutaaaaa___",
     githubUsername: "Yuta07",
     websiteUrl: "https://yutaaaaa.vercel.app/",
+  },
+  {
+    id: "shotashimotani",
+    name: "Shota Shimotani",
+    role: "Designer",
+    bio:
+      "新卒で世田谷区の病院に理学療法士として勤務。1年で退職しプログラミング/Webデザインを学習。個人でLP, HPデザインを請け負い、2021年3月にLisa technologies (株)へjoin。現在はLisa technologis (株)と一部上場企業保険会社でUIデザインを担当しながら、個人でもデザイン制作を受けています。",
+    avatarSrc: "/avatars/hajime_nakagawa.jpg",
+    sources: [],
+    includeUrlRegex: "zenn.dev",
+    twitterUsername: "702_Creative",
+    websiteUrl:
+      "https://hexagonal-kingfisher-a2a.notion.site/portfolio-dfcdaa107e7b4aae80aa75b1aafd398e",
   },
   {
     id: "hajimenakagawa",
