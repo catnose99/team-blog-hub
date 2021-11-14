@@ -45,6 +45,9 @@ yarn build
 yarn dev
 ```
 
+## 画像について
+[Zennの画像コンテナ](https://zenn.dev/dashboard/uploader)を利用し、URLを取得して貼り付けてください。
+
 ## 新規メンバー追加のやり方
 mainからnew/[member_name]というブランチを切り、PRを投げてください。
 `members.ts`の中の`members`に新しいオブジェクトを追加します。Memberオブジェクトの型は以下のようになっています。
