@@ -48,6 +48,7 @@ const Page: NextPage<Props> = (props) => {
                 <a
                   href={`https://twitter.com/${twitterUsername}`}
                   className="member-header__link"
+                  target="_blank"
                 >
                   <img
                     src="/icons/twitter.svg"
@@ -61,6 +62,7 @@ const Page: NextPage<Props> = (props) => {
                 <a
                   href={`https://github.com/${githubUsername}`}
                   className="member-header__link"
+                  target="_blank"
                 >
                   <img
                     src="/icons/github.svg"
@@ -71,7 +73,11 @@ const Page: NextPage<Props> = (props) => {
                 </a>
               )}
               {websiteUrl && (
-                <a href={websiteUrl} className="member-header__link">
+                <a
+                  href={websiteUrl}
+                  className="member-header__link"
+                  target="_blank"
+                >
                   <img
                     src="/icons/link.svg"
                     alt={`ウェブサイトのリンク`}
