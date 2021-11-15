@@ -6,7 +6,7 @@ export const members: Member[] = [
     name: "lufe",
     role: "Manager",
     bio: "セキュリティについてかんばります。",
-    avatarSrc: "/avatars/lufe.png",
+    avatarSrc: "/avatars/lufe.jpg",
     sources: [
       "https://zenn.dev/lufe/feed",
       "https://lufe.hatenablog.com/rss",
