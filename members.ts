@@ -11,7 +11,7 @@ export const members: Member[] = [
       "https://zenn.dev/lufe/feed",
       "https://lufe.hatenablog.com/rss",
     ]
-  }
+  },
   {
     id: "nishi",
     name: "Nishi",
@@ -21,5 +21,5 @@ export const members: Member[] = [
     sources: [
       "https://zenn.dev/nishi/feed",
     ]
-  }
+  },
 ];
