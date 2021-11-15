@@ -1,6 +1,7 @@
 # Lisa’s Output Hub
 Lisaの開発ブログ。RSSで各メンバーやLisaのZennアカウントの投稿を集約する。開発メンバー以外の人の投稿も歓迎で、あえてタイトルにTechとは入れていない。
-<img width="1440" alt="Screen Shot 2021-11-10 at 8 36 45" src="https://user-images.githubusercontent.com/51704330/141022877-5a22fafa-29ef-4d9c-beda-1058c6b0220e.png">
+<img width="1440" alt="Screen Shot 2021-11-10 at 9 45 16" src="https://user-images.githubusercontent.com/51704330/141028871-102c8db7-e4a9-4a67-872d-30a701ec2e0e.png">
+
 
 TODO: CI状況やビルド状況のバッジを掲載
 
