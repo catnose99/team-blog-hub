@@ -2,6 +2,17 @@ import { Member } from "@src/types";
 
 export const members: Member[] = [
   {
+    id: "corporate",
+    name: "Lisa Technologies",
+    role: "Official",
+    bio:
+      "フードデリバリーを最適化する「フードデリバリーマネージャー（FDM）」を開発しています",
+    avatarSrc: "/avatars/lisa_tech.png",
+    sources: ["https://zenn.dev/lisatech/feed"],
+    includeUrlRegex: "medium.com|zenn.dev",
+    websiteUrl: "https://lisatech.jp/",
+  },
+  {
     id: "shintaronakagawa",
     name: "Shintaro Nakagawa",
     role: "Lead Engineer",
@@ -29,8 +40,9 @@ export const members: Member[] = [
     id: "yutakamiyazaki",
     name: "Yutaka Miyazaki",
     role: "Frontend dev",
-    bio: "",
-    avatarSrc: "/avatars/catnose.jpg",
+    bio:
+      "フロントエンドエンジニア2年目の業務委託。前職はクラウドERPのカスタマイズ開発をしていました。",
+    avatarSrc: "/avatars/yutaka_miyazaki.svg",
     sources: ["https://yutaaaaa.vercel.app/rss/feed.xml"],
     includeUrlRegex: "medium.com|zenn.dev",
     twitterUsername: "yutaaaaa___",
@@ -73,18 +85,6 @@ export const members: Member[] = [
     includeUrlRegex: "zenn.dev",
     twitterUsername: "",
     githubUsername: "",
-    websiteUrl: "",
-  },
-  {
-    id: "yoshitakahyouda",
-    name: "Yoshitaka Hyouda",
-    role: "Intern",
-    bio: "",
-    avatarSrc: "/avatars/hajime_nakagawa.jpg",
-    sources: [],
-    includeUrlRegex: "zenn.dev",
-    twitterUsername: "",
-    githubUsername: "YoshitakaHyouda",
     websiteUrl: "",
   },
 ];
