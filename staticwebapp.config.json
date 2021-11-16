@@ -1,0 +1,22 @@
+{
+    "routes": [
+        {
+            "route": "/members/ネスケラボ",
+            "rewrite": "/members/%E3%83%8D%E3%82%B9%E3%82%B1%E3%83%A9%E3%83%9C"
+        },
+        {
+          "route": "/members/With MR Blog",
+          "rewrite": "/members/With%20MR%20Blog"
+        },
+        {
+          "route": "/members/Streaming Tech Blog",
+          "rewrite": "/members/Streaming%20Tech%20Blog"
+        }
+  ],
+    "responseOverrides": {
+      "404": {
+        "rewrite": "/404.html",
+        "statusCode": 200
+      }
+    }
+  }
