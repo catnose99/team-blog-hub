@@ -25,13 +25,5 @@ export const members: Member[] = [
     avatarSrc: "/avatars/streaming.png",
     sources: ["https://media-streaming.nextscape.net/feed"],
     websiteUrl: "https://media-streaming.nextscape.net/s",
-  },
-  {
-    id: "takada_junji",
-    name: "Takada Junji",
-    role: "Designer",
-    bio: "Designing all of the apps in Foo company.",
-    avatarSrc: "/avatars/junji.jpg",
-    sources: [],
-  },
+  }
 ];
