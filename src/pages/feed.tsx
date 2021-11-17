@@ -1,42 +1,54 @@
-import { GetServerSidePropsContext } from "next";
-import RSS from "rss";
+import fs from "fs";
+import { GetStaticProps } from "next";
+import { Feed } from "feed";
 
 import posts from "@.contents/posts.json";
 import { PostItem } from "@src/types";
 import { config } from "@site.config";
 
-async function generateFeedXml() {
-  const feed = new RSS({
+async function generatedRssFeed() {
+  const baseUrl = config.siteMeta.siteUrl;
+  const date = new Date();
+  const author = {
+    name: "Lisa Technologies Inc",
+    email: "lisatech.dev@gmail.com",
+    link: "https://lisatech.jp/",
+  };
+
+  const feed = new Feed({
     title: config.siteMeta.title,
     description: config.siteMeta.description,
-    site_url: config.siteMeta.description,
-    feed_url: `${config.siteMeta.siteUrl}/feed`,
+    id: baseUrl,
+    link: baseUrl,
+    copyright: `All rights reserved ${date.getFullYear()}, ${author.name}`,
+    updated: date,
+    feedLinks: {
+      rss2: `${baseUrl}/rss/feed.xml`,
+      json: `${baseUrl}/rss/feed.json`,
+      atom: `${baseUrl}/rss/atom.xml`,
+    },
     language: "ja",
+    author,
   });
 
   const p = posts as PostItem[]; //無理やり変換
   p?.forEach((post) => {
-    feed.item({
+    feed.addItem({
       title: post.title,
       description: post.contentSnippet ? post.contentSnippet : "",
       date: new Date(post.dateMiliSeconds),
-      url: post.link,
+      link: post.link,
     });
   });
 
-  // XML形式の文字列にする
-  return feed.xml();
+  fs.mkdirSync("./public/rss", { recursive: true });
+  fs.writeFileSync("./public/rss/feed.xml", feed.rss2());
+  fs.writeFileSync("./public/rss/atom.xml", feed.atom1());
+  fs.writeFileSync("./public/rss/feed.json", feed.json1());
 }
 
-export const getServerSideProps = async ({
-  res,
-}: GetServerSidePropsContext) => {
-  const xml = await generateFeedXml(); // フィードのXMLを生成する（後述）
-
-  res.statusCode = 200;
-  res.setHeader("Cache-Control", "s-maxage=86400, stale-while-revalidate"); // 24時間キャッシュする
-  res.setHeader("Content-Type", "text/xml");
-  res.end(xml);
+export const getServerSideProps: GetStaticProps = async () => {
+  generatedRssFeed();
 
   return {
     props: {},
