@@ -24,7 +24,7 @@ jobs:
       - name: Build Next.js app
         run: npm run build
         env:
-          URL_PREFIX: myapp
+          URL_PREFIX: lisa-output-hub
 
       - name: Export Next.js app
         run: npm run export
