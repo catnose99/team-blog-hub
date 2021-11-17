@@ -47,7 +47,11 @@ async function generatedRssFeed() {
   fs.writeFileSync("./public/rss/feed.json", feed.json1());
 }
 
+<<<<<<< HEAD
 export const getStaticProps: GetStaticProps = async () => {
+=======
+export const getServerSideProps: GetStaticProps = async () => {
+>>>>>>> 93151a23b258db447caf945ecc865985c7b49626
   generatedRssFeed();
 
   return {
