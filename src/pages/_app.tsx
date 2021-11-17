@@ -18,6 +18,12 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
         />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="Lisa's Output Hub"
+          href={`${config.siteMeta.siteUrl}/feed`}
+        />
       </Head>
       <SiteHeader />
       <Component {...pageProps} />

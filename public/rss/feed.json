@@ -1,0 +1,133 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Lisa's Output Hub",
+    "home_page_url": "https://lisatech.blog",
+    "feed_url": "https://lisatech.blog/rss/feed.json",
+    "description": "Lisa Technologies株式会社のメンバーの投稿が集まります",
+    "author": {
+        "name": "Lisa Technologies Inc",
+        "url": "https://lisatech.jp/"
+    },
+    "items": [
+        {
+            "url": "https://yutaaaaa.vercel.app/easy-darkmode",
+            "title": "イージーな気分でダークモードを実装する",
+            "summary": "## やること  最小限の構成だけでダークモードを実装します。ダークモードを実装する際は",
+            "date_modified": "2021-09-03T00:00:00.000Z"
+        },
+        {
+            "url": "https://yutaaaaa.vercel.app/dayjs-thisandthat",
+            "title": "Day.jsあれこれ",
+            "summary": "## Moment.js から Day.js へ  あるプロジェクトでもともと Moment.js を使用していたのですが、Moment.js がメンテナンスモードに入るということで置き換えを検討しました。",
+            "date_modified": "2021-09-02T00:00:00.000Z"
+        },
+        {
+            "url": "https://yutaaaaa.vercel.app/cloudinary-dynamic",
+            "title": "Next.jsブログ用のOGP画像をCloudinaryで動的に生成する",
+            "summary": "## Cloudinary  [Cloudinary](https://cloudinary.com/) は画像や動画などのメディアを動的 URL を使用して変換・最適化・配信を簡単にできるサービスです。",
+            "date_modified": "2021-09-01T00:00:00.000Z"
+        },
+        {
+            "url": "https://zenn.dev/ikenohi/articles/b87a904053c074",
+            "title": "Notion Web Clipperで媒体の異なるアウトプットをらくらく一元記録",
+            "summary": "8月もそろそろ終わり。みなさんいかがお過ごしでしょうか。私は「この夏休みは週に2本以上記事を書くぞ」と意気込んでいたので、もうすぐ9月に入るという現実を目の当たりにして自分のこれまでのアウトプットの量を確認したくなりました。しかし、アウトプット先はZennや所属団体の内部ブログ、あるいは臨時のLT会だったりとばらばらで、「夏休みの間」というふうに期間を絞ってカウントするのはちょっと大変そうです。そこで、NotionのChrome拡張機能であるNotion Web Clipperを使って簡単に自分のアウトプットを記録する方法を思いついたので紹介します。ちなみにNotionのWeb C...",
+            "date_modified": "2021-08-28T03:37:07.000Z"
+        },
+        {
+            "url": "https://zenn.dev/ikenohi/articles/53fd06eebf8dbd",
+            "title": "「関係の質を高める」という観点でモブプロを推す",
+            "summary": "概要私は学生の仲間と集まってFlutterでアプリ開発をしています。チーム開発をするとは言ってもいかんせん初心者の集まりなので、「壁にぶつかったときにいつでも複数人で対処できるようにしよう」ということで、つい先日チームの開発方式にモブプロ（ペアプロ）を採用しました。最初は「なんか流行ってる感じもするしやってみるか」くらいの感覚だったのですが、モブプロを繰り返すうちに「メンバー同士の関係の質を高める」という点においてモブプロが優れていると感じるようになりました。今回はそのことについて深堀りしていきます。 関係の質を高めるとはどういうことかこの記事を書こうと思ったきっかけは、次...",
+            "date_modified": "2021-08-19T11:16:32.000Z"
+        },
+        {
+            "url": "https://zenn.dev/ikenohi/articles/9e95727a931b9a",
+            "title": "【Flutter】Codemagicで「.envが無い！」と怒られる",
+            "summary": "初学者の学習メモです。 これはなにflutter_dotenvを用いて.envで環境変数を管理し、.gitignoreに入れておいたところ、Codemagicのビルド時に以下のようなエラーが出ました。そりゃそうだ。                      Error detected in pubspec.yaml:No file or variants found for asset: .env.            Codemagic上でビルド前に.envファイルを用意してエラーを解決する方法を書きます。こちらの公式の説明に沿っていきます。htt...",
+            "date_modified": "2021-08-11T02:21:31.000Z"
+        },
+        {
+            "url": "https://zenn.dev/ikenohi/articles/d849bb194b2af9",
+            "title": "【Flutter】Typography Widgetを自作すると便利",
+            "summary": "初学者の学習メモです。 なるべく宣言的にText Widgetを記述したいText Widgetは出現回数が比較的多いので、コードから「文字の内容」「スタイル」を読み取るコストをなるべく下げたいなと思うことがよくあります。また、Text Widgetが持つUI上の意味は（誤解を恐れずに言えば）多くの場合「ただの文字」でしかないので、なるべく短く記述したいです。ということで、例えばこんなふうに書けたら良いのではないかと思いました。Widgetの名前でスタイルが、第一引数で文字の内容がわかります。スタイルがWidget内部に隠蔽されている分、すっきり書けます。       ...",
+            "date_modified": "2021-08-08T07:02:08.000Z"
+        },
+        {
+            "url": "https://zenn.dev/ikenohi/articles/f4c09bd6cd121f",
+            "title": "【Flutter】BottomNav実装でRiverpod×Hooksに入門",
+            "summary": "これはなにBottomNavigationによるページ切り替えを実装しながら、下記2つのパッケージに入門する記事です。flutter_hookshooks_riverpodBottomNavigationとstateを用いて普通に画面切り替えの実装をするやり方が分かっていると読みやすいと思います。分かっていなくても読めるようには心がけました。完成予定品はこちら。 実装まず、パッケージをインストールします。下記コードは執筆時のバージョンですので、適宜公式サイトでバージョンを確認するようお願いします。                      depende...",
+            "date_modified": "2021-07-29T03:46:18.000Z"
+        },
+        {
+            "url": "https://zenn.dev/ikenohi/articles/45f60d814f18a3",
+            "title": "【Flutter】ページ遷移関数をラップするといい感じ",
+            "summary": "普通にページ遷移を書くときにもやもやするところ                      Navigator.of(context).push(  PageRouteBuilder(    pageBuilder: (context, animation, secondaryAnimation) {      return NextPage();    },    transitionsBuilder: (context, animation, secondaryAnimation, child) {      return FadeTransition(   ...",
+            "date_modified": "2021-07-20T10:40:01.000Z"
+        },
+        {
+            "url": "https://zenn.dev/ikenohi/articles/6ca9792170d725",
+            "title": "無料版Slackで擬似的にグループメンションを使う方法",
+            "summary": "やりたいこと有料版限定の機能である「ユーザーグループを作成し、まとめてメンションできるようにする」を無料版でも使いたい。例えば、幹部と呼ばれる山田、田中、佐藤、木村、小林の5人がいたとしたら、@幹部をつけるだけで5人にメンションが行ってほしい。「有料版にしろよ」と言われたらそりゃそうなのだが、Slackの有料版を使おうと思うと最低でも￥850/人月の支払いを要求されるので、大学生サークルで使うには高すぎるという背景がある。 方法Slackbotのカスタムレスポンスを利用する。例えば「@幹部」というキーワードに対して、幹部5人分のメンションをbotに返してもらうように設定する...",
+            "date_modified": "2021-05-18T23:38:24.000Z"
+        },
+        {
+            "url": "https://zenn.dev/ikenohi/articles/fc633e30670d0b",
+            "title": "【TS】世界のナベアツに学ぶ、カスタムフック入門",
+            "summary": "これはなにReactのカスタムフックについて、わかりやすい例えを通じてなんとなーく学べる記事です。対象読者は以下のような方々。useState, useCallback等のHooksがなんとなく使える人初歩的なTypeScriptでコンポーネントが書ける/これから書きたい人世界のナベアツとReactが好きな人 Reactで世界のナベアツを作る「簡単なカウントアプリで、3の倍数と3の付く数字は過激に表示する」というものを作ります。イメージがつきにくい人はこちらのデモを参照してください。まず、全体像を載せておきます。                      ...",
+            "date_modified": "2021-03-19T12:12:59.000Z"
+        },
+        {
+            "url": "https://yutaaaaa.vercel.app/next-amplify-hosting",
+            "title": "AmplifyでNext.jsをホスティングしてAccess Deniedになるエラーを解決する。",
+            "summary": "## 背景  Amplify で Next.js の開発をしていて、 `amplify add hosting` でデプロイまで上手くいっているにも関わらず、存在しない URL に遷移した場合にカスタム 404 ページでなく、403 `Access Denied` に飛んでしまう事象が発生。",
+            "date_modified": "2020-12-10T00:00:00.000Z"
+        },
+        {
+            "url": "https://yutaaaaa.vercel.app/chartjs-annotation",
+            "title": "Chart.jsのチャート内に注釈を描写する",
+            "summary": "## はじめに  業務で React と Chart.js を使用しているのですが、チャートの x 軸の日付でデータの比較をするにあたって、チャート内にラインを引くためにプラグインの `chartjs-plugin-annotation.js` を使用しました。",
+            "date_modified": "2020-10-31T00:00:00.000Z"
+        },
+        {
+            "url": "https://yutaaaaa.vercel.app/react-chart-tooltip",
+            "title": "React + Chart.jsでカスタムツールチップ",
+            "summary": "## はじめに  React で Chart.js を使用するために `react-chartjs-2` をインストールします。",
+            "date_modified": "2020-10-30T00:00:00.000Z"
+        },
+        {
+            "url": "https://yutaaaaa.vercel.app/cognito-custom-message",
+            "title": "lambdaトリガーでCognitoカスタムメッセージ",
+            "summary": "## はじめに  Cognito を通して認証を行なった場合、登録したメールアドレス宛にメールを送信するようになっています。",
+            "date_modified": "2020-10-29T00:00:00.000Z"
+        },
+        {
+            "url": "https://yutaaaaa.vercel.app/amplify-authclass",
+            "title": "React + Amplify Auth(Cognito)での認証",
+            "summary": "この記事は、`amplify auth` がインストール済みであることが前提となっています。  ## Aamplify について",
+            "date_modified": "2020-10-27T00:00:00.000Z"
+        },
+        {
+            "url": "https://yutaaaaa.vercel.app/next-amp",
+            "title": "Next.jsでAMP対応",
+            "summary": "## What's AMP ?  AMP は Accelerated Mobile Pages の略でウェブサイトを高速かつユーザーファーストにし、収益化するシンプルかつ堅牢なフォーマット。",
+            "date_modified": "2020-09-30T00:00:00.000Z"
+        },
+        {
+            "url": "https://yutaaaaa.vercel.app/neomorphism",
+            "title": "ニューモーフィズムとは",
+            "summary": "## ニューモーフィズムとは  ニューモーフィズムは `フラットデザイン` と `スキューモフィズム` を組み合わせたデザインのことで、背景色・形状・シャドウを組み合わせて実現する、背景から浮かんでいたり・",
+            "date_modified": "2020-09-27T00:00:00.000Z"
+        },
+        {
+            "url": "https://yutaaaaa.vercel.app/markdown-express",
+            "title": "ブログ内マークダウンの表現",
+            "summary": "## はじめに  このブログは Next.js で構築されています。",
+            "date_modified": "2020-09-24T00:00:00.000Z"
+        },
+        {
+            "url": "https://yutaaaaa.vercel.app/first-post",
+            "title": "ポートフォリオのこと",
+            "summary": "## ポートフォリオについて  - Resume",
+            "date_modified": "2020-09-22T00:00:00.000Z"
+        }
+    ]
+}

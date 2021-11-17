@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Lisa's Output Hub</title>
+        <link>https://lisatech.blog</link>
+        <description>Lisa Technologies株式会社のメンバーの投稿が集まります</description>
+        <lastBuildDate>Wed, 17 Nov 2021 03:03:11 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>All rights reserved 2021, Lisa Technologies Inc</copyright>
+        <item>
+            <title><![CDATA[イージーな気分でダークモードを実装する]]></title>
+            <link>https://yutaaaaa.vercel.app/easy-darkmode</link>
+            <guid>https://yutaaaaa.vercel.app/easy-darkmode</guid>
+            <pubDate>Fri, 03 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[## やること  最小限の構成だけでダークモードを実装します。ダークモードを実装する際は]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Day.jsあれこれ]]></title>
+            <link>https://yutaaaaa.vercel.app/dayjs-thisandthat</link>
+            <guid>https://yutaaaaa.vercel.app/dayjs-thisandthat</guid>
+            <pubDate>Thu, 02 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[## Moment.js から Day.js へ  あるプロジェクトでもともと Moment.js を使用していたのですが、Moment.js がメンテナンスモードに入るということで置き換えを検討しました。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Next.jsブログ用のOGP画像をCloudinaryで動的に生成する]]></title>
+            <link>https://yutaaaaa.vercel.app/cloudinary-dynamic</link>
+            <guid>https://yutaaaaa.vercel.app/cloudinary-dynamic</guid>
+            <pubDate>Wed, 01 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[## Cloudinary  [Cloudinary](https://cloudinary.com/) は画像や動画などのメディアを動的 URL を使用して変換・最適化・配信を簡単にできるサービスです。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Notion Web Clipperで媒体の異なるアウトプットをらくらく一元記録]]></title>
+            <link>https://zenn.dev/ikenohi/articles/b87a904053c074</link>
+            <guid>https://zenn.dev/ikenohi/articles/b87a904053c074</guid>
+            <pubDate>Sat, 28 Aug 2021 03:37:07 GMT</pubDate>
+            <description><![CDATA[8月もそろそろ終わり。みなさんいかがお過ごしでしょうか。私は「この夏休みは週に2本以上記事を書くぞ」と意気込んでいたので、もうすぐ9月に入るという現実を目の当たりにして自分のこれまでのアウトプットの量を確認したくなりました。しかし、アウトプット先はZennや所属団体の内部ブログ、あるいは臨時のLT会だったりとばらばらで、「夏休みの間」というふうに期間を絞ってカウントするのはちょっと大変そうです。そこで、NotionのChrome拡張機能であるNotion Web Clipperを使って簡単に自分のアウトプットを記録する方法を思いついたので紹介します。ちなみにNotionのWeb C...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[「関係の質を高める」という観点でモブプロを推す]]></title>
+            <link>https://zenn.dev/ikenohi/articles/53fd06eebf8dbd</link>
+            <guid>https://zenn.dev/ikenohi/articles/53fd06eebf8dbd</guid>
+            <pubDate>Thu, 19 Aug 2021 11:16:32 GMT</pubDate>
+            <description><![CDATA[概要私は学生の仲間と集まってFlutterでアプリ開発をしています。チーム開発をするとは言ってもいかんせん初心者の集まりなので、「壁にぶつかったときにいつでも複数人で対処できるようにしよう」ということで、つい先日チームの開発方式にモブプロ（ペアプロ）を採用しました。最初は「なんか流行ってる感じもするしやってみるか」くらいの感覚だったのですが、モブプロを繰り返すうちに「メンバー同士の関係の質を高める」という点においてモブプロが優れていると感じるようになりました。今回はそのことについて深堀りしていきます。 関係の質を高めるとはどういうことかこの記事を書こうと思ったきっかけは、次...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[【Flutter】Codemagicで「.envが無い！」と怒られる]]></title>
+            <link>https://zenn.dev/ikenohi/articles/9e95727a931b9a</link>
+            <guid>https://zenn.dev/ikenohi/articles/9e95727a931b9a</guid>
+            <pubDate>Wed, 11 Aug 2021 02:21:31 GMT</pubDate>
+            <description><![CDATA[初学者の学習メモです。 これはなにflutter_dotenvを用いて.envで環境変数を管理し、.gitignoreに入れておいたところ、Codemagicのビルド時に以下のようなエラーが出ました。そりゃそうだ。                      Error detected in pubspec.yaml:No file or variants found for asset: .env.            Codemagic上でビルド前に.envファイルを用意してエラーを解決する方法を書きます。こちらの公式の説明に沿っていきます。htt...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[【Flutter】Typography Widgetを自作すると便利]]></title>
+            <link>https://zenn.dev/ikenohi/articles/d849bb194b2af9</link>
+            <guid>https://zenn.dev/ikenohi/articles/d849bb194b2af9</guid>
+            <pubDate>Sun, 08 Aug 2021 07:02:08 GMT</pubDate>
+            <description><![CDATA[初学者の学習メモです。 なるべく宣言的にText Widgetを記述したいText Widgetは出現回数が比較的多いので、コードから「文字の内容」「スタイル」を読み取るコストをなるべく下げたいなと思うことがよくあります。また、Text Widgetが持つUI上の意味は（誤解を恐れずに言えば）多くの場合「ただの文字」でしかないので、なるべく短く記述したいです。ということで、例えばこんなふうに書けたら良いのではないかと思いました。Widgetの名前でスタイルが、第一引数で文字の内容がわかります。スタイルがWidget内部に隠蔽されている分、すっきり書けます。       ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[【Flutter】BottomNav実装でRiverpod×Hooksに入門]]></title>
+            <link>https://zenn.dev/ikenohi/articles/f4c09bd6cd121f</link>
+            <guid>https://zenn.dev/ikenohi/articles/f4c09bd6cd121f</guid>
+            <pubDate>Thu, 29 Jul 2021 03:46:18 GMT</pubDate>
+            <description><![CDATA[これはなにBottomNavigationによるページ切り替えを実装しながら、下記2つのパッケージに入門する記事です。flutter_hookshooks_riverpodBottomNavigationとstateを用いて普通に画面切り替えの実装をするやり方が分かっていると読みやすいと思います。分かっていなくても読めるようには心がけました。完成予定品はこちら。 実装まず、パッケージをインストールします。下記コードは執筆時のバージョンですので、適宜公式サイトでバージョンを確認するようお願いします。                      depende...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[【Flutter】ページ遷移関数をラップするといい感じ]]></title>
+            <link>https://zenn.dev/ikenohi/articles/45f60d814f18a3</link>
+            <guid>https://zenn.dev/ikenohi/articles/45f60d814f18a3</guid>
+            <pubDate>Tue, 20 Jul 2021 10:40:01 GMT</pubDate>
+            <description><![CDATA[普通にページ遷移を書くときにもやもやするところ                      Navigator.of(context).push(  PageRouteBuilder(    pageBuilder: (context, animation, secondaryAnimation) {      return NextPage();    },    transitionsBuilder: (context, animation, secondaryAnimation, child) {      return FadeTransition(   ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[無料版Slackで擬似的にグループメンションを使う方法]]></title>
+            <link>https://zenn.dev/ikenohi/articles/6ca9792170d725</link>
+            <guid>https://zenn.dev/ikenohi/articles/6ca9792170d725</guid>
+            <pubDate>Tue, 18 May 2021 23:38:24 GMT</pubDate>
+            <description><![CDATA[やりたいこと有料版限定の機能である「ユーザーグループを作成し、まとめてメンションできるようにする」を無料版でも使いたい。例えば、幹部と呼ばれる山田、田中、佐藤、木村、小林の5人がいたとしたら、@幹部をつけるだけで5人にメンションが行ってほしい。「有料版にしろよ」と言われたらそりゃそうなのだが、Slackの有料版を使おうと思うと最低でも￥850/人月の支払いを要求されるので、大学生サークルで使うには高すぎるという背景がある。 方法Slackbotのカスタムレスポンスを利用する。例えば「@幹部」というキーワードに対して、幹部5人分のメンションをbotに返してもらうように設定する...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[【TS】世界のナベアツに学ぶ、カスタムフック入門]]></title>
+            <link>https://zenn.dev/ikenohi/articles/fc633e30670d0b</link>
+            <guid>https://zenn.dev/ikenohi/articles/fc633e30670d0b</guid>
+            <pubDate>Fri, 19 Mar 2021 12:12:59 GMT</pubDate>
+            <description><![CDATA[これはなにReactのカスタムフックについて、わかりやすい例えを通じてなんとなーく学べる記事です。対象読者は以下のような方々。useState, useCallback等のHooksがなんとなく使える人初歩的なTypeScriptでコンポーネントが書ける/これから書きたい人世界のナベアツとReactが好きな人 Reactで世界のナベアツを作る「簡単なカウントアプリで、3の倍数と3の付く数字は過激に表示する」というものを作ります。イメージがつきにくい人はこちらのデモを参照してください。まず、全体像を載せておきます。                      ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[AmplifyでNext.jsをホスティングしてAccess Deniedになるエラーを解決する。]]></title>
+            <link>https://yutaaaaa.vercel.app/next-amplify-hosting</link>
+            <guid>https://yutaaaaa.vercel.app/next-amplify-hosting</guid>
+            <pubDate>Thu, 10 Dec 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[## 背景  Amplify で Next.js の開発をしていて、 `amplify add hosting` でデプロイまで上手くいっているにも関わらず、存在しない URL に遷移した場合にカスタム 404 ページでなく、403 `Access Denied` に飛んでしまう事象が発生。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Chart.jsのチャート内に注釈を描写する]]></title>
+            <link>https://yutaaaaa.vercel.app/chartjs-annotation</link>
+            <guid>https://yutaaaaa.vercel.app/chartjs-annotation</guid>
+            <pubDate>Sat, 31 Oct 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[## はじめに  業務で React と Chart.js を使用しているのですが、チャートの x 軸の日付でデータの比較をするにあたって、チャート内にラインを引くためにプラグインの `chartjs-plugin-annotation.js` を使用しました。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[React + Chart.jsでカスタムツールチップ]]></title>
+            <link>https://yutaaaaa.vercel.app/react-chart-tooltip</link>
+            <guid>https://yutaaaaa.vercel.app/react-chart-tooltip</guid>
+            <pubDate>Fri, 30 Oct 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[## はじめに  React で Chart.js を使用するために `react-chartjs-2` をインストールします。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[lambdaトリガーでCognitoカスタムメッセージ]]></title>
+            <link>https://yutaaaaa.vercel.app/cognito-custom-message</link>
+            <guid>https://yutaaaaa.vercel.app/cognito-custom-message</guid>
+            <pubDate>Thu, 29 Oct 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[## はじめに  Cognito を通して認証を行なった場合、登録したメールアドレス宛にメールを送信するようになっています。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[React + Amplify Auth(Cognito)での認証]]></title>
+            <link>https://yutaaaaa.vercel.app/amplify-authclass</link>
+            <guid>https://yutaaaaa.vercel.app/amplify-authclass</guid>
+            <pubDate>Tue, 27 Oct 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[この記事は、`amplify auth` がインストール済みであることが前提となっています。  ## Aamplify について]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Next.jsでAMP対応]]></title>
+            <link>https://yutaaaaa.vercel.app/next-amp</link>
+            <guid>https://yutaaaaa.vercel.app/next-amp</guid>
+            <pubDate>Wed, 30 Sep 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[## What's AMP ?  AMP は Accelerated Mobile Pages の略でウェブサイトを高速かつユーザーファーストにし、収益化するシンプルかつ堅牢なフォーマット。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[ニューモーフィズムとは]]></title>
+            <link>https://yutaaaaa.vercel.app/neomorphism</link>
+            <guid>https://yutaaaaa.vercel.app/neomorphism</guid>
+            <pubDate>Sun, 27 Sep 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[## ニューモーフィズムとは  ニューモーフィズムは `フラットデザイン` と `スキューモフィズム` を組み合わせたデザインのことで、背景色・形状・シャドウを組み合わせて実現する、背景から浮かんでいたり・]]></description>
+        </item>
+        <item>
+            <title><![CDATA[ブログ内マークダウンの表現]]></title>
+            <link>https://yutaaaaa.vercel.app/markdown-express</link>
+            <guid>https://yutaaaaa.vercel.app/markdown-express</guid>
+            <pubDate>Thu, 24 Sep 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[## はじめに  このブログは Next.js で構築されています。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[ポートフォリオのこと]]></title>
+            <link>https://yutaaaaa.vercel.app/first-post</link>
+            <guid>https://yutaaaaa.vercel.app/first-post</guid>
+            <pubDate>Tue, 22 Sep 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[## ポートフォリオについて  - Resume]]></description>
+        </item>
+    </channel>
+</rss>
