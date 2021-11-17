@@ -3,7 +3,7 @@ export const config = {
     title: "Lisa's Output Hub",
     teamName: "Lisa Technologies Inc.",
     description: "Lisa Technologies株式会社のメンバーの投稿が集まります",
-    siteUrl: "https://lisablog.vercel.app",
+    siteUrl: "https://lisatech.blog",
   },
   siteRoot:
     process.env.NODE_ENV === "production"

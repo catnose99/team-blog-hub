@@ -10,7 +10,7 @@ async function generateFeedXml() {
     title: config.siteMeta.title,
     description: config.siteMeta.description,
     site_url: config.siteMeta.description,
-    feed_url: `${config.siteMeta.description}/feed`,
+    feed_url: `${config.siteMeta.siteUrl}/feed`,
     language: "ja",
   });
 
