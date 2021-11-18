@@ -47,7 +47,7 @@ const Page: NextPage<Props> = (props) => {
             <div className="member-header__links">
               {twitterUsername && (
                 <a
-                  href={url(`https://twitter.com/${twitterUsername}`)}
+                  href={`https://twitter.com/${twitterUsername}`}
                   className="member-header__link"
                   target="_blank"
                 >
@@ -61,7 +61,7 @@ const Page: NextPage<Props> = (props) => {
               )}
               {githubUsername && (
                 <a
-                  href={url(`https://github.com/${githubUsername}`)}
+                  href={`https://github.com/${githubUsername}`}
                   className="member-header__link"
                   target="_blank"
                 >
