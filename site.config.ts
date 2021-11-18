@@ -3,17 +3,15 @@ export const config = {
     title: "Lisa's Output Hub",
     teamName: "Lisa Technologies Inc.",
     description: "Lisa Technologies株式会社のメンバーの投稿が集まります",
-    siteUrl: "https://lisatech.blog",
+    siteUrl: "https://dev-blog.lisatech.jp/",
   },
   siteRoot:
     process.env.NODE_ENV === "production"
-      ? "https://team-blog-hub.vercel.app"
+      ? "https://dev-blog.lisatech.jp/"
       : "http://localhost:3000",
+  // 3つ以上にするとレスポンシブのために改修が必要
+  // HPはLisa Officialのmemberページからリンクしてあるので下記の2つを選択
   headerLinks: [
-    {
-      title: "Company",
-      href: "https://lisatech.jp/",
-    },
     {
       title: "Product",
       href: "https://fooddeliverymanager.com/",
