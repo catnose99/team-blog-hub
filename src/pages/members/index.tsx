@@ -8,6 +8,7 @@ import { ContentWrapper } from "@src/components/ContentWrapper";
 import { PageSEO } from "@src/components/PageSEO";
 import { getMemberPath } from "@src/utils/helper";
 import { Member } from "@src/types";
+import { url } from "@src/utils/url";
 
 const MemberCard: React.FC<{ member: Member }> = ({ member }) => {
   return (
@@ -15,7 +16,7 @@ const MemberCard: React.FC<{ member: Member }> = ({ member }) => {
       <a className="member-card">
         <div className="member-card__avatar">
           <img
-            src={member.avatarSrc}
+            src={url(member.avatarSrc)}
             alt={member.name}
             width={80}
             height={80}

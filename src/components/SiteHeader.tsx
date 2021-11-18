@@ -2,6 +2,7 @@ import Link from "next/link";
 import { config } from "@site.config";
 
 import { ContentWrapper } from "@src/components/ContentWrapper";
+import { url } from "@src/utils/url";
 
 export const SiteHeader: React.FC = () => (
   <header className="site-header">
@@ -10,7 +11,7 @@ export const SiteHeader: React.FC = () => (
         <Link href="/" passHref>
           <a className="site-header__logo-link">
             <img
-              src="/logo.svg"
+              src={url("/logo.svg")}
               alt={config.siteMeta.title}
               className="site-header__logo-img"
             />
