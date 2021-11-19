@@ -13,7 +13,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link
           rel="icon shortcut"
           type="image/png"
-          href={`${config.siteRoot}/logo.png`}
+          href={`${config.siteRoot}/favicon.ico`}
         />
         <link
           rel="stylesheet"

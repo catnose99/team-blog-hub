@@ -15,7 +15,7 @@
   align-items: center;
 }
 .site-header__logo-img {
-  height: 35px;
+  height: 20px;
 }
 
 .site-header__links {
@@ -25,4 +25,6 @@
 .site-header__link {
   margin-left: 1.5rem;
   font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-primary-text);
 }

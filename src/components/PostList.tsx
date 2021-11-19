@@ -39,7 +39,7 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
           </div>
         </a>
       </Link>
-      <a href={link} className="post-link__main-link">
+      <a href={link} className="post-link__main-link" target="_blank" rel="noopener noreferrer">
         <h2 className="post-link__title">{title}</h2>
         {hostname && (
           <div className="post-link__site">
@@ -66,7 +66,7 @@ export const PostList: React.FC<{ items: PostItem[] }> = (props) => {
   const canLoadMore = totalItemsCount - displayItemsCount > 0;
 
   if (!totalItemsCount) {
-    return <div className="post-list-empty">No posts yet</div>;
+    return <div className="post-list-empty">記事がありません</div>;
   }
 
   return (
@@ -82,7 +82,7 @@ export const PostList: React.FC<{ items: PostItem[] }> = (props) => {
             onClick={() => setDisplayItemsCount(displayItemsCount + 32)}
             className="post-list-load__button"
           >
-            LOAD MORE
+            もっと見る
           </button>
         </div>
       )}
