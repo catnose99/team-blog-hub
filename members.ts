@@ -33,7 +33,17 @@ export const members: Member[] = [
     ]
   },
   {
-      id: "4shley",
+    id: "Taukon",
+    name: "taukon",
+    role: "Member",
+    bio: "セキュリティ初心者です。",
+    avatarSrc: "/avatars/taukon.jpg",
+    sources: [
+      "https://zenn.dev/taukon/feed",
+    ]
+  },
+  {
+    id: "4shley",
     name: "ksk",
     role: "Member",
     bio: "がんばれ、モチベーションくん",
@@ -41,5 +51,6 @@ export const members: Member[] = [
     sources: [
       "https://qiita.com/reacon4234/feed",
     ]
-  }
+  },
+  
 ];
