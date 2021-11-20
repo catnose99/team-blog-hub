@@ -22,4 +22,14 @@ export const members: Member[] = [
       "https://zenn.dev/nishi/feed",
     ]
   },
+  {
+    id: "ny-a",
+    name: "Nyaarch64",
+    role: "Member",
+    bio: "継続していきたいです。",
+    avatarSrc: "/avatars/ny-a.jpg",
+    sources: [
+      "https://zenn.dev/ny_a/feed",
+    ]
+  },
 ];
