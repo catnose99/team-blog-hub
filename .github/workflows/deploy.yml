@@ -9,7 +9,7 @@ on:
         description: branch|tag|SHA to checkout
         default: 'main'
         required: true
-  # 毎日日本時間の 11時 に GitHub Actions が実行される (cron の時刻は UST)
+  # 毎日日本時間の 11時 に GitHub Actions が実行される (cron の時刻は UTC)
   # 実行の際に参照されるブランチは上記の default で指定したものが使用される
   schedule:
     - cron:  '0 2 * * *'
