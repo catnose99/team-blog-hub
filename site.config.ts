@@ -1,7 +1,7 @@
 export const config = {
   siteMeta: {
-    title: "Flagment PoC blog",
-    teamName: "Flagment PoC.",
+    title: "Fragment PoC blog",
+    teamName: "Fragment PoC.",
     description: "SecurityMinicamp group",
   },
   siteRoot:
