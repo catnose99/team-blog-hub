@@ -32,4 +32,14 @@ export const members: Member[] = [
       "https://zenn.dev/ny_a/feed",
     ]
   },
+  {
+    id: "Taukon",
+    name: "taukon",
+    role: "Member",
+    bio: "セキュリティ初心者です。",
+    avatarSrc: "/avatars/taukon.jpg",
+    sources: [
+      "https://zenn.dev/taukon/feed",
+    ]
+  },
 ];
