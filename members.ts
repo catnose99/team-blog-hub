@@ -32,4 +32,14 @@ export const members: Member[] = [
       "https://zenn.dev/ny_a/feed",
     ]
   },
+  {
+      id: "4shley",
+    name: "ksk",
+    role: "Member",
+    bio: "がんばれ、モチベーションくん",
+    avatarSrc: "/avatars/ksk.jpg",
+    sources: [
+      "https://qiita.com/reacon4234/feed",
+    ]
+  }
 ];
