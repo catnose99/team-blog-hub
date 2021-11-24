@@ -6,7 +6,7 @@ export const config = {
   },
   siteRoot:
     process.env.NODE_ENV === "production"
-      ? "https://blog.ctf4.me"
+      ? "https://minicamp.ctf4.me"
       : "http://localhost:3000",
   headerLinks: [
     {
