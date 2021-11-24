@@ -11,8 +11,8 @@ const Page: NextPage = () => {
       <div className="error">
         <ContentWrapper>
           <div>
-            <div className="error__status">404</div>
-            <h1 className="error__message">Page not found...</h1>
+            <div className="error__status">お探しのページは見つかりませんでした。</div>
+            <h1 className="error__message">URLをご確認ください。</h1>
 
             <nav className="error__actions">
               <LinkBackHome />

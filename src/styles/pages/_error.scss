@@ -1,14 +1,16 @@
 .error {
   padding: 3rem 0;
-  text-align: center;
+  text-align: left;
 }
 .error__status {
-  font-size: 110px;
+  font-size: 32px;
   font-weight: 700;
-  line-height: 1.2;
+  color: var(--color-primary-text);
 }
 .error__message {
-  color: var(--color-base-text-lighter);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-primary-text);
 }
 .error__actions {
   margin-top: 3rem;

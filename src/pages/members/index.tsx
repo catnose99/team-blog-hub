@@ -33,14 +33,18 @@ const Page: NextPage = () => {
   return (
     <>
       <PageSEO title="Members" path="/members" />
+      <div className="members__title_area">
+        <ContentWrapper>
+          <h1 className="members__title">
+              ブログ一覧{" "}
+              <span className="members__title-team">
+                @ {config.siteMeta.teamName}
+              </span>
+          </h1>
+        </ContentWrapper>
+      </div>
       <ContentWrapper>
         <section className="members">
-          <h1 className="members__title">
-            Members{" "}
-            <span className="members__title-team">
-              @ {config.siteMeta.teamName}
-            </span>
-          </h1>
           <div className="members__cards">
             {members.map((member, i) => (
               <MemberCard key={`member-card-${i}`} member={member} />

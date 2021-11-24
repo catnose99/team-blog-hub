@@ -2,7 +2,29 @@
   padding: 2.5rem 0;
 }
 .members__title {
+  padding: 3rem 0;
   font-size: 2.3rem;
+  color: var(--color-primary-text);
+}
+.members__title_area{
+  position: relative;
+
+  &::before,
+  &::after {
+      content: "";
+      display: block;
+      position: absolute;
+  }
+
+  &::before {
+      width: 100%;
+      height: -webkit-fill-available;
+      background-size: 10px 10px;
+      background-image: radial-gradient(#7E98B1 5%,transparent 11%);
+      background-color: transparent;
+      top: 0;
+      left: 0;
+  }
 }
 .members__title-team {
   display: block;
