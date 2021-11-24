@@ -40,7 +40,7 @@ export const members: Member[] = [
     bio:
       "フロントエンドエンジニア2年目の業務委託。前職はクラウドERPのカスタマイズ開発をしていました。",
     avatarSrc: "/avatars/yutaka_miyazaki.svg",
-    sources: ["https://yutaaaaa.dev/feed"],
+    sources: ["https://yutaaaaa.dev/rss/feed.xml"],
     twitterUsername: "yutaaaaa___",
     githubUsername: "Yuta07",
     websiteUrl: "https://yutaaaaa.dev/",
