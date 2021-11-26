@@ -4,7 +4,7 @@ export const members: Member[] = [
   {
     id: "lufeee",
     name: "lufe",
-    role: "Manager",
+    role: "Tutor & Member",
     bio: "セキュリティについてかんばります。",
     avatarSrc: "/avatars/lufe.jpg",
     sources: [
@@ -25,7 +25,7 @@ export const members: Member[] = [
   {
     id: "ny-a",
     name: "Nyaarch64",
-    role: "Member",
+    role: "Tutor",
     bio: "継続していきたいです。",
     avatarSrc: "/avatars/ny-a.jpg",
     sources: [
@@ -52,5 +52,4 @@ export const members: Member[] = [
       "https://qiita.com/reacon4234/feed",
     ]
   },
-  
 ];
