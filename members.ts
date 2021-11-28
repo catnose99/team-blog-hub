@@ -27,7 +27,7 @@ export const members: Member[] = [
     name: "Akari Kusumoto",
     role: "Backend dev",
     bio: "",
-    avatarSrc: "/avatars/catnose.jpg",
+    avatarSrc: "/avatars/akari_kusumoto.jpg",
     sources: [],
     twitterUsername: "",
     githubUsername: "AkariKusumoto",
@@ -51,7 +51,7 @@ export const members: Member[] = [
     role: "Designer",
     bio:
       "新卒で世田谷区の病院に理学療法士として勤務。1年で退職しプログラミング/Webデザインを学習。個人でLP, HPデザインを請け負い、2021年3月にLisa technologies (株)へjoin。現在はLisa technologis (株)と一部上場企業保険会社でUIデザインを担当しながら、個人でもデザイン制作を受けています。",
-    avatarSrc: "/avatars/hajime_nakagawa.jpg",
+    avatarSrc: "/avatars/shota_shimotani.jpg",
     sources: [],
     twitterUsername: "702_Creative",
     websiteUrl:
@@ -61,7 +61,8 @@ export const members: Member[] = [
     id: "hajimenakagawa",
     name: "Hajime Nakagawa",
     role: "Intern",
-    bio: "当ブログの立ち上げ担当",
+    bio:
+      "当ブログの立ち上げ担当。フロントエンドの経験が長いですが、オンボーディングシステムを作ったりCSチームの情報設計をお手伝いしたりと幅広くお手伝いさせてもらってます。PM志望23卒。",
     avatarSrc: "/avatars/hajime_nakagawa.jpg",
     sources: ["https://zenn.dev/ikenohi/feed"],
     twitterUsername: "hajixxnaka",
@@ -73,11 +74,24 @@ export const members: Member[] = [
     id: "gomatsuda",
     name: "Go Matsuda",
     role: "Intern",
-    bio: "",
-    avatarSrc: "/avatars/hajime_nakagawa.jpg",
-    sources: [],
+    bio:
+      "2020年7月にCSインターン生としてLisa technologis (株)にジョイン。カナダへの留学で、CSとして働けなくなったのでプログラミングを学び始め、開発チームへ移動。",
+    avatarSrc: "/avatars/go_matsuda.png",
+    sources: ["https://zenn.dev/go116/feed"],
     twitterUsername: "",
     githubUsername: "",
     websiteUrl: "",
+  },
+  {
+    id: "kosukeinoue",
+    name: "Kosuke Inoue",
+    role: "Intern",
+    bio:
+      "2021年11月にフルリモートインターン生としてLisa Technologies（株）にジョイン。北の大地からバリューを出すべく、日々奔走する。休日は疲れた心をギターで癒やす。",
+    avatarSrc: "/avatars/kosuke_inoue.png",
+    sources: ["https://zenn.dev/go116/feed"],
+    twitterUsername: "youuchiharu",
+    githubUsername: "Kosuke2000",
+    websiteUrl: "https://hubcnavi.net/",
   },
 ];
