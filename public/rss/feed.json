@@ -1,8 +1,8 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Lisa's Output Hub",
-    "home_page_url": "https://lisatech.blog",
-    "feed_url": "https://lisatech.blog/rss/feed.json",
+    "title": "Lisa Output Hub",
+    "home_page_url": "https://dev-blog.lisatech.jp/",
+    "feed_url": "https://dev-blog.lisatech.jp//rss/feed.json",
     "description": "Lisa Technologies株式会社のメンバーの投稿が集まります",
     "author": {
         "name": "Lisa Technologies Inc",
@@ -10,19 +10,19 @@
     },
     "items": [
         {
-            "url": "https://yutaaaaa.vercel.app/easy-darkmode",
+            "url": "https://yutaaaaa.dev/easy-darkmode",
             "title": "イージーな気分でダークモードを実装する",
             "summary": "## やること  最小限の構成だけでダークモードを実装します。ダークモードを実装する際は",
             "date_modified": "2021-09-03T00:00:00.000Z"
         },
         {
-            "url": "https://yutaaaaa.vercel.app/dayjs-thisandthat",
+            "url": "https://yutaaaaa.dev/dayjs-thisandthat",
             "title": "Day.jsあれこれ",
             "summary": "## Moment.js から Day.js へ  あるプロジェクトでもともと Moment.js を使用していたのですが、Moment.js がメンテナンスモードに入るということで置き換えを検討しました。",
             "date_modified": "2021-09-02T00:00:00.000Z"
         },
         {
-            "url": "https://yutaaaaa.vercel.app/cloudinary-dynamic",
+            "url": "https://yutaaaaa.dev/cloudinary-dynamic",
             "title": "Next.jsブログ用のOGP画像をCloudinaryで動的に生成する",
             "summary": "## Cloudinary  [Cloudinary](https://cloudinary.com/) は画像や動画などのメディアを動的 URL を使用して変換・最適化・配信を簡単にできるサービスです。",
             "date_modified": "2021-09-01T00:00:00.000Z"
@@ -76,55 +76,55 @@
             "date_modified": "2021-03-19T12:12:59.000Z"
         },
         {
-            "url": "https://yutaaaaa.vercel.app/next-amplify-hosting",
+            "url": "https://yutaaaaa.dev/next-amplify-hosting",
             "title": "AmplifyでNext.jsをホスティングしてAccess Deniedになるエラーを解決する。",
             "summary": "## 背景  Amplify で Next.js の開発をしていて、 `amplify add hosting` でデプロイまで上手くいっているにも関わらず、存在しない URL に遷移した場合にカスタム 404 ページでなく、403 `Access Denied` に飛んでしまう事象が発生。",
             "date_modified": "2020-12-10T00:00:00.000Z"
         },
         {
-            "url": "https://yutaaaaa.vercel.app/chartjs-annotation",
+            "url": "https://yutaaaaa.dev/chartjs-annotation",
             "title": "Chart.jsのチャート内に注釈を描写する",
             "summary": "## はじめに  業務で React と Chart.js を使用しているのですが、チャートの x 軸の日付でデータの比較をするにあたって、チャート内にラインを引くためにプラグインの `chartjs-plugin-annotation.js` を使用しました。",
             "date_modified": "2020-10-31T00:00:00.000Z"
         },
         {
-            "url": "https://yutaaaaa.vercel.app/react-chart-tooltip",
+            "url": "https://yutaaaaa.dev/react-chart-tooltip",
             "title": "React + Chart.jsでカスタムツールチップ",
             "summary": "## はじめに  React で Chart.js を使用するために `react-chartjs-2` をインストールします。",
             "date_modified": "2020-10-30T00:00:00.000Z"
         },
         {
-            "url": "https://yutaaaaa.vercel.app/cognito-custom-message",
+            "url": "https://yutaaaaa.dev/cognito-custom-message",
             "title": "lambdaトリガーでCognitoカスタムメッセージ",
             "summary": "## はじめに  Cognito を通して認証を行なった場合、登録したメールアドレス宛にメールを送信するようになっています。",
             "date_modified": "2020-10-29T00:00:00.000Z"
         },
         {
-            "url": "https://yutaaaaa.vercel.app/amplify-authclass",
+            "url": "https://yutaaaaa.dev/amplify-authclass",
             "title": "React + Amplify Auth(Cognito)での認証",
             "summary": "この記事は、`amplify auth` がインストール済みであることが前提となっています。  ## Aamplify について",
             "date_modified": "2020-10-27T00:00:00.000Z"
         },
         {
-            "url": "https://yutaaaaa.vercel.app/next-amp",
+            "url": "https://yutaaaaa.dev/next-amp",
             "title": "Next.jsでAMP対応",
             "summary": "## What's AMP ?  AMP は Accelerated Mobile Pages の略でウェブサイトを高速かつユーザーファーストにし、収益化するシンプルかつ堅牢なフォーマット。",
             "date_modified": "2020-09-30T00:00:00.000Z"
         },
         {
-            "url": "https://yutaaaaa.vercel.app/neomorphism",
+            "url": "https://yutaaaaa.dev/neomorphism",
             "title": "ニューモーフィズムとは",
             "summary": "## ニューモーフィズムとは  ニューモーフィズムは `フラットデザイン` と `スキューモフィズム` を組み合わせたデザインのことで、背景色・形状・シャドウを組み合わせて実現する、背景から浮かんでいたり・",
             "date_modified": "2020-09-27T00:00:00.000Z"
         },
         {
-            "url": "https://yutaaaaa.vercel.app/markdown-express",
+            "url": "https://yutaaaaa.dev/markdown-express",
             "title": "ブログ内マークダウンの表現",
             "summary": "## はじめに  このブログは Next.js で構築されています。",
             "date_modified": "2020-09-24T00:00:00.000Z"
         },
         {
-            "url": "https://yutaaaaa.vercel.app/first-post",
+            "url": "https://yutaaaaa.dev/first-post",
             "title": "ポートフォリオのこと",
             "summary": "## ポートフォリオについて  - Resume",
             "date_modified": "2020-09-22T00:00:00.000Z"

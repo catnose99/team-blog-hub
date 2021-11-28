@@ -6,7 +6,7 @@ export const members: Member[] = [
     name: "Lisa Technologies",
     role: "Official",
     bio:
-      "フードデリバリーを最適化する「フードデリバリーマネージャー（FDM）」を開発しています",
+      "フードデリバリーを最適化する「フードデリバリーマネージャー（FDM）」を開発しています。資金調達完了に伴い組織拡大中！",
     avatarSrc: "/avatars/lisa_tech.png",
     sources: ["https://zenn.dev/lisatech/feed"],
     websiteUrl: "https://lisatech.jp/",
@@ -17,7 +17,7 @@ export const members: Member[] = [
     role: "Lead Engineer",
     bio:
       "学生時代よりソフトウェア開発・マーケティング業務に携わる。工学部卒（卒論AR実装)、農林水産省認定の６次産業での立ち上げ、D2Cブランドの立ち上げ、EC系SaaSの自社開発、フリーランスを経て、 Lisa Technologies(株)にジョイン",
-    avatarSrc: "/avatars/catnose.jpg",
+    avatarSrc: "/avatars/shintaro_nakagawa.jpg",
     sources: ["https://zenn.dev/sintaro/feed"],
     twitterUsername: "sintaro0221",
     githubUsername: "sintaro",
@@ -26,7 +26,7 @@ export const members: Member[] = [
     id: "akarikusumoto",
     name: "Akari Kusumoto",
     role: "Backend dev",
-    bio: "",
+    bio: "FDMのバックエンドを担当しています",
     avatarSrc: "/avatars/akari_kusumoto.jpg",
     sources: [],
     twitterUsername: "",
@@ -62,7 +62,7 @@ export const members: Member[] = [
     name: "Hajime Nakagawa",
     role: "Intern",
     bio:
-      "当ブログの立ち上げ担当。フロントエンドの経験が長いですが、オンボーディングシステムを作ったりCSチームの情報設計をお手伝いしたりと幅広くお手伝いさせてもらってます。PM志望23卒。",
+      "21年11月にジョインした当ブログの立ち上げ担当。フロントエンドの経験が長いですが、オンボーディングシステムを作ったりCSチームの情報設計をお手伝いしたりと幅広くやらせてもらってます。PM志望23卒。",
     avatarSrc: "/avatars/hajime_nakagawa.jpg",
     sources: ["https://zenn.dev/ikenohi/feed"],
     twitterUsername: "hajixxnaka",

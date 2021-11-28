@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://lisatech.blog</id>
-    <title>Lisa's Output Hub</title>
-    <updated>2021-11-17T03:03:11.262Z</updated>
+    <id>https://dev-blog.lisatech.jp/</id>
+    <title>Lisa Output Hub</title>
+    <updated>2021-11-28T03:44:52.425Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Lisa Technologies Inc</name>
         <email>lisatech.dev@gmail.com</email>
         <uri>https://lisatech.jp/</uri>
     </author>
-    <link rel="alternate" href="https://lisatech.blog"/>
-    <link rel="self" href="https://lisatech.blog/rss/atom.xml"/>
+    <link rel="alternate" href="https://dev-blog.lisatech.jp/"/>
+    <link rel="self" href="https://dev-blog.lisatech.jp//rss/atom.xml"/>
     <subtitle>Lisa Technologies株式会社のメンバーの投稿が集まります</subtitle>
     <rights>All rights reserved 2021, Lisa Technologies Inc</rights>
     <entry>
         <title type="html"><![CDATA[イージーな気分でダークモードを実装する]]></title>
-        <id>https://yutaaaaa.vercel.app/easy-darkmode</id>
-        <link href="https://yutaaaaa.vercel.app/easy-darkmode"/>
+        <id>https://yutaaaaa.dev/easy-darkmode</id>
+        <link href="https://yutaaaaa.dev/easy-darkmode"/>
         <updated>2021-09-03T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[## やること  最小限の構成だけでダークモードを実装します。ダークモードを実装する際は]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Day.jsあれこれ]]></title>
-        <id>https://yutaaaaa.vercel.app/dayjs-thisandthat</id>
-        <link href="https://yutaaaaa.vercel.app/dayjs-thisandthat"/>
+        <id>https://yutaaaaa.dev/dayjs-thisandthat</id>
+        <link href="https://yutaaaaa.dev/dayjs-thisandthat"/>
         <updated>2021-09-02T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[## Moment.js から Day.js へ  あるプロジェクトでもともと Moment.js を使用していたのですが、Moment.js がメンテナンスモードに入るということで置き換えを検討しました。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Next.jsブログ用のOGP画像をCloudinaryで動的に生成する]]></title>
-        <id>https://yutaaaaa.vercel.app/cloudinary-dynamic</id>
-        <link href="https://yutaaaaa.vercel.app/cloudinary-dynamic"/>
+        <id>https://yutaaaaa.dev/cloudinary-dynamic</id>
+        <link href="https://yutaaaaa.dev/cloudinary-dynamic"/>
         <updated>2021-09-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[## Cloudinary  [Cloudinary](https://cloudinary.com/) は画像や動画などのメディアを動的 URL を使用して変換・最適化・配信を簡単にできるサービスです。]]></summary>
     </entry>
@@ -92,64 +92,64 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[AmplifyでNext.jsをホスティングしてAccess Deniedになるエラーを解決する。]]></title>
-        <id>https://yutaaaaa.vercel.app/next-amplify-hosting</id>
-        <link href="https://yutaaaaa.vercel.app/next-amplify-hosting"/>
+        <id>https://yutaaaaa.dev/next-amplify-hosting</id>
+        <link href="https://yutaaaaa.dev/next-amplify-hosting"/>
         <updated>2020-12-10T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[## 背景  Amplify で Next.js の開発をしていて、 `amplify add hosting` でデプロイまで上手くいっているにも関わらず、存在しない URL に遷移した場合にカスタム 404 ページでなく、403 `Access Denied` に飛んでしまう事象が発生。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Chart.jsのチャート内に注釈を描写する]]></title>
-        <id>https://yutaaaaa.vercel.app/chartjs-annotation</id>
-        <link href="https://yutaaaaa.vercel.app/chartjs-annotation"/>
+        <id>https://yutaaaaa.dev/chartjs-annotation</id>
+        <link href="https://yutaaaaa.dev/chartjs-annotation"/>
         <updated>2020-10-31T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[## はじめに  業務で React と Chart.js を使用しているのですが、チャートの x 軸の日付でデータの比較をするにあたって、チャート内にラインを引くためにプラグインの `chartjs-plugin-annotation.js` を使用しました。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[React + Chart.jsでカスタムツールチップ]]></title>
-        <id>https://yutaaaaa.vercel.app/react-chart-tooltip</id>
-        <link href="https://yutaaaaa.vercel.app/react-chart-tooltip"/>
+        <id>https://yutaaaaa.dev/react-chart-tooltip</id>
+        <link href="https://yutaaaaa.dev/react-chart-tooltip"/>
         <updated>2020-10-30T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[## はじめに  React で Chart.js を使用するために `react-chartjs-2` をインストールします。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[lambdaトリガーでCognitoカスタムメッセージ]]></title>
-        <id>https://yutaaaaa.vercel.app/cognito-custom-message</id>
-        <link href="https://yutaaaaa.vercel.app/cognito-custom-message"/>
+        <id>https://yutaaaaa.dev/cognito-custom-message</id>
+        <link href="https://yutaaaaa.dev/cognito-custom-message"/>
         <updated>2020-10-29T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[## はじめに  Cognito を通して認証を行なった場合、登録したメールアドレス宛にメールを送信するようになっています。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[React + Amplify Auth(Cognito)での認証]]></title>
-        <id>https://yutaaaaa.vercel.app/amplify-authclass</id>
-        <link href="https://yutaaaaa.vercel.app/amplify-authclass"/>
+        <id>https://yutaaaaa.dev/amplify-authclass</id>
+        <link href="https://yutaaaaa.dev/amplify-authclass"/>
         <updated>2020-10-27T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[この記事は、`amplify auth` がインストール済みであることが前提となっています。  ## Aamplify について]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Next.jsでAMP対応]]></title>
-        <id>https://yutaaaaa.vercel.app/next-amp</id>
-        <link href="https://yutaaaaa.vercel.app/next-amp"/>
+        <id>https://yutaaaaa.dev/next-amp</id>
+        <link href="https://yutaaaaa.dev/next-amp"/>
         <updated>2020-09-30T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[## What's AMP ?  AMP は Accelerated Mobile Pages の略でウェブサイトを高速かつユーザーファーストにし、収益化するシンプルかつ堅牢なフォーマット。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[ニューモーフィズムとは]]></title>
-        <id>https://yutaaaaa.vercel.app/neomorphism</id>
-        <link href="https://yutaaaaa.vercel.app/neomorphism"/>
+        <id>https://yutaaaaa.dev/neomorphism</id>
+        <link href="https://yutaaaaa.dev/neomorphism"/>
         <updated>2020-09-27T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[## ニューモーフィズムとは  ニューモーフィズムは `フラットデザイン` と `スキューモフィズム` を組み合わせたデザインのことで、背景色・形状・シャドウを組み合わせて実現する、背景から浮かんでいたり・]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[ブログ内マークダウンの表現]]></title>
-        <id>https://yutaaaaa.vercel.app/markdown-express</id>
-        <link href="https://yutaaaaa.vercel.app/markdown-express"/>
+        <id>https://yutaaaaa.dev/markdown-express</id>
+        <link href="https://yutaaaaa.dev/markdown-express"/>
         <updated>2020-09-24T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[## はじめに  このブログは Next.js で構築されています。]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[ポートフォリオのこと]]></title>
-        <id>https://yutaaaaa.vercel.app/first-post</id>
-        <link href="https://yutaaaaa.vercel.app/first-post"/>
+        <id>https://yutaaaaa.dev/first-post</id>
+        <link href="https://yutaaaaa.dev/first-post"/>
         <updated>2020-09-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[## ポートフォリオについて  - Resume]]></summary>
     </entry>
