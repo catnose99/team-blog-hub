@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port=5000",
     "build": "run-s build:posts build:next",
     "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
     "build:next": "next build",
-    "start": "next start"
+    "start": "next start --port=5000"
   },
   "dependencies": {
     "dayjs": "^1.9.3",

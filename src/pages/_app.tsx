@@ -11,9 +11,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <link
-          rel="icon shortcut"
-          type="image/png"
-          href={`${config.siteRoot}/logo.png`}
+          rel="shortcut icon" 
+          href={`${config.siteRoot}/logo.svg`}
         />
         <link
           rel="stylesheet"
