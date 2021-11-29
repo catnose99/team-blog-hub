@@ -9,6 +9,7 @@
     "noImplicitAny": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
+    "incremental": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -18,7 +19,8 @@
     "baseUrl": ".",
     "paths": {
       "@*": ["./*"]
-    }
+    },
+    "incremental": true
   },
   "exclude": ["node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js"]
