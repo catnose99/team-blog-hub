@@ -2,6 +2,18 @@ import { Member } from '@src/types'
 
 export const members: Member[] = [
   {
+    id: 'kj',
+    name: '麻野耕司',
+    role: 'CEO',
+    bio: '',
+    avatarSrc: '/avatars/kj.jpg',
+    sources: ['https://note.com/kojiasano1103/rss'],
+    includeUrlRegex: '',
+    twitterUsername: 'asanokoji',
+    githubUsername: '',
+    websiteUrl: '',
+  },
+  {
     id: 'yoshiko',
     name: 'よしこ',
     role: 'Frontend',
