@@ -26,7 +26,7 @@
   font-size: 0.95rem;
   position: relative;
   &:hover:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     top: -1rem;

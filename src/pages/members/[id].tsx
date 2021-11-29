@@ -1,30 +1,18 @@
-import { NextPage, GetStaticProps, GetStaticPaths } from "next";
-import { members } from "@members";
-import { PostItem, Member } from "@src/types";
-import { PostList } from "@src/components/PostList";
-import { ContentWrapper } from "@src/components/ContentWrapper";
-import { PageSEO } from "@src/components/PageSEO";
-import {
-  getMemberById,
-  getMemberPostsById,
-  getMemberPath,
-} from "@src/utils/helper";
+import { NextPage, GetStaticProps, GetStaticPaths } from 'next'
+import { members } from '@members'
+import { PostItem, Member } from '@src/types'
+import { PostList } from '@src/components/PostList'
+import { ContentWrapper } from '@src/components/ContentWrapper'
+import { PageSEO } from '@src/components/PageSEO'
+import { getMemberById, getMemberPostsById, getMemberPath } from '@src/utils/helper'
 
 type Props = {
-  postItems: PostItem[];
-  member: Member;
-};
+  postItems: PostItem[]
+  member: Member
+}
 
 const Page: NextPage<Props> = (props) => {
-  const {
-    id,
-    name,
-    bio,
-    avatarSrc,
-    twitterUsername,
-    githubUsername,
-    websiteUrl,
-  } = props.member;
+  const { id, name, bio, avatarSrc, twitterUsername, githubUsername, websiteUrl } = props.member
 
   return (
     <>
@@ -45,10 +33,7 @@ const Page: NextPage<Props> = (props) => {
             <p className="member-header__bio">{bio}</p>
             <div className="member-header__links">
               {twitterUsername && (
-                <a
-                  href={`https://twitter.com/${twitterUsername}`}
-                  className="member-header__link"
-                >
+                <a href={`https://twitter.com/${twitterUsername}`} className="member-header__link">
                   <img
                     src="/icons/twitter.svg"
                     alt={`Twitterのユーザー@${twitterUsername}`}
@@ -58,10 +43,7 @@ const Page: NextPage<Props> = (props) => {
                 </a>
               )}
               {githubUsername && (
-                <a
-                  href={`https://github.com/${githubUsername}`}
-                  className="member-header__link"
-                >
+                <a href={`https://github.com/${githubUsername}`} className="member-header__link">
                   <img
                     src="/icons/github.svg"
                     alt={`GitHubのユーザー@${githubUsername}`}
@@ -72,12 +54,7 @@ const Page: NextPage<Props> = (props) => {
               )}
               {websiteUrl && (
                 <a href={websiteUrl} className="member-header__link">
-                  <img
-                    src="/icons/link.svg"
-                    alt={`ウェブサイトのリンク`}
-                    width={22}
-                    height={22}
-                  />
+                  <img src="/icons/link.svg" alt={`ウェブサイトのリンク`} width={22} height={22} />
                 </a>
               )}
             </div>
@@ -89,37 +66,37 @@ const Page: NextPage<Props> = (props) => {
         </ContentWrapper>
       </section>
     </>
-  );
-};
+  )
+}
 
 export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
-  const id = params?.id as string;
-  const member = getMemberById(id);
-  const postItems = getMemberPostsById(id);
+  const id = params?.id as string
+  const member = getMemberById(id)
+  const postItems = getMemberPostsById(id)
 
-  if (!member) throw "User not found";
+  if (!member) throw 'User not found'
 
   return {
     props: {
       member,
       postItems,
     },
-  };
-};
+  }
+}
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const memberNameList = members.map((member) => encodeURIComponent(member.id));
+  const memberNameList = members.map((member) => encodeURIComponent(member.id))
   const paths = memberNameList.map((id) => {
     return {
       params: {
         id,
       },
-    };
-  });
+    }
+  })
   return {
     paths,
     fallback: false,
-  };
-};
+  }
+}
 
-export default Page;
+export default Page
