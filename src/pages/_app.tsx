@@ -22,7 +22,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           rel="alternate"
           type="application/rss+xml"
           title="Lisa's Output Hub"
-          href={`${config.siteMeta.siteUrl}/feed`}
+          href={`${config.siteMeta.siteUrl}/rss/feed.xml`}
         />
       </Head>
       <SiteHeader />
