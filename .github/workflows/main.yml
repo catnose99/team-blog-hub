@@ -30,8 +30,11 @@ jobs:
       - name: Export Next.js app
         run: yarn export
 
+      - name: add nojekyll
+        run: touch ./out/.nojekyll
+
       - name: Copy CNAME
-        run: cp CNAME out/CNAME
+        run: cp CNAME ./out/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
