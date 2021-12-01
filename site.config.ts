@@ -13,6 +13,10 @@ export const config = {
   // HPはLisa Officialのmemberページからリンクしてあるので下記の2つを選択
   headerLinks: [
     {
+      title: "Company",
+      href: "https://lisatech.jp/",
+    },
+    {
       title: "Product",
       href: "https://fooddeliverymanager.com/",
     },
