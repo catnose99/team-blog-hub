@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { members } from "@members";
 import { getMemberPath } from "@src/utils/helper";
-import { url } from "@src/utils/url";
+// import { url } from "@src/utils/url";
 
 export const ScrollableMembers: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ export const ScrollableMembers: React.FC = () => {
           <a className="scrollable-member__link">
             <span className="scrollable-member__image">
               <img
-                src={url(member.avatarSrc)}
+                src={member.avatarSrc}
                 alt={member.name}
                 className="scrollable-member__img"
                 width={80}

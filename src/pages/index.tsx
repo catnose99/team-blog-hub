@@ -11,7 +11,7 @@ import {
   ContentWrapper,
   UndoWrapForScroll,
 } from "@src/components/ContentWrapper";
-import { url } from "@src/utils/url";
+// import { url } from "@src/utils/url";
 
 const Page: NextPage = () => {
   return (
@@ -34,7 +34,7 @@ const Page: NextPage = () => {
           <Link href="/rss/feed.xml">
             <a className="home-hero__feed-icon">
               <img
-                src={url("/icons/rss-fill.svg")}
+                src={"/icons/rss-fill.svg"}
                 alt="rss"
                 width={22}
                 height={22}

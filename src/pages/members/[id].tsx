@@ -9,7 +9,7 @@ import {
   getMemberPostsById,
   getMemberPath,
 } from "@src/utils/helper";
-import { url } from "@src/utils/url";
+// import { url } from "@src/utils/url";
 
 type Props = {
   postItems: PostItem[];
@@ -35,7 +35,7 @@ const Page: NextPage<Props> = (props) => {
           <header className="member-header">
             <div className="member-header__avatar">
               <img
-                src={url(avatarSrc)}
+                src={avatarSrc}
                 alt={name}
                 width={100}
                 height={100}
@@ -52,7 +52,7 @@ const Page: NextPage<Props> = (props) => {
                   target="_blank"
                 >
                   <img
-                    src={url("/icons/twitter.svg")}
+                    src={"/icons/twitter.svg"}
                     alt={`Twitterのユーザー@${twitterUsername}`}
                     width={22}
                     height={22}
@@ -66,7 +66,7 @@ const Page: NextPage<Props> = (props) => {
                   target="_blank"
                 >
                   <img
-                    src={url("/icons/github.svg")}
+                    src={"/icons/github.svg"}
                     alt={`GitHubのユーザー@${githubUsername}`}
                     width={22}
                     height={22}
@@ -80,7 +80,7 @@ const Page: NextPage<Props> = (props) => {
                   target="_blank"
                 >
                   <img
-                    src={url("/icons/link.svg")}
+                    src={"/icons/link.svg"}
                     alt={`ウェブサイトのリンク`}
                     width={22}
                     height={22}

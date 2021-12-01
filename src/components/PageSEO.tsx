@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 import { config } from "@site.config";
-import { url } from "@src/utils/url";
+// import { url } from "@src/utils/url";
 
 // types
 type Props = {
@@ -24,7 +24,7 @@ export const PageSEO: React.FC<Props> = (props) => {
   } = props;
 
   const pageUrl = `${config.siteRoot}${path || ""}`;
-  const defaultOgImgUrl = url(`${config.siteRoot}/og.png`);
+  const defaultOgImgUrl = `${config.siteRoot}/og.png`;
 
   return (
     <Head>
