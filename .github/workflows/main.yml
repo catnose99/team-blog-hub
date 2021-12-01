@@ -2,9 +2,9 @@ name: Deploy Next.js app
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   schedule:
-    - cron: '0 6 * * *' # 15:00 JST every day
+    - cron: "0 6 * * *" # 15:00 JST every day
 
 jobs:
   build:
@@ -24,11 +24,14 @@ jobs:
 
       - name: Build Next.js app
         run: yarn build
-        env:
-          URL_PREFIX: lisa-output-hub
+        # env:
+        #   URL_PREFIX: lisa-output-hub
 
       - name: Export Next.js app
         run: yarn export
+
+      - name: Copy CNAME
+        run: cp CNAME out/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
