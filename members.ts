@@ -107,4 +107,16 @@ export const members: Member[] = [
     githubUsername: "",
     websiteUrl: "https://mamorukijima.com/",
   },
+  {
+    id: "nannichi",
+    name: "nannichi",
+    role: "Business",
+    bio: "",
+    avatarSrc: "/avatars/nannichi.jpg",
+    sources: ["https://note.com/masatoshi_228/rss"],
+    includeUrlRegex: "",
+    twitterUsername: "",
+    githubUsername: "",
+    websiteUrl: "",
+  },
 ];
