@@ -10,7 +10,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href={`${config.siteRoot}/logo.svg`} />
+        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
