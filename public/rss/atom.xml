@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dev-blog.lisatech.jp/</id>
     <title>Lisa Output Hub</title>
-    <updated>2021-12-01T10:38:41.384Z</updated>
+    <updated>2021-12-15T06:55:09.558Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Lisa Technologies Inc</name>
@@ -13,6 +13,34 @@
     <link rel="self" href="https://dev-blog.lisatech.jp//rss/atom.xml"/>
     <subtitle>Lisa Technologies株式会社のメンバーの投稿が集まります</subtitle>
     <rights>All rights reserved 2021, Lisa Technologies Inc</rights>
+    <entry>
+        <title type="html"><![CDATA[「タスク前宣言」がやりたい！]]></title>
+        <id>https://zenn.dev/youuchiharu/articles/1d5faee21ef6ff</id>
+        <link href="https://zenn.dev/youuchiharu/articles/1d5faee21ef6ff"/>
+        <updated>2021-12-14T14:12:58.000Z</updated>
+        <summary type="html"><![CDATA[モヤモヤエピソード先日、インターン生の僕はチームリーダーと初めて 1on1 をした。その際、最近出したドキュメント「採用基盤（仮）」についてのフィードバック（FB）をもらった。このドキュメントは、いのうえくんのインプットがそのまま書いてあるね。メンバーと共有するドキュメントは、読んだら誰でも行動に移せるような指示書でなくてはいけないよ。次、がんばろうね。しっかりドキュメントを見てもらえたことへの嬉しさ反面、ちょっとモヤモヤが残った。そこで、同じインターン生であり、高校の文化祭で一緒に漫才をした相方にその夜相談してみた...「今回のタスクはエンジニアの採用基盤を作ることだ...]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GatsbyでGoogle Analytics 4が動かなかった]]></title>
+        <id>https://zenn.dev/ikenohi/articles/4a05337af8f2ad</id>
+        <link href="https://zenn.dev/ikenohi/articles/4a05337af8f2ad"/>
+        <updated>2021-12-13T13:40:50.000Z</updated>
+        <summary type="html"><![CDATA[初学者の学習メモです。インターン先のGatsby製LPでGoogle Tag Managerを使っていたが、GA4でのデータ収集がうまくできていなかったので修正した。 原因と対処法古いGatsbyプラグインを使っていた→ gatsby-plugin-google-analyticsではなく、gatsby-plugin-gtagを使おうGA3からGA4に移行するに当たり、Tracking IDの変更をしなくてはいけなかった→ 'UA-...'ではなく'G-...'を設定しよう 調査過程Chromeの拡張機能でエラー内容を調査してみる。https://chrom...]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[隣接するスキルを学ぶと「後ろ」が楽になる]]></title>
+        <id>https://zenn.dev/ikenohi/articles/78964bb348cdfa</id>
+        <link href="https://zenn.dev/ikenohi/articles/78964bb348cdfa"/>
+        <updated>2021-12-12T08:10:01.000Z</updated>
+        <summary type="html"><![CDATA[ポエムです。エンジニアリングに興味があるデザイナー、デザインに興味があるエンジニア Advent Calendar 2021に参加しています。 結論デザインとプログラミングを両方学ぶと、変化があるのは主にデザイン側で、生産性が上がるのは主にプログラミング側なぜなら、デザイン→プログラミングという流れだから とある日のサークルでの出来事サークルで新しくInstagramのアカウントを創設するということで、1年生の子がアイコンに使う画像の案を3つ持ってきてくれました。彼女が提出してくれたのは、大きな正方形の画像3枚でした。どれも上手にデザインされてはいるものの、Ins...]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Array.prototype.reduce()とかのprototypeってなに？]]></title>
+        <id>https://zenn.dev/ikenohi/articles/b714e47b174ed9</id>
+        <link href="https://zenn.dev/ikenohi/articles/b714e47b174ed9"/>
+        <updated>2021-12-10T10:23:38.000Z</updated>
+        <summary type="html"><![CDATA[初学者の学習メモです。 今まで何回もこれをやってきました（やめ太郎さんリスペクト）ワイ「あー、JavaScriptの配列のreduceメソッドの使い方忘れた」ワイ「脳みその容量がreduceされとるがな」ワイ「"JS array.reduce"で検索っと」ワイ「お、出てきた出てきた。天下のMDN様や」https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceワイ「ん...?」ワイ「Array.prototype.reduce()...?」ワイ...]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[開発メンバー4人のスタートアップですが、開発広報始めます]]></title>
         <id>https://zenn.dev/lisatech/articles/launch-devrel</id>
