@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dev-blog.lisatech.jp/</id>
     <title>Lisa Output Hub</title>
-    <updated>2021-12-01T01:59:43.561Z</updated>
+    <updated>2021-12-01T10:38:41.384Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Lisa Technologies Inc</name>
@@ -13,6 +13,13 @@
     <link rel="self" href="https://dev-blog.lisatech.jp//rss/atom.xml"/>
     <subtitle>Lisa Technologies株式会社のメンバーの投稿が集まります</subtitle>
     <rights>All rights reserved 2021, Lisa Technologies Inc</rights>
+    <entry>
+        <title type="html"><![CDATA[開発メンバー4人のスタートアップですが、開発広報始めます]]></title>
+        <id>https://zenn.dev/lisatech/articles/launch-devrel</id>
+        <link href="https://zenn.dev/lisatech/articles/launch-devrel"/>
+        <updated>2021-12-01T03:24:20.000Z</updated>
+        <summary type="html"><![CDATA[はじめまして！Lisa Technologies 株式会社エンジニアインターンのなかがわはじめと申します！この度、弊社ではエンジニア組織拡大のための開発広報の施策としてテックブログを始めることにいたしました！🎉https://dev-blog.lisatech.jp本稿ではテックブログのローンチを記念して、ブログを開始した経緯や少人数でブログを継続するための工夫についてお話できたらと思います！ 1.15 億円の資金調達！開発チームの拡大が急務に飲食店が運用するフードデリバリーの最適化を行うためのプロダクト「フードデリバリーマネージャー（FDM）」を開発する弊社では、2021 ...]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[イージーな気分でダークモードを実装する]]></title>
         <id>https://yutaaaaa.dev/easy-darkmode</id>

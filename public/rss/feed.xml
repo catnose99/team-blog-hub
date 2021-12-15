@@ -4,11 +4,18 @@
         <title>Lisa Output Hub</title>
         <link>https://dev-blog.lisatech.jp/</link>
         <description>Lisa Technologies株式会社のメンバーの投稿が集まります</description>
-        <lastBuildDate>Wed, 01 Dec 2021 01:59:43 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Dec 2021 10:38:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>All rights reserved 2021, Lisa Technologies Inc</copyright>
+        <item>
+            <title><![CDATA[開発メンバー4人のスタートアップですが、開発広報始めます]]></title>
+            <link>https://zenn.dev/lisatech/articles/launch-devrel</link>
+            <guid>https://zenn.dev/lisatech/articles/launch-devrel</guid>
+            <pubDate>Wed, 01 Dec 2021 03:24:20 GMT</pubDate>
+            <description><![CDATA[はじめまして！Lisa Technologies 株式会社エンジニアインターンのなかがわはじめと申します！この度、弊社ではエンジニア組織拡大のための開発広報の施策としてテックブログを始めることにいたしました！🎉https://dev-blog.lisatech.jp本稿ではテックブログのローンチを記念して、ブログを開始した経緯や少人数でブログを継続するための工夫についてお話できたらと思います！ 1.15 億円の資金調達！開発チームの拡大が急務に飲食店が運用するフードデリバリーの最適化を行うためのプロダクト「フードデリバリーマネージャー（FDM）」を開発する弊社では、2021 ...]]></description>
+        </item>
         <item>
             <title><![CDATA[イージーな気分でダークモードを実装する]]></title>
             <link>https://yutaaaaa.dev/easy-darkmode</link>

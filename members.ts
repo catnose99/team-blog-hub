@@ -89,7 +89,7 @@ export const members: Member[] = [
     bio:
       "2021年11月にフルリモートインターン生としてLisa Technologies（株）にジョイン。北の大地からバリューを出すべく、日々奔走する。休日は疲れた心をギターで癒やす。",
     avatarSrc: "/avatars/kosuke_inoue.png",
-    sources: ["https://zenn.dev/go116/feed"],
+    sources: ["https://zenn.dev/youuchiharu/feed"],
     twitterUsername: "youuchiharu",
     githubUsername: "Kosuke2000",
     websiteUrl: "https://hubcnavi.net/",
