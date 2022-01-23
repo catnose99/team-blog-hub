@@ -35,4 +35,6 @@ yarn-error.log*
 
 # generated data
 /.contents
+build/
 .firebase
+
