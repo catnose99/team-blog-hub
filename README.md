@@ -32,3 +32,4 @@ VercelやNetlifyにデプロイすることを推奨します。`npm run build`�
 
 ## Licence
 MIT
+
