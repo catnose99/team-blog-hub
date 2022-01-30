@@ -10,16 +10,17 @@ export const config = {
       : "http://localhost:3000",
   headerLinks: [
     {
-      title: "About",
-      href: "/about",
+      title: "トップ",
+      href: "/"
+
     },
     {
-      title: "Company",
-      href: "",
+      title: "会社情報",
+      href: "https://corp.sweeep.ai",
     },
     {
-      title: "GitHub",
-      href: "",
+      title: "採用情報",
+      href: "https://corp.sweeep.ai/recruit",
     },
   ],
 };
