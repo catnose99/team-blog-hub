@@ -1,0 +1,16 @@
+steps:
+  - id: 'Install npm packages'
+    name: 'node:15'
+    args: ['npm', 'install']
+  - id: 'Build App'
+    name: 'node:15'
+    args: ['npm', 'run', 'build']
+  - id: "Set Project ID"
+    name: gcr.io/cloud-builders/gcloud
+    args:
+      - '-c'
+      - |
+        sed -i -e "s/_PROJECT_ID/$PROJECT_ID/g" .firebaserc
+  - id: "Deploy to Firebase"
+    name: 'gcr.io/$PROJECT_ID/firebase'
+    args: ['deploy', "--only", "hosting"]

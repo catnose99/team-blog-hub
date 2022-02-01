@@ -4,14 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "run-s build:posts build:next",
+    "build": "run-s build:posts build:next && next export --outdir build",
     "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
     "build:next": "next build",
     "start": "next start"
   },
   "dependencies": {
     "dayjs": "^1.9.3",
-    "next": "9.5.5",
+    "next": "^10.2.3",
     "react": "16.14.0",
     "react-dom": "16.14.0"
   },
