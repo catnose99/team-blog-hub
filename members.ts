@@ -1,5 +1,7 @@
 import { Member } from "@src/types";
 
+
+
 export const members: Member[] = [
   /*{
     id: "",
@@ -18,13 +20,19 @@ export const members: Member[] = [
     websiteUrl: "",
   },
   */
-  {
-    id: "taka",
-    name: "Taka Wakiyama",
-    role: "Development",
-    bio: "開発屋",
-    avatarSrc: "/avatars/F8117FDF.png",
-    sources: ["https://zenn.dev/topics/python/feed"],
-    githubUsername: "TakaWakiyama",
-  },
 ];
+
+for (const _ of new Array(20)) {
+  const rand = Math.floor(100000 * Math.random())
+  const me: Member = {
+      id: `taka`,
+      name: "Taka Wakiyama",
+      role: "Development",
+      bio: "開発屋",
+      avatarSrc: "/avatars/F8117FDF.png",
+      sources: [],
+      githubUsername: "TakaWakiyama",
+  }
+  members.push(me)
+}
+members[0].sources?.push("https://github.blog/category/engineering/feed/")

@@ -6,6 +6,8 @@ import { SiteFooter } from "@src/components/SiteFooter";
 
 import "@src/styles/globals.scss";
 
+import 'tailwindcss/tailwind.css';
+
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
