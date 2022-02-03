@@ -3,36 +3,28 @@ import { Member } from "@src/types";
 
 
 export const members: Member[] = [
-  /*{
-    id: "",
-    name: "",
-    role: "",
-    bio:
-      "",
-    avatarSrc: "",
+  {
+    id: `taka`,
+    name: "Taka Wakiyama",
+    role: "Development",
+    bio: "開発屋",
+    avatarSrc: "/avatars/F8117FDF.png",
+    sources: [],
+    githubUsername: "TakaWakiyama",
+  },
+  {
+    id: "sweeep",
+    name: "sweeep株式会社(last)",
+    role: "owner",
+    bio: "公式",
+    avatarSrc: "/logo_mark_square_radius.png",
     sources: [
-      "",
-      "",
+      "https://note.com/sweeep_ai/rss",
     ],
     includeUrlRegex: "",
     twitterUsername: "",
     githubUsername: "",
     websiteUrl: "",
   },
-  */
 ];
 
-for (const _ of new Array(20)) {
-  const rand = Math.floor(100000 * Math.random())
-  const me: Member = {
-      id: `taka`,
-      name: "Taka Wakiyama",
-      role: "Development",
-      bio: "開発屋",
-      avatarSrc: "/avatars/F8117FDF.png",
-      sources: [],
-      githubUsername: "TakaWakiyama",
-  }
-  members.push(me)
-}
-members[0].sources?.push("https://github.blog/category/engineering/feed/")

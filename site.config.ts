@@ -2,7 +2,9 @@ export const config = {
   siteMeta: {
     title: "sweeep Blog Hub",
     teamName: "sweeep Inc.",
-    description: "RSS based blog starter kit for teams.",
+    description: `請求書の受取・仕訳・振込を自動化するプロダクト開発を行なっている
+    sweeep株式会社開発チームの技術記事をまとめたサイトです
+    `,
   },
   siteRoot:
     process.env.NODE_ENV === "production"
