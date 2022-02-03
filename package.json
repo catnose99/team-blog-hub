@@ -7,7 +7,9 @@
     "build": "run-s build:posts build:next && next export --outdir build",
     "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
     "build:next": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "firebase deploy --only hosting"
+
   },
   "dependencies": {
     "dayjs": "^1.9.3",
