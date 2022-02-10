@@ -14,7 +14,7 @@ const Page: NextPage = () => {
             <p>
               このサイトはチームのためのブログスターター
               <a href="https://github.com/catnose99/team-blog-hub">
-                Team Blog Hub
+                airCloset's Engineer Blog
               </a>
               のデモです。ブログのRSSのURLを登録することで、チームメンバーの投稿を一覧にまとめて表示します。
             </p>

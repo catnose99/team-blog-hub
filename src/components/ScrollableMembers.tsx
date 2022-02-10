@@ -22,7 +22,7 @@ export const ScrollableMembers: React.FC = () => {
               />
             </span>
             <span className="scrollable-member__name">{member.name}</span>
-            <span className="scrollable-member__role">{member.role}</span>
+            <span className="scrollable-member__role">{member.fullName}</span>
           </a>
         </Link>
       ))}

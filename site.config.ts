@@ -1,7 +1,7 @@
 export const config = {
   siteMeta: {
-    title: "Team Blog Hub",
-    teamName: "catnose Inc.",
+    title: "airCloset Engineer's Blog",
+    teamName: "airCloset Inc.",
     description: "RSS based blog starter kit for teams.",
   },
   siteRoot:
