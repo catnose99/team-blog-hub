@@ -26,5 +26,16 @@ export const members: Member[] = [
     githubUsername: "",
     websiteUrl: "",
   },
+  {
+    id: `hirac`,
+    name: "Kimihiro Hirashita",
+    role: "CTO",
+    bio: "雑草系CTO",
+    avatarSrc: "/avatars/hirac.jpg",
+    sources: [
+       "https://zenn.dev/hirac/feed",
+    ],
+    githubUsername: "hirac1220",
+  },
 ];
 
