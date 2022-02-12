@@ -13,6 +13,26 @@ export const members: Member[] = [
     githubUsername: "TakaWakiyama",
   },
   {
+    id: `caory`,
+    name: "Caory Watanabe",
+    role: "Tech CS",
+    bio: `
+    【LOVE】猫と酒と人と愛oT
+    【JOB】「働くを楽しく」をMissionに掲げるsweeep株式会社のテクニカルサポート担当。
+    仕組み化、効率化、自動化だいすき♡
+    `,
+    avatarSrc: "/avatars/caory.jpg",
+    sources: [],
+  },
+  {
+    id: "takayuki",
+    name: "Takayuki.T#",
+    role: "CS",
+    bio: `百貨店社員歴やIT企業CS歴が長い、ただのおぢさんです。`,
+    avatarSrc: "/avatars/pnfelpimqre.webp",
+    sources: [],
+  },
+  {
     id: "sweeep",
     name: "sweeep株式会社(last)",
     role: "owner",
