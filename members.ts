@@ -58,6 +58,15 @@ export const members: Member[] = [
     githubUsername: "hirac1220",
   },
   {
+    id: `yoshikawa`,
+    name: "Tomoya Yoshikawa",
+    role: "Engineer",
+    bio: `頑張らないために頑張る.`,
+    avatarSrc: "/avatars/yoshikawat64m.jpg",
+    sources: [],
+    githubUsername: "yoshikawat64m",
+  },
+  {
     id: `saki_imafuku`,
     name: "Saki Imafuku",
     role: "Development",
@@ -66,6 +75,6 @@ export const members: Member[] = [
     sources: [
       "https://zenn.dev/saki/feed",
     ],
-    githubUsername: "ImafukuSaki",
-  },
+    githubUsername: "ImafukuSaki",  
+  }
 ];
