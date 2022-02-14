@@ -4,6 +4,26 @@ import { Member } from "@src/types";
 
 export const members: Member[] = [
   {
+    id: `hirac`,
+    name: "Kimihiro Hirashita",
+    role: "CTO",
+    bio: "雑草系CTO",
+    avatarSrc: "/avatars/hirac.jpg",
+    sources: [
+       "https://zenn.dev/hirac/feed",
+    ],
+    githubUsername: "hirac1220",
+  },
+  {
+    id: `yoshikawa`,
+    name: "Tomoya Yoshikawa",
+    role: "Engineer",
+    bio: `頑張らないために頑張る.`,
+    avatarSrc: "/avatars/yoshikawat64m.jpg",
+    sources: [],
+    githubUsername: "yoshikawat64m",
+  },
+  {
     id: `taka`,
     name: "Taka Wakiyama",
     role: "Development",
@@ -11,6 +31,17 @@ export const members: Member[] = [
     avatarSrc: "/avatars/F8117FDF.png",
     sources: [],
     githubUsername: "TakaWakiyama",
+  },
+  {
+    id: `saki_imafuku`,
+    name: "Saki Imafuku",
+    role: "Development",
+    bio: "元経理のエンジニア",
+    avatarSrc: "/avatars/imafuku.jpg",
+    sources: [
+      "https://zenn.dev/saki/feed",
+    ],
+    githubUsername: "ImafukuSaki",
   },
   {
     id: `caory`,
@@ -33,6 +64,18 @@ export const members: Member[] = [
     sources: [],
   },
   {
+    id: `pechefamille`,
+    name: "Hisako Isaka",
+    role: "モバイルアプリリーダー",
+    bio: "フリーランスでsweeepのモバイルアプリリーダーを担当しています",
+    avatarSrc: "/avatars/pechefamille.jpeg",
+    sources: [
+      "https://zenn.dev/pechefamille/feed",
+      "https://qiita.com/HisakoIsaka/feed",
+    ],
+    githubUsername: "pechefamille",
+  },
+  {
     id: "sweeep",
     name: "sweeep",
     role: "company account",
@@ -45,48 +88,5 @@ export const members: Member[] = [
     twitterUsername: "",
     githubUsername: "",
     websiteUrl: "",
-  },
-  {
-    id: `hirac`,
-    name: "Kimihiro Hirashita",
-    role: "CTO",
-    bio: "雑草系CTO",
-    avatarSrc: "/avatars/hirac.jpg",
-    sources: [
-       "https://zenn.dev/hirac/feed",
-    ],
-    githubUsername: "hirac1220",
-  },
-  {
-    id: `yoshikawa`,
-    name: "Tomoya Yoshikawa",
-    role: "Engineer",
-    bio: `頑張らないために頑張る.`,
-    avatarSrc: "/avatars/yoshikawat64m.jpg",
-    sources: [],
-    githubUsername: "yoshikawat64m",
-  },
-  {
-    id: `saki_imafuku`,
-    name: "Saki Imafuku",
-    role: "Development",
-    bio: "元経理のエンジニア",
-    avatarSrc: "/avatars/imafuku.jpg",
-    sources: [
-      "https://zenn.dev/saki/feed",
-    ],
-    githubUsername: "ImafukuSaki",
-  },
-  {
-    id: `pechefamille`,
-    name: "Hisako Isaka",
-    role: "モバイルアプリリーダー",
-    bio: "フリーランスでsweeepのモバイルアプリリーダーを担当しています",
-    avatarSrc: "/avatars/pechefamille.jpeg",
-    sources: [
-      "https://zenn.dev/pechefamille/feed",
-      "https://qiita.com/HisakoIsaka/feed",
-    ],
-    githubUsername: "pechefamille",
   },
 ];

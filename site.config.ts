@@ -8,7 +8,7 @@ export const config = {
   },
   siteRoot:
     process.env.NODE_ENV === "production"
-      ? "https://sweeep-blog-hub.web.app/"
+      ? "https://tech-blog.sweeep.ai"
       : "http://localhost:3000",
   headerLinks: [
     {
