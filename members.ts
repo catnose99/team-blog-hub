@@ -7,7 +7,7 @@ export const members: Member[] = [
     id: `taka`,
     name: "Taka Wakiyama",
     role: "Development",
-    bio: "開発屋",
+    bio: "サーバーサイドに寄りたいエンジニア",
     avatarSrc: "/avatars/F8117FDF.png",
     sources: [],
     githubUsername: "TakaWakiyama",
@@ -34,9 +34,9 @@ export const members: Member[] = [
   },
   {
     id: "sweeep",
-    name: "sweeep株式会社(last)",
-    role: "owner",
-    bio: "公式",
+    name: "sweeep",
+    role: "company account",
+    bio: "会社の技術投稿をします！",
     avatarSrc: "/logo_mark_square_radius.png",
     sources: [
       "https://note.com/sweeep_ai/rss",
