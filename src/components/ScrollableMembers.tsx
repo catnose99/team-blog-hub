@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { members } from "@members";
-import { getMemberPath } from "@src/utils/helper";
+import { getMemberPath, getSortedMemberAtRandom  } from "@src/utils/helper";
 
 export const ScrollableMembers: React.FC = () => {
   return (
     <div className="scrollable-members">
-      {members.map((member, i) => (
+      {getSortedMemberAtRandom(members).map((member, i) => (
         <Link
           key={`scrollable-member-${i}`}
           href={getMemberPath(member.id)}

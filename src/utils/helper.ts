@@ -1,4 +1,4 @@
-import { PostItem } from "@src/types";
+import { Member, PostItem } from "@src/types";
 import { members } from "@members";
 import posts from "@.contents/posts.json";
 
@@ -22,4 +22,8 @@ export function getFaviconSrcFromHostname(hostname: string) {
 }
 export function getMemberPath(id: string) {
   return `/members/${encodeURIComponent(id)}`;
+}
+
+export function getSortedMemberAtRandom(members: Member[]): Member[] {
+  return JSON.parse(JSON.stringify(members)).sort(() => Math.random() - 0.5) as Member[]
 }
