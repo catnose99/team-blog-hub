@@ -1,5 +1,7 @@
 # Team Blog Hub
 
+Forked by https://github.com/catnose99/team-blog-hub
+
 ![Demo](https://user-images.githubusercontent.com/34590683/96832331-8c289400-1479-11eb-9466-f24d30860a24.png)
 
 企業/チームのためのブログ・スターターです。Forkしてご自由にお使いください。
@@ -11,13 +13,15 @@
 [チーム個々人のテックブログをRSSで集約するサイトを作った →](https://zenn.dev/catnose99/articles/cb72a73368a547756862)
 
 ## Demo
+
 https://team-blog-hub.vercel.app
 
 ## Development
+
 ```bash
-$ yarn install
-$ yarn build
-$ yarn dev
+$npm install
+$npm run build
+$npm run dev
 ```
 
 - サイトの基本設定は`site.config.ts`で行います。
@@ -28,8 +32,13 @@ $ yarn dev
 その他、ご自由にコードを書き換えてください。
 
 ## Deployment
-VercelやNetlifyにデプロイすることを推奨します。`npm run build`（or `yarn build`）を実行することで、RSSからの投稿データの取得とサイトのビルドが行われます。1日に1回などの頻度で自動デプロイするのが良いかもしれません。
+
+Firebase Hosting を利用しています。
+
+```bash
+$npm run build && npm run deploy
+```
 
 ## Licence
-MIT
 
+MIT
