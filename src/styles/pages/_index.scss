@@ -5,6 +5,8 @@
   font-size: 3.1rem;
   line-height: 1.4;
   color: var(--color-base-text-lighter);
+  text-shadow: 1px 1px black;
+  font-weight: 600;
   @include mq(xs) {
     font-size: 2.6rem;
   }

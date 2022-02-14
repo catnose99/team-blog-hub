@@ -75,6 +75,6 @@ export const members: Member[] = [
     sources: [
       "https://zenn.dev/saki/feed",
     ],
-    githubUsername: "ImafukuSaki",  
+    githubUsername: "ImafukuSaki",
   }
 ];
