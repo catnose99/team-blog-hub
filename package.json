@@ -9,7 +9,6 @@
     "build:next": "next build",
     "start": "next start",
     "deploy": "firebase deploy --only hosting"
-
   },
   "dependencies": {
     "dayjs": "^1.9.3",

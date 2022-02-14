@@ -76,5 +76,17 @@ export const members: Member[] = [
       "https://zenn.dev/saki/feed",
     ],
     githubUsername: "ImafukuSaki",
-  }
+  },
+  {
+    id: `pechefamille`,
+    name: "Hisako Isaka",
+    role: "モバイルアプリリーダー",
+    bio: "フリーランスでsweeepのモバイルアプリリーダーを担当しています",
+    avatarSrc: "/avatars/pechefamille.jpeg",
+    sources: [
+      "https://zenn.dev/pechefamille/feed",
+      "https://qiita.com/HisakoIsaka/feed",
+    ],
+    githubUsername: "pechefamille",
+  },
 ];
