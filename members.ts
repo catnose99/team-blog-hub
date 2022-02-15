@@ -76,6 +76,15 @@ export const members: Member[] = [
     githubUsername: "pechefamille",
   },
   {
+    id: `yusekita`,
+    name: "Yu Sekita",
+    role: "Development",
+    bio: "sweeep株式会社 BEエンジニア",
+    avatarSrc: "/avatars/yusekita.png",
+    sources: ["https://zenn.dev/yusekita/feed"],
+    githubUsername: "yu-sekita",
+  },
+  {
     id: "sweeep",
     name: "sweeep",
     role: "company account",
