@@ -1,18 +1,22 @@
 name: deploy website
 on:
-  # 一応動確のために手動で GitHub Actions を実行可能にする
-  # その際の引数として checkout 時の ref を渡している
-  # default 部分はリポジトリに設定されているデフォルトブランチを指定する
+  # 画面から手動実行
   workflow_dispatch:
     inputs:
       ref:
         description: branch|tag|SHA to checkout
         default: 'master'
         required: true
-  # 毎日日本時間の 11時 に GitHub Actions が実行される (cron の時刻は UST)
-  # 実行の際に参照されるブランチは上記の default で指定したものが使用される
+  # 定期実行
   schedule:
     - cron:  '0 2 * * *'
+  # プルリクごとに実行
+  pull_request_target:
+  # masterマージ時に実行
+  push:
+    branches:
+      - master
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -23,13 +27,24 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '15'
-      # 投稿内容を更新するために npm run build:posts を走らせる
       - name: Recreate all posts
         shell: bash
         run: |
           npm install
           npm run build:posts
       - uses: amondnet/vercel-action@v20
+      - uses: ./
+        id: now-deployment-staging
+        if: github.event_name == 'pull_request_target'
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.TEAM_ID}}
+          vercel-project-id: ${{ secrets.PROJECT_ID}}
+          scope: hitto
+          working-directory: ./
+      - uses: ./
+        id: now-deployment-production
+        if: github.event_name == 'push'
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.TEAM_ID}}
