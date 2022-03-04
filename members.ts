@@ -14,4 +14,16 @@ export const members: Member[] = [
     githubUsername: "nwiizo",
     websiteUrl: "https://nwiizo.github.io/",
   },
+  {
+    id: "yteraoka",
+    name: "yteraoka",
+    role: "SRE",
+    bio: "ojisan",
+    avatarSrc: "/avatars/naoko.jpg",
+    sources: ["https://blog.1q77.com/feed/","https://qiita.com/yteraoka/feed"],
+    includeUrlRegex: "",
+    twitterUsername: "yteraoka",
+    githubUsername: "yteraoka",
+    websiteUrl: "https://blog.1q77.com/",
+  },
 ];
