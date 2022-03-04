@@ -1,4 +1,4 @@
-# Team Blog Hub
+# 3-shake Engineers' Blogs
 
 ![Demo](https://user-images.githubusercontent.com/34590683/96832331-8c289400-1479-11eb-9466-f24d30860a24.png)
 
