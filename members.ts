@@ -12,6 +12,6 @@ export const members: Member[] = [
     includeUrlRegex: "syu-m-5151.hatenablog.com",
     twitterUsername: "nwiizo",
     githubUsername: "nwiizo",
-    websiteUrl: "https://nwiizo99.com",
+    websiteUrl: "https://nwiizo.github.io/",
   },
 ];
