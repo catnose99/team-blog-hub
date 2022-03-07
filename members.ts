@@ -26,4 +26,16 @@ export const members: Member[] = [
     githubUsername: "yteraoka",
     websiteUrl: "https://blog.1q77.com/",
   },
+  {
+    id: "tozastation",
+    name: "tozastation",
+    role: "SRE",
+    bio: "tarako_chan",
+    avatarSrc: "/avatars/tozastation.jpg",
+    sources: ["https://qiita.com/tozastation","https://www.wantedly.com/id/tozastation"],
+    includeUrlRegex: "",
+    twitterUsername: "tozastation",
+    githubUsername: "tozastation",
+    websiteUrl: "https://github.com/tozastation",
+  },
 ];
