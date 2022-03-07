@@ -2,7 +2,7 @@ name: Deploy Next.js app
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   schedule:
     - cron: '28 18 * * *' # 3:28 AM JST every day
   workflow_dispatch:
