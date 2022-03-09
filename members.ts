@@ -49,4 +49,16 @@ export const members: Member[] = [
     githubUsername: "nwiizo",
     websiteUrl: "https://nwiizo.github.io/",
   },
+  {
+    id: "tez",
+    name: "Takuya Tezuka",
+    role: "JB",
+    bio: "tez",
+    avatarSrc: "/avatars/tezuka.jpg",
+    sources: ["https://qiita.com/TT_Private/feed"],
+    includeUrlRegex: "qiita.com/TT_Private",
+    twitterUsername: "tt0603",
+    githubUsername: "taku-tez",
+    websiteUrl: "https://www.wantedly.com/id/takuya_tezuka",
+  },
 ];
