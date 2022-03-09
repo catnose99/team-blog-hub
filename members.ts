@@ -61,4 +61,4 @@ export const members: Member[] = [
     githubUsername: "skikkh",
     websiteUrl: "",
   },
-];
+].sort((a, b) => (a.id < b.id ? -1 : 1));
