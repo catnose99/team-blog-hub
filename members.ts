@@ -43,7 +43,7 @@ export const members: Member[] = [
     role: "SRE",
     bio: "mizumoto",
     avatarSrc: "/avatars/kyohmizu.png",
-    sources: ["https://kyohmizu.hatenablog.com/feed/","https://qiita.com/kyohmizu/feed"],
+    sources: ["https://kyohmizu.hatenablog.com/feed","https://qiita.com/kyohmizu/feed"],
     includeUrlRegex: "",
     twitterUsername: "kyohmizu",
     githubUsername: "kyohmizu",
