@@ -56,7 +56,7 @@ export const members: Member[] = [
     bio: "skikkh",
     avatarSrc: "/avatars/skikkh.jpeg",
     sources: ["https://qiita.com/skikkh/feed"],
-    includeUrlRegex: "syu-m-5151.hatenablog.com",
+    includeUrlRegex: "",
     twitterUsername: "skikkh",
     githubUsername: "skikkh",
     websiteUrl: "",
