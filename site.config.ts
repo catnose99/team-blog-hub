@@ -1,12 +1,12 @@
 export const config = {
   siteMeta: {
-    title: "Team Blog Hub",
-    teamName: "catnose Inc.",
-    description: "RSS based blog starter kit for teams.",
+    title: "3-shake Engineers' Blogs",
+    teamName: "3-shake Inc.",
+    description: "3-shake に所属するエンジニアのブログ記事をまとめています。",
   },
   siteRoot:
     process.env.NODE_ENV === "production"
-      ? "https://team-blog-hub.vercel.app"
+      ? "https://blog.3-shake.com/"
       : "http://localhost:3000",
   headerLinks: [
     {
