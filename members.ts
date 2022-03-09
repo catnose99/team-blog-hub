@@ -61,4 +61,16 @@ export const members: Member[] = [
     githubUsername: "skikkh",
     websiteUrl: "",
   },
+  {
+    id: "toshikish",
+    name: "toshikish",
+    role: "SRE",
+    bio: "Toshiki Shimomura",
+    avatarSrc: "/avatars/toshikish.png",
+    sources: ["https://toshikish.hateblo.jp/feed","https://zenn.dev/toshikish/feed","https://qiita.com/toshikish/feed"],
+    includeUrlRegex: "",
+    twitterUsername: "",
+    githubUsername: "toshikish",
+    websiteUrl: "",
+  },
 ];
