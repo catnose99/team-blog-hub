@@ -10,16 +10,12 @@ export const config = {
       : "http://localhost:3000",
   headerLinks: [
     {
-      title: "About",
-      href: "/about",
+      title: "Recruit",
+      href: "https://3-shake.com/category/recruit/",
     },
     {
       title: "Company",
-      href: "https://zenn.dev/catnose99/articles/cb72a73368a547756862",
-    },
-    {
-      title: "GitHub",
-      href: "https://github.com/catnose99/team-blog-hub",
+      href: "https://3-shake.com/",
     },
   ],
 };
