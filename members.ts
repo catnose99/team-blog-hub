@@ -49,4 +49,16 @@ export const members: Member[] = [
     githubUsername: "nwiizo",
     websiteUrl: "https://nwiizo.github.io/",
   },
+  {
+    id: "skikkh",
+    name: "skikkh",
+    role: "SRE",
+    bio: "skikkh",
+    avatarSrc: "/avatars/skikkh.jpeg",
+    sources: ["https://qiita.com/skikkh/feed"],
+    includeUrlRegex: "syu-m-5151.hatenablog.com",
+    twitterUsername: "skikkh",
+    githubUsername: "skikkh",
+    websiteUrl: "",
+  },
 ];
