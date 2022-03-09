@@ -5,8 +5,7 @@ export const members: Member[] = [
     id: "nwiizo",
     name: "nwiizo",
     role: "Software Developer",
-    bio:
-      "Software Developer",
+    bio: "Software Developer",
     avatarSrc: "/avatars/nwiizo.jpeg",
     sources: ["https://syu-m-5151.hatenablog.com/feed"],
     includeUrlRegex: "syu-m-5151.hatenablog.com",
@@ -32,7 +31,7 @@ export const members: Member[] = [
     role: "SRE",
     bio: "tarako_chan",
     avatarSrc: "/avatars/tozastation.jpg",
-    sources: ["https://qiita.com/tozastation","https://www.wantedly.com/id/tozastation"],
+    sources: ["https://qiita.com/tozastation/feed"],
     includeUrlRegex: "",
     twitterUsername: "tozastation",
     githubUsername: "tozastation",
