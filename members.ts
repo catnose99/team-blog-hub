@@ -6,7 +6,7 @@ export const members: Member[] = [
     name: "yteraoka",
     role: "SRE",
     bio: "ojisan",
-    avatarSrc: "/avatars/naoko.jpg",
+    avatarSrc: "/avatars/yteraoka.jpeg",
     sources: ["https://blog.1q77.com/feed/","https://qiita.com/yteraoka/feed"],
     includeUrlRegex: "",
     twitterUsername: "yteraoka",
