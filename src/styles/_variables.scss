@@ -1,9 +1,21 @@
 :root {
-  --color-base-background: #111;
-  --color-base-background-lighter: #24242d;
-  --color-base-text: #fff;
-  --color-base-text-lighter: rgba(212, 231, 241, 0.6);
-  --color-border: rgba(115, 125, 130, 0.4);
-  --color-primary-background: #9060ff;
-  --color-primary-text: #b494ff;
+  /* primitive color */
+  --__COLOR_BLACK: #313131;
+  --__COLOR_GRAY_10: #747474;
+  --__COLOR_GRAY_30: #ecebe8;
+  --__COLOR_GRAY_50: #ededed;
+  --__COLOR_GRAY_70: #F0F3F9;
+  --__COLOR_GRAY_90: #fcfcfc;
+  --__COLOR_WHITE: #ffffff;
+  --__COLOR_RED: #cf0606;
+  --__COLOR_DEEP_RED: #de0836;
+
+  /* app color */
+  --color-base-background: var(--__COLOR_GRAY_90);
+  --color-base-background-lighter: var(--__COLOR_GRAY_70);
+  --color-base-text: var(--__COLOR_BLACK);
+  --color-base-text-lighter: var(--__COLOR_GRAY_10);
+  --color-border: var(--__COLOR_GRAY_30);
+  --color-primary-background: var(--__COLOR_GRAY_70);
+  --color-primary-text: var(--__COLOR_BLACK);
 }
