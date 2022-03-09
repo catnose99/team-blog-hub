@@ -37,4 +37,16 @@ export const members: Member[] = [
     githubUsername: "tozastation",
     websiteUrl: "https://github.com/tozastation",
   },
+  {
+    id: "kyohmizu",
+    name: "kyohmizu",
+    role: "SRE",
+    bio: "mizumoto",
+    avatarSrc: "/avatars/kyohmizu.png",
+    sources: ["https://kyohmizu.hatenablog.com/feed/","https://qiita.com/kyohmizu/feed"],
+    includeUrlRegex: "",
+    twitterUsername: "kyohmizu",
+    githubUsername: "kyohmizu",
+    websiteUrl: "https://kyohmizu.com/",
+  },
 ];
