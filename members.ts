@@ -97,4 +97,16 @@ export const members: Member[] = [
     githubUsername: "taku-tez",
     websiteUrl: "https://www.wantedly.com/id/takuya_tezuka",
   },
+  {
+    id: "atsuya0",
+    name: "Atsuya Tsukada",
+    role: "SRE",
+    bio: "human",
+    avatarSrc: "/avatars/atsuya0.jpg",
+    sources: ["https://zenn.dev/tayusa/feed", "https://qiita.com/atsuya0/feed"],
+    includeUrlRegex: "",
+    twitterUsername: "",
+    githubUsername: "atsuya0",
+    websiteUrl: "https://github.com/atsuya0",
+  },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
