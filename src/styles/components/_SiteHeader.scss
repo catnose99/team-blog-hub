@@ -17,7 +17,12 @@
 .site-header__logo-img {
   height: 35px;
 }
-
+.site-header__logo-text {
+  margin-left: 0.8rem;
+  font-size: 0.99rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
 .site-header__links {
   display: flex;
   align-items: center;

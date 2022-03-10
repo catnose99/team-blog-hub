@@ -14,6 +14,11 @@ export const SiteHeader: React.FC = () => (
               alt={config.siteMeta.title}
               className="site-header__logo-img"
             />
+            <span className="site-header__logo-text">
+              3-shake
+            <br />
+              Engineers' Blogs
+            </span>
           </a>
         </Link>
         <div className="site-header__links">
