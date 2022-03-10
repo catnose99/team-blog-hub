@@ -90,7 +90,7 @@ export const members: Member[] = [
     name: "Takuya Tezuka",
     role: "JB",
     bio: "tez",
-    avatarSrc: "/avatars/tezuka.jpg",
+    avatarSrc: "/avatars/tezuka.jpeg",
     sources: ["https://qiita.com/TT_Private/feed"],
     includeUrlRegex: "qiita.com/TT_Private",
     twitterUsername: "tt0603",
