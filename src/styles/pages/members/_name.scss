@@ -4,6 +4,8 @@
 }
 .member-header__avatar-img {
   border-radius: 18px;
+  object-fit: cover;
+  object-position: 0 0;
 }
 .member-header__name {
   margin-top: 0.5rem;
