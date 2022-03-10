@@ -98,6 +98,18 @@ export const members: Member[] = [
     websiteUrl: "https://www.wantedly.com/id/takuya_tezuka",
   },
   {
+    id: "sosan01",
+    name: "Soichiro Tsuchida",
+    role: "SRE",
+    bio: "sosan",
+    avatarSrc: "/avatars/sosan01.png",
+    sources: [],
+    includeUrlRegex: "",
+    twitterUsername: "",
+    githubUsername: "sosan01",
+    websiteUrl: "",
+  },
+  {
     id: "atsuya0",
     name: "Atsuya Tsukada",
     role: "SRE",
