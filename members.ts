@@ -138,7 +138,7 @@ export const members: Member[] = [
     name: "Ryoma Aoki",
     role: "SRE / Backend Engineer",
     bio: "a dog lover",
-    avatarSrc: "/avatars/arisgi.jpeg",
+    avatarSrc: "/avatars/arisgi.jpg",
     sources: [],
     includeUrlRegex: "",
     twitterUsername: "",
