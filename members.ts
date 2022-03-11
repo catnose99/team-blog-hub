@@ -30,14 +30,16 @@ export const members: Member[] = [
     ],
   },
   {
-    id: "n-kyoncy",
-    name: "n-kyoncy",
+    id: "kyoncy",
+    name: "きょんしー",
     role: "Frontend Engineer",
     avatarSrc: "/avatars/n-kyoncy.png",
     sources: [
       "https://product-blog.hitto.co.jp/feed/author/n-kyoncy",
       "https://zenn.dev/kyoncy/feed"
     ],
+    githubUsername: "kyoncy",
+    twitterUsername: "kyoncy_site",
     websiteUrl: "https://kyoncy.site",
   },
   {
