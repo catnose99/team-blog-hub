@@ -44,7 +44,7 @@ export const members: Member[] = [
     bio: "Brogrammer",
     avatarSrc: "/avatars/nwiizo.jpeg",
     sources: ["https://syu-m-5151.hatenablog.com/feed","https://zenn.dev/nwiizo/feed"],
-    includeUrlRegex: "syu-m-5151.hatenablog.com",
+    includeUrlRegex: "",
     twitterUsername: "nwiizo",
     githubUsername: "nwiizo",
     websiteUrl: "https://nwiizo.github.io/",
