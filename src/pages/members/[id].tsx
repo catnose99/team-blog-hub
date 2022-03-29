@@ -1,4 +1,7 @@
 import { NextPage, GetStaticProps, GetStaticPaths } from "next";
+import { FaTwitter, FaGithub } from "react-icons/fa";
+import { AiOutlineLink } from "react-icons/ai";
+
 import { members } from "@members";
 import { PostItem, Member } from "@src/types";
 import { PostList } from "@src/components/PostList";
@@ -49,11 +52,9 @@ const Page: NextPage<Props> = (props) => {
                   href={`https://twitter.com/${twitterUsername}`}
                   className="member-header__link"
                 >
-                  <img
-                    src="/icons/twitter.svg"
-                    alt={`Twitterのユーザー@${twitterUsername}`}
-                    width={22}
-                    height={22}
+                  <FaTwitter
+                    className="member-header__link-icon"
+                    aria-label={`Follow @${twitterUsername} on Twitter`}
                   />
                 </a>
               )}
@@ -62,21 +63,17 @@ const Page: NextPage<Props> = (props) => {
                   href={`https://github.com/${githubUsername}`}
                   className="member-header__link"
                 >
-                  <img
-                    src="/icons/github.svg"
-                    alt={`GitHubのユーザー@${githubUsername}`}
-                    width={22}
-                    height={22}
+                  <FaGithub
+                    className="member-header__link-icon"
+                    aria-label={`@${githubUsername} on GitHub`}
                   />
                 </a>
               )}
               {websiteUrl && (
                 <a href={websiteUrl} className="member-header__link">
-                  <img
-                    src="/icons/link.svg"
-                    alt={`ウェブサイトのリンク`}
-                    width={22}
-                    height={22}
+                  <AiOutlineLink
+                    className="member-header__link-icon"
+                    aria-label={`Link to website`}
                   />
                 </a>
               )}
