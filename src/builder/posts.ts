@@ -2,7 +2,6 @@ import fs from "fs-extra";
 import Parser from "rss-parser";
 import { members } from "../../members";
 import { PostItem, Member } from "../types";
-export default {};
 
 type FeedItem = {
   title: string;
@@ -11,6 +10,15 @@ type FeedItem = {
   isoDate?: string;
   dateMiliSeconds: number;
 };
+
+function isValidUrl(str: string): boolean {
+  try {
+    const { protocol } = new URL(str);
+    return protocol === "http:" || protocol === "https:";
+  } catch {
+    return false;
+  }
+}
 
 const parser = new Parser();
 let allPostItems: PostItem[] = [];
@@ -30,7 +38,9 @@ async function fetchFeedItems(url: string) {
         dateMiliSeconds: isoDate ? new Date(isoDate).getTime() : 0,
       };
     })
-    .filter(({ title, link }) => title && link) as FeedItem[];
+    .filter(
+      ({ title, link }) => title && link && isValidUrl(link)
+    ) as FeedItem[];
 }
 
 async function getFeedItemsFromSources(sources: undefined | string[]) {
