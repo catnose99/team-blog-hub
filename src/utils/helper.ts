@@ -13,12 +13,9 @@ export function getMemberById(id: string) {
 export function getMemberPostsById(id: string) {
   return (posts as PostItem[]).filter((item) => item.authorId === id);
 }
-export function getHostFromURL(str: string) {
-  const url = new URL(str);
-  return url?.hostname || "blog";
-}
-export function getFaviconSrcFromHostname(hostname: string) {
-  return `https://www.google.com/s2/favicons?domain=${hostname}`;
+
+export function getFaviconSrcFromOrigin(hostname: string) {
+  return `https://www.google.com/s2/favicons?sz=32&domain_url=${hostname}`;
 }
 export function getMemberPath(id: string) {
   return `/members/${encodeURIComponent(id)}`;
