@@ -5,7 +5,6 @@ import relativeTime from "dayjs/plugin/relativeTime";
 
 import { PostItem } from "@src/types";
 import {
-  getMemberByName,
   getHostFromURL,
   getFaviconSrcFromHostname,
   getMemberPath,
@@ -30,6 +29,7 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
             className="post-link__author-img"
             width={35}
             height={35}
+            alt={member.name}
           />
           <div className="post-link__author-name">
             <div className="post-link__author-name">{member.name}</div>
@@ -48,6 +48,7 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
               width={14}
               height={14}
               className="post-link__site-favicon"
+              alt={hostname}
             />
             {hostname}
           </div>
