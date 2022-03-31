@@ -35,7 +35,7 @@ export const members: Member[] = [
     includeUrlRegex: "",
     twitterUsername: "kyohmizu",
     githubUsername: "kyohmizu",
-    websiteUrl: "https://kyohmizu.com/",
+    websiteUrl: "https://profile.kyohmizu.com/",
   },
   {
     id: "nwiizo",
