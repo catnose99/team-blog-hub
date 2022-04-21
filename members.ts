@@ -157,4 +157,16 @@ export const members: Member[] = [
     githubUsername: "genki-hashimoto",
     websiteUrl: "https://www.wantedly.com/id/genki_hashimoto",
   },
+  {
+    id: "thekuwayama",
+    name: "Tomoya Kuwayama",
+    role: "Backend Engineer (Team Leader)",
+    bio: "kuwayama",
+    avatarSrc: "/avatars/thekuwayama.jpg",
+    sources: [],
+    includeUrlRegex: "",
+    twitterUsername: "",
+    githubUsername: "thekuwayama",
+    websiteUrl: "https://thekuwayama.github.io",
+  },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
