@@ -177,7 +177,7 @@ export const members: Member[] = [
     avatarSrc: "/avatars/masasuzu.png",
     sources: ["https://blog.masasuzu.net/feed", "https://diary.masasuzu.net/feed"],
     includeUrlRegex: "",
-    twitterUsername: "",
+    twitterUsername: "masasuz",
     githubUsername: "masasuzu",
     websiteUrl: "https://masasuzu.net",
   },
