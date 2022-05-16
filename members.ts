@@ -217,4 +217,16 @@ export const members: Member[] = [
     githubUsername: "unvavo",
     websiteUrl: "",
   },
+  {
+    id: "hiroki-hasegawa",
+    name: "Hiroki Hasegawa",
+    role: "SRE",
+    bio: "Thank you everyone for visiting my page!",
+    avatarSrc: "/avatars/hirokihasegawa.png",
+    sources: [],
+    includeUrlRegex: "",
+    twitterUsername: "Hiroki__IT",
+    githubUsername: "hiroki-it",
+    websiteUrl: "https://hiroki-it.github.io/tech-notebook-mkdocs/about.html",
+  },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
