@@ -1,8 +1,8 @@
 export const config = {
   siteMeta: {
-    title: "Team Blog Hub",
-    teamName: "catnose Inc.",
-    description: "RSS based blog starter kit for teams.",
+    title: "Chompy Developers' Blog",
+    teamName: "Chompy, Inc.",
+    description: "Chompy を運営する Chompy, Inc. の開発メンバーのBlogを一覧できます。",
   },
   siteRoot:
     process.env.NODE_ENV === "production"
@@ -10,16 +10,12 @@ export const config = {
       : "http://localhost:3000",
   headerLinks: [
     {
-      title: "About",
-      href: "/about",
-    },
-    {
       title: "Company",
-      href: "https://zenn.dev/catnose99/articles/cb72a73368a547756862",
+      href: "https://chompy-inc.com/",
     },
     {
-      title: "GitHub",
-      href: "https://github.com/catnose99/team-blog-hub",
+      title: "Recruit",
+      href: "https://chompy-inc.com/recruit/",
     },
   ],
 };
