@@ -1,17 +1,38 @@
-# Team Blog Hub
+# Chompy Developers Blog
 
-![Demo](https://user-images.githubusercontent.com/34590683/96832331-8c289400-1479-11eb-9466-f24d30860a24.png)
+Fork of https://github.com/catnose99/team-blog-hub
 
-企業/チームのためのブログ・スターターです。Forkしてご自由にお使いください。
-
-ブログのRSSのURLを登録することで、チームメンバーの投稿を一覧にまとめて表示します。Zenn、Qiita、Medium、note、はてなブログなど、RSSフィードを取得できるサイトであれば、メンバーは好きな場所に投稿できます。
-
-詳しくは下記の記事をご覧ください。
-
-[チーム個々人のテックブログをRSSで集約するサイトを作った →](https://zenn.dev/catnose99/articles/cb72a73368a547756862)
+published at: https://xxxx/
 
 ## Demo
 https://team-blog-hub.vercel.app
+
+## Setting
+- サイトの基本設定は`site.config.ts`で行います。
+- 配色を変更するには`src/styles/variables.scss`を書き換えます。
+- ロゴなどの画像を変更するには`public`内のファイルを置き換えます。
+
+### Setting Member
+
+- メンバーのプロフィールやRSSの登録は`members.ts`で行います。
+
+```
+[{
+  id: "id"
+  name: "メンバーの名前",
+  role: "役職名",
+  bio:　"自己紹介文"
+  avatarSrc: "アイコン画像のパス"
+  sources: [
+    "RSSのURL",
+  ],
+  includeUrlRegex: "含めたい記事のURLにマッチする正規表現",
+  excludeUrlRegex: "除きたい記事のURLにマッチする正規表現"
+  twitterUsername: "twitterのユーザー名",
+  githubUsername: "githubのユーザー名",
+  websiteUrl: "自身の運営するURL",
+}]
+```
 
 ## Development
 ```bash
@@ -20,15 +41,7 @@ $ yarn build
 $ yarn dev
 ```
 
-- サイトの基本設定は`site.config.ts`で行います。
-- メンバーのプロフィールやRSSの登録は`members.ts`で行います。
-- 配色を変更するには`src/styles/variables.scss`を書き換えます。
-- ロゴなどの画像を変更するには`public`内のファイルを置き換えます。
+## 参考
+[チーム個々人のテックブログをRSSで集約するサイトを作った →](https://zenn.dev/catnose99/articles/cb72a73368a547756862)
 
-その他、ご自由にコードを書き換えてください。
-
-## Deployment
-VercelやNetlifyにデプロイすることを推奨します。`yarn build`を実行することで、RSSからの投稿データの取得とサイトのビルドが行われます。1日に1回などの頻度で自動デプロイするのが良いかもしれません。
-
-## Licence
-MIT
+[Ubieエンジニアのブログ記事まとめサイト「Ubie Engineers' Blogs」を公開しました｜Ubie (ユビー)｜note](https://note.com/ubie/n/n54c7628383ee)
