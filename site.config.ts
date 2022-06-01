@@ -6,7 +6,7 @@ export const config = {
   },
   siteRoot:
     process.env.NODE_ENV === "production"
-      ? "https://team-blog-hub.vercel.app"
+      ? "https://syninc.github.io/chompy-developers-blog"
       : "http://localhost:3000",
   headerLinks: [
     {
