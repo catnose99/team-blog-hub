@@ -1,0 +1,39 @@
+name: github pages
+
+# masterブランチにプッシュしたときjobsに記述した操作を行う
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    # ubuntu OS を仮想マシン上に用意する
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+          cache: yarn
+
+      - run: yarn
+
+      - run: yarn build
+
+      - run: yarn export
+
+      # しかしGitHub Pagesの仕様として_から始まるディレクトリが見えず404となる
+      # つまりHTMLからJSを読み込めない
+      # これを回避するために.nojekyllファイルをoutディレクトリに作る
+      - name: add nojekyll
+        run: touch ./out/.nojekyll
+
+      # gh-pagesブランチにoutディレクトリの中身をプッシュする
+      # gh-pagesブランチは自動的に作成される
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
