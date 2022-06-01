@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next build && next export -o docs",
+    "export": "next build && next export",
     "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
     "start": "next start",
     "lint": "next lint"
