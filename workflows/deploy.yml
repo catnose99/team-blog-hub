@@ -19,7 +19,6 @@ jobs:
           cache: yarn
 
       - run: yarn
-      - run: yarn build
       - run: yarn export
 
       # gh-pagesブランチにoutディレクトリの中身をプッシュする
