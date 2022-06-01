@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "run-s build:posts build:next",
+    "build": "next build",
     "export": "next export",
     "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
-    "build:next": "next build",
     "start": "next start",
     "lint": "next lint"
   },
