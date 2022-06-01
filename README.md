@@ -2,7 +2,7 @@
 
 Fork of https://github.com/catnose99/team-blog-hub
 
-published at: https://xxxx/
+published at: https://syninc.github.io/chompy-developers-blog
 
 ## Demo
 https://team-blog-hub.vercel.app
