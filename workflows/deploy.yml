@@ -19,11 +19,8 @@ jobs:
           cache: yarn
 
       - run: yarn
-
       - run: yarn build
-
-      - run: |
-          yarn export
+      - run: yarn export
 
       # gh-pagesブランチにoutディレクトリの中身をプッシュする
       # gh-pagesブランチは自動的に作成される
