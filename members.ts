@@ -235,7 +235,7 @@ export const members: Member[] = [
     role: "SRE",
     bio: "piyo",
     avatarSrc: "/avatars/kokisato.png",
-    sources: [],
+    sources: ["https://zenn.dev/kou_pg_0131/feed"],
     includeUrlRegex: "",
     twitterUsername: "koki_develop",
     githubUsername: "koki-develop",
