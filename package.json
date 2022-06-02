@@ -8,7 +8,6 @@
     "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
     "build:next": "next build",
     "export": "next export",
-    "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
     "start": "next start",
     "lint": "next lint"
   },
