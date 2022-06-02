@@ -29,6 +29,6 @@ jobs:
       # gh-pagesブランチは自動的に作成される
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
-        with:workflows
+        with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
