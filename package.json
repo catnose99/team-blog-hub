@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "run-s build:posts build:next",
     "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
-    "build:next": "NODE_ENV=production next build",
+    "build:next": "next build",
     "export": "next export",
     "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
     "start": "next start",

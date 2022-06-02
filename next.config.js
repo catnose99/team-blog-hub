@@ -1,7 +1,7 @@
-const isProd = process.env.NODE_ENV === "production";
+const urlPrefix = process.env.URL_PREFIX ? '/' + process.env.URL_PREFIX : ''
 
 module.exports = {
-    basePath: isProd ? "/chompy-developers-blog" : "",
-    assetPrefix: isProd ? "/chompy-developers-blog" : "",
+    assetPrefix: urlPrefix,
+    basePath: urlPrefix,
     trailingSlash: true
 };

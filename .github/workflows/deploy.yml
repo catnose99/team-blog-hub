@@ -22,6 +22,8 @@ jobs:
 
       - run: yarn
       - run: yarn build
+        env:
+          URL_PREFIX: chompy-developers-blog
       - run: yarn export
 
       # gh-pagesブランチにoutディレクトリの中身をプッシュする
