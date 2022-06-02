@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "env NODE_ENV='production' next build",
+    "build": "run-s build:posts build:next",
+    "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
+    "build:next": "next build",
     "export": "next export",
     "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
     "start": "next start",
