@@ -3,5 +3,6 @@ const urlPrefix = process.env.NODE_ENV === "production" ? '/chompy-developers-bl
 module.exports = {
     assetPrefix: urlPrefix,
     basePath: urlPrefix,
-    trailingSlash: true
+    trailingSlash: true,
+    publicRuntimeConfig: { urlPrefix }
 };
