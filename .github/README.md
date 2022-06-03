@@ -22,7 +22,7 @@ https://team-blog-hub.vercel.app
   name: "メンバーの名前",
   role: "役職名",
   bio:　"自己紹介文"
-  avatarSrc: "アイコン画像のパス"
+  avatarSrc: "※ urlPrefix + アイコン画像のパス"
   sources: [
     "RSSのURL",
   ],
@@ -33,6 +33,7 @@ https://team-blog-hub.vercel.app
   websiteUrl: "自身の運営するURL",
 }]
 ```
+※1. urlPrefix (= /chompy-developers-blog) は変数定義しているのでそちらを利用してください
 
 ## Development
 ```bash
