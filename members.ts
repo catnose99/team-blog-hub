@@ -1,5 +1,6 @@
 import { Member } from "@src/types";
 
+// TODO GitHub PagesではURLに https://syninc.github.io/が含まれるため,avatarSrcの前にurlPrefixが必要
 const urlPrefix = process.env.NODE_ENV === "production" ? '/chompy-developers-blog' : ''
 
 export const members: Member[] = [
