@@ -32,9 +32,6 @@ jobs:
       - name: export
         run: yarn export
 
-      - name: add nojekyll
-        run: touch ./out/.nojekyll
-
       # gh-pagesブランチにoutディレクトリの中身をプッシュする
       # gh-pagesブランチは自動的に作成される
       - name: deploy github pages
