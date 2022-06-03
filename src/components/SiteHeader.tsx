@@ -10,6 +10,7 @@ export const SiteHeader: React.FC = () => (
         <Link href="/" passHref>
           <a className="site-header__logo-link">
             <img
+              width={128}
               height={68}
               src={`${config.siteRoot}/logo.svg`}
               alt={config.siteMeta.title}
