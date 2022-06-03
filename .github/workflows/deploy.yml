@@ -3,8 +3,10 @@ name: github pages
 # masterブランチにプッシュしたときjobsに記述した操作を行う
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  schedule:
+    - cron: '28 18 * * *' # 3:28 AM JST every day
+  workflow_dispatch:
 
 jobs:
   build-deploy:
