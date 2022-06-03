@@ -26,8 +26,6 @@ jobs:
 
       - name: build
         run: yarn build
-        env:
-          URL_PREFIX: chompy-developers-blog
 
       - name: export
         run: yarn export

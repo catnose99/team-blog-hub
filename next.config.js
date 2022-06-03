@@ -1,4 +1,4 @@
-const urlPrefix = process.env.URL_PREFIX ? '/' + process.env.URL_PREFIX : ''
+const urlPrefix = process.env.NODE_ENV === "production" ? '/chompy-developers-blog' : ''
 
 module.exports = {
     assetPrefix: urlPrefix,
