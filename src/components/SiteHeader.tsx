@@ -9,13 +9,10 @@ export const SiteHeader: React.FC = () => (
       <div className="site-header__inner">
         <Link href="/" passHref>
           <a className="site-header__logo-link">
-            <img
-              width={128}
-              height={68}
-              src={`${config.siteRoot}/logo.svg`}
-              alt={config.siteMeta.title}
-              // className="site-header__logo-img"
-            />
+            <h2>
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
+              Chompy Developers' Blog
+            </h2>
           </a>
         </Link>
         <div className="site-header__links">
