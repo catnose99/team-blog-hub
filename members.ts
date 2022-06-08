@@ -25,6 +25,7 @@ export const members: Member[] = [
         "Chompyのエンジニアアカウントです。技術関連のことやブログやPodcastの更新情報をつぶやきます💡 アプリの利用に関するお問い合わせはアプリ内の「困ったときは」よりお送りください。",
     avatarSrc: `${urlPrefix}/avatars/chompy_developer.jpeg`,
     sources: [
+        "https://anchor.fm/s/70ca842c/podcast/rss"
     ],
     twitterUsername: "chompy_dev",
   },
