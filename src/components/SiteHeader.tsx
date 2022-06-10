@@ -9,10 +9,10 @@ export const SiteHeader: React.FC = () => (
       <div className="site-header__inner">
         <Link href="/" passHref>
           <a className="site-header__logo-link">
-            <h2>
+            <h4>
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               Chompy Developers' Blog
-            </h2>
+            </h4>
           </a>
         </Link>
         <div className="site-header__links">
