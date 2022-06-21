@@ -80,7 +80,7 @@ export const members: Member[] = [
     bio: "This Is The Sreake Section Blog.",
     avatarSrc: "/avatars/sreake.png",
     sources: ["https://sreake.com/blog/feed/"],
-    includeUrlRegex: "",
+    includeUrlRegex: "blog",
     excludeUrlRegex: "event",
     twitterUsername: "SreakeJ",
     githubUsername: "",
