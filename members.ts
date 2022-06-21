@@ -81,7 +81,7 @@ export const members: Member[] = [
     avatarSrc: "/avatars/sreake.png",
     sources: ["https://sreake.com/blog/feed/"],
     includeUrlRegex: "",
-    excludeUrlRegex: "/event/",
+    excludeUrlRegex: "event",
     twitterUsername: "SreakeJ",
     githubUsername: "",
     websiteUrl: "https://sreake.com",
