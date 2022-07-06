@@ -25,7 +25,8 @@ export const members: Member[] = [
         "Chompyのエンジニアアカウントです。技術関連のことやブログやPodcastの更新情報をつぶやきます💡 アプリの利用に関するお問い合わせはアプリ内の「困ったときは」よりお送りください。",
     avatarSrc: `${urlPrefix}/avatars/chompy_developer.jpeg`,
     sources: [
-        "https://anchor.fm/s/70ca842c/podcast/rss"
+        "https://anchor.fm/s/70ca842c/podcast/rss",
+        "https://note.com/chompy/rss"
     ],
     twitterUsername: "chompy_dev",
   },
@@ -40,21 +41,6 @@ export const members: Member[] = [
     ],
     twitterUsername: "ogiogi93",
     githubUsername: "ogiogi93",
-  },
-  {
-    id: "morikuni",
-    name: "morikuni",
-    bio:
-        "Go/GCP/アプリケーションアーキテクチャ/写真。"+
-        "カヤック ⇒ メルカリ ⇒ Chompy",
-    avatarSrc: `${urlPrefix}/avatars/morikuni.jpeg`,
-    sources: [
-      "https://inukirom.hatenablog.com/rss",
-      "https://qiita.com/morikuni/feed",
-    ],
-    twitterUsername: "inukirom",
-    githubUsername: "morikuni",
-    websiteUrl:"https://y.at/%F0%9F%8C%95%F0%9F%94%A5%F0%9F%92%A6%F0%9F%8C%B2%F0%9F%92%B0",
   },
   {
     id: "suzukenz",
