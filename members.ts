@@ -159,18 +159,6 @@ export const members: Member[] = [
     websiteUrl: "https://www.wantedly.com/id/genki_hashimoto",
   },
   {
-    id: "thekuwayama",
-    name: "Tomoya Kuwayama",
-    role: "Backend Engineer (Team Leader)",
-    bio: "kuwayama",
-    avatarSrc: "/avatars/thekuwayama.jpg",
-    sources: [],
-    includeUrlRegex: "",
-    twitterUsername: "",
-    githubUsername: "thekuwayama",
-    websiteUrl: "https://thekuwayama.github.io",
-  },
-  {
     id: "masasuzu",
     name: "SUZUKI, Masashi",
     role: "SRE",
