@@ -230,4 +230,16 @@ export const members: Member[] = [
     githubUsername: "koki-develop",
     websiteUrl: "https://koki.me",
   },
+  {
+    id: "kaisato",
+    name: "Kai Sato",
+    role: "SRE",
+    bio: "domo",
+    avatarSrc: "/avatars/kaisato.png",
+    sources: [],
+    includeUrlRegex: "",
+    twitterUsername: "KAI21441756",
+    githubUsername: "kaitexio",
+    websiteUrl: "",
+  },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
