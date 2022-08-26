@@ -257,4 +257,16 @@ export const members: Member[] = [
     githubUsername: "Pranc1ngPegasus",
     websiteUrl: "https://pranc1ngpegasus.com",
   },
+  {
+    id: "d-murota",
+    name: "Daichi Murota",
+    role: "SRE",
+    bio: "d-murota",
+    avatarSrc: "/avatars/d-murota.jpg",
+    sources: [],
+    includeUrlRegex: "",
+    twitterUsername: "",
+    githubUsername: "d-murota-w",
+    websiteUrl: "",
+  },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
