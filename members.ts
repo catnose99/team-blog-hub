@@ -55,4 +55,11 @@ export const members: Member[] = [
     githubUsername: "suzukenz",
     websiteUrl:"https://blog.suzukenz.jp/"
   },
+  {
+    id: "tyapama",
+    name: "taishi",
+    bio: "エンジニアです。ひいらぎのたい焼きが好きです。技術広報も兼任しています。",
+    avatarSrc: `${urlPrefix}/avatars/taishi.jpeg`,
+    githubUsername: "tyapama",
+  },
 ];
