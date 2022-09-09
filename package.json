@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "run-s build:posts build:next",
+    "build": "run-s build:posts build:feed build:next",
     "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
+    "build:feed": "ts-node --project tsconfig.builder.json ./src/builder/feed.ts",
     "build:next": "next build",
     "start": "next start",
     "export": "next export",
