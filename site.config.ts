@@ -10,6 +10,10 @@ export const config = {
       : "http://localhost:3000",
   headerLinks: [
     {
+      title: "RSS",
+      href: "/feed.xml",
+    },
+    {
       title: "Recruit",
       href: "https://3-shake.com/category/recruit/",
     },
