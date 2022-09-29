@@ -35,3 +35,4 @@ yarn-error.log*
 
 # generated data
 /.contents
+/public/feed.xml
