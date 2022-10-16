@@ -7,7 +7,7 @@ export const members: Member[] = [
     role: "SRE",
     bio: "ojisan",
     avatarSrc: "/avatars/yteraoka.jpeg",
-    sources: ["https://blog.1q77.com/feed/","https://qiita.com/yteraoka/feed", "https://medium.com/feed/@yteraoka", "https://zenn.dev/yteraoka/feed"],
+    sources: ["https://blog.1q77.com/index.xml","https://qiita.com/yteraoka/feed", "https://medium.com/feed/@yteraoka", "https://zenn.dev/yteraoka/feed"],
     includeUrlRegex: "",
     twitterUsername: "yteraoka",
     githubUsername: "yteraoka",
