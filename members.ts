@@ -51,7 +51,7 @@ export const members: Member[] = [
     role: "Engineer, Programmer",
     bio: "",
     avatarSrc: "/avatars/kidapu.jpg",
-    sources: ["https://qiita.com/kidapu/feed", "https://note.com/kidapu/rss"],
+    sources: ["https://qiita-feed.saqoosha.workers.dev/kidapu", "https://note.com/kidapu/rss"],
     twitterUsername: "kidapu",
     githubUsername: "kidapu",
   },
