@@ -60,7 +60,7 @@ export const members: Member[] = [
     name: "murasaqi",
     role: "Visual Artist, Programmer",
     avatarSrc: "/avatars/murasaqi.jpg",
-    sources: [],
+    sources: ["https://qiita-feed.saqoosha.workers.dev/Murasaqi", "https://zenn.dev/murasaqi/feed"],
     twitterUsername: "murasaki_0606",
     githubUsername: "murasaqi",
   },
