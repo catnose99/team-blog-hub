@@ -13,7 +13,7 @@ on:
   # 毎日日本時間の 11時 に GitHub Actions が実行される (cron の時刻は UST)
   # 実行の際に参照されるブランチは上記の default で指定したものが使用される
   schedule:
-    - cron:  '0 2 * * *'
+    - cron: '0 2 * * *'
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -30,12 +30,12 @@ jobs:
         run: |
           npm install
           npm run build:posts
-      - uses: amondnet/vercel-action@v20
+      - uses: amondnet/vercel-action@v25.1.0
         with:
           # GitHub Actions の Secrets で作成した値を参照する形で
           # Vercel デプロイ時に必要となる各種パラメタを設定する
           vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
-          vercel-args: '--prod' # Optional
           vercel-org-id: ${{ secrets.ORG_ID}}  #Required
           vercel-project-id: ${{ secrets.PROJECT_ID}} #Required
+          vercel-args: '--prod' # Optional
           working-directory: ./
