@@ -37,5 +37,6 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
           vercel-org-id: ${{ secrets.ORG_ID}}  #Required
           vercel-project-id: ${{ secrets.PROJECT_ID}} #Required
+          scope: ${{ secrets.TEAM_ID}}
           vercel-args: '--prod' # Optional
           working-directory: ./
