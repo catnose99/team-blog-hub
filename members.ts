@@ -4,7 +4,7 @@ export const members: Member[] = [
   {
     id: "catnose",
     name: "CatNose",
-    role: "CTO",
+    role: "staff",
     sources: [
       "https://note.com/retail_ai/rss"
     ]
