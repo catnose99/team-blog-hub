@@ -291,6 +291,7 @@ export const members: Member[] = [
     includeUrlRegex: "",
     twitterUsername: "",
     githubUsername: "tayatamn",
+    websiteUrl: "",
   },
   {
     id: "Go",
