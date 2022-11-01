@@ -286,7 +286,7 @@ export const members: Member[] = [
     name: "Soichiro Taya",
     role: "SRE",
     bio: "tayakun",
-    avatarSrc: "/avatars/tayakun.jpg",
+    avatarSrc: "/avatars/tayakun.png",
     sources: ["https://qiita.com/tayakun/feed"],
     includeUrlRegex: "",
     twitterUsername: "",
