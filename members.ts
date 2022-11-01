@@ -282,6 +282,18 @@ export const members: Member[] = [
     websiteUrl: "",
   },
   {
+    id: "tayakun",
+    name: "Soichiro Taya",
+    role: "SRE",
+    bio: "tayakun",
+    avatarSrc: "/avatars/tayakun.jpg",
+    sources: ["https://qiita.com/tayakun/feed"],
+    includeUrlRegex: "",
+    twitterUsername: "",
+    githubUsername: "tayatamn",
+    websiteUrl: "",
+  },
+  {
     id: "Go",
     name: "Masaki Go",
     role: "SRE",
