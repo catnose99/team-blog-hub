@@ -291,6 +291,17 @@ export const members: Member[] = [
     includeUrlRegex: "",
     twitterUsername: "",
     githubUsername: "tayatamn",
+  },
+  {
+    id: "Go",
+    name: "Masaki Go",
+    role: "SRE",
+    bio: "SRE",
+    avatarSrc: "/avatars/msaki_go.jpg",
+    sources: ["https://qiita.com/mk_yjn43/feed","https://zenn.dev/m_g/feed"],
+    includeUrlRegex: "",
+    twitterUsername: "mk_yjn43",
+    githubUsername: "masaki-G",
     websiteUrl: "",
   },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
