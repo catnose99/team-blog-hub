@@ -286,7 +286,7 @@ export const members: Member[] = [
     name: "Masaki Go",
     role: "SRE",
     bio: "SRE",
-    avatarSrc: "/avatars/msaki_go.jpg",
+    avatarSrc: "/avatars/masaki_go.jpg",
     sources: ["https://qiita.com/mk_yjn43/feed","https://zenn.dev/m_g/feed"],
     includeUrlRegex: "",
     twitterUsername: "mk_yjn43",
