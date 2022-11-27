@@ -79,7 +79,7 @@ export const members: Member[] = [
     role: "",
     bio: "This Is The Sreake Section Blog.",
     avatarSrc: "/avatars/sreake.png",
-    sources: ["https://sreake.com/blog/feed/"],
+    sources: ["https://sreake.com/feed/"],
     includeUrlRegex: "blog",
     excludeUrlRegex: "event",
     twitterUsername: "SreakeJ",
