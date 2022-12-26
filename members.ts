@@ -212,7 +212,7 @@ export const members: Member[] = [
     role: "SRE",
     bio: "Let me know your favorite technology!",
     avatarSrc: "/avatars/hirokihasegawa.png",
-    sources: [],
+    sources: ["https://hiroki-hasegawa.hatenablog.jp/feed"],
     includeUrlRegex: "",
     twitterUsername: "Hiroki__IT",
     githubUsername: "hiroki-it",
