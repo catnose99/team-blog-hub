@@ -210,7 +210,7 @@ export const members: Member[] = [
     id: "hiroki-hasegawa",
     name: "Hiroki Hasegawa",
     role: "SRE",
-    bio: "Thank you everyone for visiting my page!",
+    bio: "Let me know your favorite technology!",
     avatarSrc: "/avatars/hirokihasegawa.png",
     sources: [],
     includeUrlRegex: "",
