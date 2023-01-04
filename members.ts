@@ -135,18 +135,6 @@ export const members: Member[] = [
     websiteUrl: "https://www.wantedly.com/id/abnoumaru",
   },
   {
-    id: "arisgi",
-    name: "Ryoma Aoki",
-    role: "SRE / Backend Engineer",
-    bio: "a dog lover",
-    avatarSrc: "/avatars/arisgi.jpg",
-    sources: [],
-    includeUrlRegex: "",
-    twitterUsername: "",
-    githubUsername: "arisgi",
-    websiteUrl: "",
-  },
-  {
     id: "genki-hashimoto",
     name: "Genki Hashimoto",
     role: "SRE",
