@@ -310,7 +310,7 @@ export const members: Member[] = [
     name: "SatohJohn",
     role: "Software Developer",
     bio: "SatohJohn",
-    avatarSrc: "/avatars/satojohn.png",
+    avatarSrc: "/avatars/satohjohn.png",
     sources: ["https://qiita.com/satohjohn/feed", "https://zenn.dev/satohjohn/feed"],
     includeUrlRegex: "",
     twitterUsername: "satohjohn",
