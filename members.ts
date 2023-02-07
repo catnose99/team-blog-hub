@@ -282,18 +282,6 @@ export const members: Member[] = [
     websiteUrl: "",
   },
   {
-    id: "Go",
-    name: "Masaki Go",
-    role: "SRE",
-    bio: "saunner",
-    avatarSrc: "/avatars/masaki_go.jpg",
-    sources: ["https://qiita.com/mk_yjn43/feed","https://zenn.dev/m_g/feed"],
-    includeUrlRegex: "",
-    twitterUsername: "mk_yjn43",
-    githubUsername: "masaki-G",
-    websiteUrl: "",
-  },
-  {
     id: "jigyakkuma",
     name: "Shinji Yamada",
     role: "Corporate Engineer",
