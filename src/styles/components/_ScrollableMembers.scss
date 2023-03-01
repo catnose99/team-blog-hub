@@ -24,10 +24,12 @@
   flex-shrink: 0;
   width: 90px;
   margin-right: 23px;
-  margin-left: -5px;
   text-align: center;
   line-height: 1.5;
   scroll-snap-align: center;
+  &:not(:first-child) {
+    margin-left: -5px;
+  }
 }
 .scrollable-member__image,
 .scrollable-member__img,
