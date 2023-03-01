@@ -216,7 +216,7 @@ export const members: Member[] = [
     includeUrlRegex: "",
     twitterUsername: "Hiroki__IT",
     githubUsername: "hiroki-it",
-    websiteUrl: "https://hiroki-it.github.io/tech-notebook-mkdocs/",
+    websiteUrl: "https://hiroki-it.github.io/tech-notebook/",
   },
   {
     id: "kokisato",
