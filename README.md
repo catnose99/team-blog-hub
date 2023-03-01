@@ -15,10 +15,7 @@ $ yarn dev
 - ロゴなどの画像を変更するには`public`内のファイルを置き換えます。
 
 ## 動作確認環境
-NodeJS v16.19.0
+Node.js v18
 
-```
-Node.js v18以降の場合webpack周りのyarn buildでエラーが出ます
-```
 ## Licence
 MIT

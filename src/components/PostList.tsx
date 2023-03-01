@@ -23,21 +23,19 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
 
   return (
     <article className="post-link">
-      <Link href={getMemberPath(member.id)} passHref>
-        <a className="post-link__author">
-          <img
-            src={member.avatarSrc}
-            className="post-link__author-img"
-            width={35}
-            height={35}
-          />
-          <div className="post-link__author-name">
-            <div className="post-link__author-name">{member.name}</div>
-            <time dateTime={isoDate} className="post-link__date">
-              {dayjs(isoDate).fromNow()}
-            </time>
-          </div>
-        </a>
+      <Link href={getMemberPath(member.id)} className="post-link__author">
+        <img
+          src={member.avatarSrc}
+          className="post-link__author-img"
+          width={35}
+          height={35}
+        />
+        <div className="post-link__author-name">
+          <div className="post-link__author-name">{member.name}</div>
+          <time dateTime={isoDate} className="post-link__date">
+            {dayjs(isoDate).fromNow()}
+          </time>
+        </div>
       </Link>
       <a href={link} className="post-link__main-link">
         <h2 className="post-link__title">{title}</h2>
