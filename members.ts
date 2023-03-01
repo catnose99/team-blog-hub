@@ -347,7 +347,7 @@ export const members: Member[] = [
     role: "SRE",
     bio: "homo sapiens",
     avatarSrc: "/avatars/sakama.jpeg",
-    sources: [""],
+    sources: [],
     includeUrlRegex: "",
     twitterUsername: "",
     githubUsername: "junichiro-sakama",
