@@ -353,4 +353,16 @@ export const members: Member[] = [
     githubUsername: "junichiro-sakama",
     websiteUrl: "",
   },
+  {
+    id: "toVersus",
+    name: "Tsubasa Nagasawa",
+    role: "SRE",
+    bio: "lazy programmer",
+    avatarSrc: "/avatars/toVersus.png",
+    sources: ["https://qiita.com/toVersus/feed", "https://zenn.dev/toversus/feed"],
+    includeUrlRegex: "",
+    twitterUsername: "toversus26",
+    githubUsername: "toVersus",
+    websiteUrl: "",
+  },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
