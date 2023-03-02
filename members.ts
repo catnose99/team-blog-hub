@@ -365,4 +365,16 @@ export const members: Member[] = [
     githubUsername: "toVersus",
     websiteUrl: "",
   },
+  {
+    id: "raba-jp",
+    name: "Hiroki Sakuraba",
+    role: "Software Developer",
+    bio: "meow",
+    avatarSrc: "/avatars/raba-jp.jpg",
+    sources: ["https://zenn.dev/raba_jp/feed"],
+    includeUrlRegex: "",
+    twitterUsername: "",
+    githubUsername: "raba-jp",
+    websiteUrl: "",
+  },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
