@@ -6,7 +6,7 @@ export const config = {
   },
   siteRoot:
     process.env.NODE_ENV === "production"
-      ? "https://blog.3-shake.com/"
+      ? "https://blog.3-shake.com"
       : "http://localhost:3000",
   headerLinks: [
     {
