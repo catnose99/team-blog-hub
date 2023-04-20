@@ -83,4 +83,13 @@ export const members: Member[] = [
     githubUsername: "genkitoyama",
     twitterUsername: "genkitoyama",
   },
+  {
+    id: "ok",
+    name: "Kazuto Omori",
+    role: "Engineer, Programmer",
+    avatarSrc: "/avatars/ok.jpg",
+    sources: ["https://note.com/ooo_ubi_ooo/rss"],
+    githubUsername: "ubiquitous-o",
+    twitterUsername: "ooo_ubi_ooo",
+  },
 ];
