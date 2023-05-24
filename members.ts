@@ -401,4 +401,16 @@ export const members: Member[] = [
     githubUsername: "",
     websiteUrl: "https://nnaka2992.hatenablog.com/",
   },
+  {
+    id: "nullzebra",
+    name: "Satoru Kikuta",
+    role: "SRE",
+    bio: "Lena is great to be able to ride Flanker.",
+    avatarSrc: "/avatars/kikuta.jpèg",
+    sources: ["https://qiita.com/nullzebra/feed", "https://zenn.dev/nullzebra/feed"],
+    includeUrlRegex: "",
+    twitterUsername: "",
+    githubUsername: "",
+    websiteUrl: "",
+  },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
