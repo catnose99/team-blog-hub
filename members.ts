@@ -418,7 +418,7 @@ export const members: Member[] = [
     name: "satoken",
     role: "SRE",
     bio: "How do you like Wednesday?",
-    avatarSrc: "/avatars/satoken.jpèg",
+    avatarSrc: "/avatars/satoken.jpg",
     sources: ["https://zenn.dev/satoken"],
     includeUrlRegex: "",
     twitterUsername: "",
