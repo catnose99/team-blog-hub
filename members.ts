@@ -419,7 +419,7 @@ export const members: Member[] = [
     role: "SRE",
     bio: "How do you like Wednesday?",
     avatarSrc: "/avatars/satoken.jpg",
-    sources: ["https://zenn.dev/satoken"],
+    sources: ["https://zenn.dev/satoken/feed"],
     includeUrlRegex: "",
     twitterUsername: "",
     githubUsername: "",
