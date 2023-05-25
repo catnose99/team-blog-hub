@@ -413,4 +413,16 @@ export const members: Member[] = [
     githubUsername: "",
     websiteUrl: "",
   },
+  {
+    id: "satoken",
+    name: "satoken",
+    role: "SRE",
+    bio: "How do you like Wednesday?",
+    avatarSrc: "/avatars/satoken.jpèg",
+    sources: ["https://zenn.dev/satoken"],
+    includeUrlRegex: "",
+    twitterUsername: "",
+    githubUsername: "",
+    websiteUrl: "",
+  },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
