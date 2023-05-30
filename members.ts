@@ -406,7 +406,7 @@ export const members: Member[] = [
     name: "Satoru Kikuta",
     role: "SRE",
     bio: "Lena is great to be able to ride Flanker.",
-    avatarSrc: "/avatars/kikuta.jpèg",
+    avatarSrc: "/avatars/kikuta.jpeg",
     sources: ["https://qiita.com/nullzebra/feed", "https://zenn.dev/nullzebra/feed"],
     includeUrlRegex: "",
     twitterUsername: "",
