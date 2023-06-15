@@ -2,6 +2,18 @@ import { Member } from "@src/types";
 
 export const members: Member[] = [
   {
+    id: "BASSDRUM",
+    name: "BASSDRUM inc.",
+    role: "Company",
+    bio: "",
+    avatarSrc: "/avatars/bassdrum.jpg",
+    sources: [
+        "https://note.com/bassdrum/rss"
+    ],
+    twitterUsername: "BASSDRUM_org",
+    githubUsername: "bassdrum-org",
+  },
+  {
     id: "ToyoshiMorioka",
     name: "Toyoshi Morioka",
     role: "Technical Director",
