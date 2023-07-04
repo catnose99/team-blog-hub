@@ -437,4 +437,16 @@ export const members: Member[] = [
     githubUsername: "bells17",
     websiteUrl: "https://bells17.io/",
   },
+  {
+    id: "yokoo-an209",
+    name: "Annosuke Yokoo",
+    role: "SRE",
+    bio: "Buchiagemasu!",
+    avatarSrc: "/avatars/yokoo.jpeg",
+    sources: ["https://qiita.com/yokoo-an209/feed"],
+    includeUrlRegex: "",
+    twitterUsername: "866mfs",
+    githubUsername: "parupappa",
+    websiteUrl: "",
+  },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
