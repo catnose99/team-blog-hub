@@ -231,21 +231,6 @@ export const members: Member[] = [
     websiteUrl: "",
   },
   {
-    id: "Pranc1ngPegasus",
-    name: "Temma Fukaya",
-    role: "Backend Engineer",
-    bio: "Coffee addict ☕",
-    avatarSrc: "/avatars/pranc1ngpegasus.png",
-    sources: [
-      "https://zenn.dev/pranc1ngpegasus/feed",
-      "https://pranc1ngpegasus.hatenablog.com/rss",
-    ],
-    includeUrlRegex: "",
-    twitterUsername: "pranc1ngpegasus",
-    githubUsername: "Pranc1ngPegasus",
-    websiteUrl: "https://pranc1ngpegasus.com",
-  },
-  {
     id: "d-murota",
     name: "Daichi Murota",
     role: "SRE",
