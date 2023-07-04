@@ -15,7 +15,7 @@ export const config = {
     },
     {
       title: "Recruit",
-      href: "https://3-shake.com/category/recruit/",
+      href: "https://jobs-3-shake.com/",
     },
     {
       title: "Company",
