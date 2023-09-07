@@ -207,18 +207,6 @@ export const members: Member[] = [
     websiteUrl: "https://hiroki-it.github.io/tech-notebook/",
   },
   {
-    id: "kokisato",
-    name: "Koki Sato",
-    role: "SRE",
-    bio: "piyo",
-    avatarSrc: "/avatars/kokisato.png",
-    sources: ["https://zenn.dev/kou_pg_0131/feed"],
-    includeUrlRegex: "",
-    twitterUsername: "koki_develop",
-    githubUsername: "koki-develop",
-    websiteUrl: "https://koki.me",
-  },
-  {
     id: "kaisato",
     name: "Kai Sato",
     role: "SRE",
