@@ -1,4 +1,4 @@
-import { Member } from "@src/types";
+import {Member} from "@src/types";
 
 export const members: Member[] = [
   {
@@ -457,5 +457,17 @@ export const members: Member[] = [
     twitterUsername: "GawinGowin",
     githubUsername: "GawinGowin",
     websiteUrl: "",
-  }
+  },
+  {
+    id: "nomadblacky",
+    name: "Takumi Kadowaki",
+    role: "Software Engineer @ Reckoner",
+    bio: "Scala / Observability",
+    avatarSrc: "/avatars/nomadblacky.jpg",
+    sources: ["https://zenn.dev/nomadblacky/feed"],
+    includeUrlRegex: "",
+    twitterUsername: "nomadblacky",
+    githubUsername: "NomadBlacky",
+    websiteUrl: "",
+  },
 ].sort((a, b) => (a.id < b.id ? -1 : 1));
