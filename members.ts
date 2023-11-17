@@ -164,7 +164,7 @@ export const members: Member[] = [
     role: "SRE",
     bio: "haraheri",
     avatarSrc: "/avatars/kiyos.jpeg",
-    sources: [],
+    sources: ["https://zenn.dev/kyohei_saito/feed"],
     includeUrlRegex: "",
     twitterUsername: "kiyo_12_07",
     githubUsername: "kiyo-s",
