@@ -327,6 +327,18 @@ export const members: Member[] = [
     websiteUrl: "",
   },
   {
+    id: "stakamura",
+    name: "Shohei Takamura",
+    role: "SRE",
+    bio: "SRE",
+    avatarSrc: "/avatars/stakamura.jpg",
+    sources: ["https://zenn.dev/hakushou41/feed"],
+    includeUrlRegex: "",
+    twitterUsername: "hakushou41",
+    githubUsername: "hakushou41",
+    websiteUrl: "",
+  },
+  {
     id: "toVersus",
     name: "Tsubasa Nagasawa",
     role: "SRE",
