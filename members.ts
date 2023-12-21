@@ -428,7 +428,7 @@ export const members: Member[] = [
     role: "SRE",
     bio: "Buchiagemasu!",
     avatarSrc: "/avatars/yokoo.jpeg",
-    sources: ["https://qiita.com/yokoo-an209/feed"],
+    sources: ["https://qiita.com/yokoo-an209/feed", "https://zenn.dev/yokoo_an209/feed"],
     includeUrlRegex: "",
     twitterUsername: "866mfs",
     githubUsername: "parupappa",
