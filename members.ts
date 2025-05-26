@@ -550,7 +550,10 @@ export const members: Member[] = [
     avatarSrc: "/avatars/iota.jpg",
     role: "Full Stack Engineer",
     bio: "A.R.E.",
-    sources: ["https://zenn.dev/iorandd/feed"],
+    sources: [
+      "https://zenn.dev/iorandd/feed",
+      "https://speakerdeck.com/ota1022.rss",
+    ],
     githubUsername: "Ota1022",
     twitterUsername: "iorandd",
     websiteUrl: "https://ota1022.github.io/",
